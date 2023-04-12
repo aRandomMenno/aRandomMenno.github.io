@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="aRandomMenno">
+        <meta name="description" content="The welcome page">
+        <title>aRandomMenno's website</title>
+        <link rel="icon" href="images/page-icon.png" type="image/x-icon"> <!--Image credit: https://pixabay.com/vectors/birds-digital-drawing-stylized-7612651/-->
+        <link rel="stylesheet" href="main.css" type="text/css">
+        <style>
+            /* CSS for the hamburger menu */
+            .hamburger {
+                display: block;
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                z-index: 999;
+                cursor: pointer;
+            }
+
+            .hamburger span {
+                display: block;
+                width: 30px;
+                height: 3px;
+                margin-bottom: 5px;
+                background-color: white;
+                transition: transform 0.3s ease-in-out;
+            }
+
+            .hamburger.active span {
+                transform: rotate(45deg);
+            }
+
+            .hamburger.active span:nth-child(2) {
+                opacity: 0;
+            }
+
+            .hamburger.active span:nth-child(3) {
+                transform: rotate(-45deg);
+            }
+
+            /* Additional styles for the menu items */
+            .menu {
+                display: none;
+            }
+
+            .menu.active {
+                display: block;
+            }
+
+            .menu ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+            .menu li {
+                margin-bottom: 10px;
+            }
+
+            .menu a {
+                display: block;
+                color: white;
+                text-decoration: none;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- Hamburger menu icon -->
+        <div class="hamburger" id="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- Menu items -->
+        <div class="menu" id="menu-items">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <script>
+            // JavaScript for the hamburger menu
+            const hamburgerMenu = document.getElementById('hamburger-menu');
+            const menuItems = document.getElementById('menu-items');
+
+            hamburgerMenu.addEventListener('click', function() {
+                this.classList.toggle('active');
+                menuItems.classList.toggle('active');
+            });
+        </script>
+    </body>
+</html>

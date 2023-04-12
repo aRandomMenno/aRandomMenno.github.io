@@ -1,7 +1,40 @@
 html {
-    font-size: larger;
+    font-size: medium;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 body {
+    background-image: url('images/background.jpg'); /*Image credit: https://pixabay.com/illustrations/frequency-wave-geometry-pattern-7776034/ */
+    background-size: cover;
     background-color: black;
-    color: antiquewhite;
+    color: darkorange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+}
+
+.xs-text {
+    font-size: 10px;
+}
+
+.s-text {
+    font-size: 15px;
+}
+
+.m-text {
+    font-size: 20px;
+}
+
+.l-text {
+    font-size: 25px;
+}
+
+.xl-text {
+    font-size: 30px;
+}
+
+.xxl-text {
+    font-size: 35px;
 }
