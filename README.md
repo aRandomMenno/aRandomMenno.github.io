@@ -8,5 +8,6 @@ Website where all my projects and some info about me are displayed.
 - [ ] Add more links when I think of them.
 - [ ] Make an actual good favicon.
 - [ ] Pick out a good font, Because I dont really like this one.
-- [ ] Do cool stuff? :)'
+- [ ] Do cool stuff? :)
 - [ ] Add music player that plays my spofify playlist.
+- [ ] Learn actual programming languages. (not for website but still.)
