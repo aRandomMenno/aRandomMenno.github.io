@@ -1,3 +1,5 @@
+/* Really Important. Don't mess with it.*/
+
 html {
     font-size: medium;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -14,6 +16,22 @@ body {
     flex-direction: column;
     text-align: center;
 }
+
+/* Use this to style a link please. Thanks!*/
+
+.link {
+    color: aquamarine;
+    text-decoration: none;
+}
+
+/* Text positions. */
+
+.fixed-postion {
+    top: 1%;
+    right: 1%;
+}
+
+/* Font Size's. */
 
 .xs-text {
     font-size: 10px;
@@ -37,4 +55,82 @@ body {
 
 .xxl-text {
     font-size: 35px;
+}
+
+.b-text {
+    font-size: 40px;
+}
+
+.xb-text {
+    font-size: 45px;
+}
+
+.xxb-text {
+    font-size: 50px;
+}
+
+/* Hamburger Menu. */
+.hamburger {
+    display: flexbox;
+    position: fixed;
+    top: 1%;
+    right: 1%;
+    z-index: auto;
+    cursor: auto;
+}
+
+.hamburger span {
+    display: block;
+    width: 32px;
+    height: 5px;
+    margin-bottom: auto;
+    background-color: deeppink;
+    transition: transform 0.5s ease-in-out;
+}
+
+.hamburger span:nth-child(1) {
+    display: block;
+    width: 32px;
+    height: 5px;
+    margin-bottom: auto;
+    background-color: deeppink;
+    transition: transform 0.75s ease-in-out;
+}
+
+.hamburger span:nth-child(2) {
+    display: block;
+    width: 32px;
+    height: 5px;
+    margin-bottom: auto;
+    background-color: deeppink;
+    transition: transform 0.25s ease-in-out;
+}
+
+.hamburger.active span {
+    transform: rotate(360deg);
+}
+
+/* hamburger Menu Styles. */
+
+.menu {
+    display: none;
+}
+
+.menu.active {
+    display: block;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu li {
+    margin-bottom: auto;
+}
+
+.menu a {
+    display: block;
+    color: rebeccapurple;
+    text-decoration: none;
 }

@@ -11,14 +11,43 @@
     </head>
 
     <body>
-        <h1><span class="xxl-text">Welcome to my website!</span></h1>
-        <p>This website is made to learn HTML, CSS and maybe some JavaScript.</p>
-        <p>Find out more <a href="about-me">about me</a>!</p>
-        <h2>The wenbring part.</h2>
-        <p>This website is part of <a href='https://webring.dinhe.net'>this webring</a>.</p>
+        <!-- Hamburger menu icon. -->
+        <div class="hamburger" id="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+            
+        </div>
 
-        <p><a href='https://webring.dinhe.net/prev/https://arandommenno.github.io/'><em><strong>Previous!</strong></em></a><a href='https://webring.dinhe.net/next/https://arandommenno.github.io/'><em><strong>   Next!</strong></em></a></p>
+        <!-- Menu items. -->
+        <div class="menu" id="menu-items" class="fixed-postion">
+            <ul>
+                <li><a href='index.html'>Home</a></li>
+                <li><a href='about-me'>About</a></li>
+                <li><a href='#'>Contact</a></li>
+            </ul>
+        </div>
+
+        <script>
+            // JavaScript for the hamburger menu
+            const hamburgerMenu = document.getElementById('hamburger-menu');
+            const menuItems = document.getElementById('menu-items');
+
+            hamburgerMenu.addEventListener('click', function() {
+                this.classList.toggle('active');
+                menuItems.classList.toggle('active');
+            });
+        </script>
         
-        <p><span class="xl-text">&copy; Menno van Zoelen</span></p>
+        <h1><span class="b-text">Welcome to my website!</span></h1>
+        <p><span class="m-text">This website is made to learn HTML, CSS and maybe some JavaScript.</span><br><span class="m-text">Find out more <a class="link" href="about-me">about me</a>!</span></p>
+
+        <h2><span class="xl-text">The Retronaut Webring.</span></h2>
+        <p><span class="m-text">This website is part of a webring.<a class="link" href='https://webring.dinhe.net'> The Retronaut</a> Webring.</span><br><span class="m-text"><a class="link" href='https://webring.dinhe.net/prev/https://arandommenno.github.io/'><em>Previous!</em></a><a class="link" href='https://webring.dinhe.net/next/https://arandommenno.github.io/'><em>   Next!</em></a></span></p>
+
+        <p></p>
+        
+        <p><span class="l-text">&copy; 2023, Menno van Zoelen</span></p>
+
     </body>
 </html>
