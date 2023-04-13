@@ -11,47 +11,31 @@
     </head>
 
     <body>
-        <!-- Hamburger menu icon. -->
-        <div class="hamburger" id="hamburger-menu">
-            <span></span>
-            <span></span>
-            <span></span>
-            
-        </div>
-
-        <!-- Menu items. -->
         <div class="menu" id="menu-items" class="fixed-postion">
             <ul>
-                <li><a href='..'>Home</a></li>
-                <li><a href='../about-me/'>About me.</a></li>
-                <li><a href="#">　</a></li>
-                <li><a href='#'>Hamburger, without a Burger.</a></li>
+                <p>
+                    <a href='..' class="link">Home</a>
+                    <br><a href='../about-me/' class="link">About me.</a>
+                    <br><a href="S1" class="link">　</a>
+                    <br><a href="#" class="link">Hamburger, without a Burger.</a>
+                </p>
             </ul>
         </div>
 
-        <script>
-            // JavaScript for the hamburger menu
-            const hamburgerMenu = document.getElementById('hamburger-menu');
-            const menuItems = document.getElementById('menu-items');
-
-            hamburgerMenu.addEventListener('click', function() {
-                this.classList.toggle('active');
-                menuItems.classList.toggle('active');
-            });
-        </script>
         <span class="default-position">
         <h1><span class="b-text">Welcome to my Socials page!</span></h1>
         <div class="m-text">
             <ul>
-                <li>Find me on<a href="https://github.com/aRandomMenno/" class="link"> Github</a>.</li>
-                <li>Find me on<a href="https://www.youtube.com/@StoepTegels4You" class="link"> Youtube</a>.</li>
-                <li>Find me on<a href="https://steamcommunity.com/id/StoepTegeltjes/" class="link"> Steam</a>.</li>
-                <li>Find me on<a href="https://twitter.com/StoepTegels4You" class="link"> Twitter</a>.</li>
+                <li>Find me on<a href="https://github.com/aRandomMenno/" class="link" target="_blank"> Github</a>.</li>
+                <li>Find me on<a href="https://www.youtube.com/@StoepTegels4You" class="link" target="_blank"> Youtube</a>.</li>
+                <li>Find me on<a href="https://steamcommunity.com/id/StoepTegeltjes/" class="link" target="_blank"> Steam</a>.</li>
+                <li>Find me on<a href="https://twitter.com/StoepTegels4You" class="link" target="_blank"> Twitter</a>.</li>
             </ul>
-
         </div>
         
-        <p><span class="l-text">&copy; 2023, Menno van Zoelen</span></p>
+        <p>
+            <span class="l-text">&copy; 2023, Menno van Zoelen</span>
+        </p>
         </span>
 
     </body>

@@ -6,7 +6,6 @@ html {
 }
 body {
     background-image: url('images/background.jpg');
-    background-size: cover;
     background-color: black;
 }
 
@@ -20,8 +19,8 @@ body {
 /* Text positions. */
 
 .fixed-postion {
-    top: 1%;
-    right: 1%;
+    top: 7px;
+    right: 7px;
 }
 
 .default-position {
@@ -32,10 +31,10 @@ body {
     height: 100vh;
     flex-direction: column;
     text-align: center;
-    position: fixed; /* Add this property */
-    top: 50%; /* Update to 50% */
-    left: 50%; /* Update to 50% */
-    transform: translate(-50%, -50%); /* Add this property */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* Font Size's. */
@@ -74,70 +73,4 @@ body {
 
 .xxb-text {
     font-size: 50px;
-}
-
-/* Hamburger Menu. */
-.hamburger {
-    display: flexbox;
-    position: fixed;
-    top: 1%;
-    right: 1%;
-    z-index: auto;
-    cursor: auto;
-}
-
-.hamburger span {
-    display: block;
-    width: 32px;
-    height: 5px;
-    margin-bottom: auto;
-    background-color: deeppink;
-    transition: transform 0.5s ease-in-out;
-}
-
-.hamburger span:nth-child(1) {
-    display: block;
-    width: 32px;
-    height: 5px;
-    margin-bottom: auto;
-    background-color: deeppink;
-    transition: transform 0.75s ease-in-out;
-}
-
-.hamburger span:nth-child(2) {
-    display: block;
-    width: 32px;
-    height: 5px;
-    margin-bottom: auto;
-    background-color: deeppink;
-    transition: transform 0.25s ease-in-out;
-}
-
-.hamburger.active span {
-    transform: rotate(360deg);
-}
-
-/* hamburger Menu Styles. */
-
-.menu {
-    display: none;
-}
-
-.menu.active {
-    display: block;
-}
-
-.menu ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.menu li {
-    margin-bottom: auto;
-}
-
-.menu a {
-    display: block;
-    color: rebeccapurple;
-    text-decoration: none;
 }
