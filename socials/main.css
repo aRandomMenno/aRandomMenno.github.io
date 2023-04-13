@@ -1,19 +1,87 @@
+/* Really Important. Don't mess with it. */
+
 html {
     font-size: medium;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 body {
-    background-image: url('images/background.jpg'); /*Image credit: https://pixabay.com/illustrations/frequency-wave-geometry-pattern-7776034/ */
+    background-image: url('images/background.jpg');
     background-size: cover;
     background-color: black;
 }
 
-/* CSS for the hamburger menu */
+/* Use this to style a link please. Thanks!*/
+
+.link {
+    color: aquamarine;
+    text-decoration: none;
+}
+
+/* Text positions. */
+
+.fixed-postion {
+    top: 1%;
+    right: 1%;
+}
+
+.default-position {
+    color: darkorange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+    position: fixed; /* Add this property */
+    top: 50%; /* Update to 50% */
+    left: 50%; /* Update to 50% */
+    transform: translate(-50%, -50%); /* Add this property */
+}
+
+/* Font Size's. */
+
+.xs-text {
+    font-size: 10px;
+}
+
+.s-text {
+    font-size: 15px;
+}
+
+.m-text {
+    font-size: 20px;
+}
+
+.l-text {
+    font-size: 25px;
+}
+
+.xl-text {
+    font-size: 30px;
+}
+
+.xxl-text {
+    font-size: 35px;
+}
+
+.b-text {
+    font-size: 40px;
+}
+
+.xb-text {
+    font-size: 45px;
+}
+
+.xxb-text {
+    font-size: 50px;
+}
+
+/* Hamburger Menu. */
 .hamburger {
     display: flexbox;
-    position: sticky;
-    top: 0%;
-    right: 0%;
+    position: fixed;
+    top: 1%;
+    right: 1%;
     z-index: auto;
     cursor: auto;
 }
@@ -49,7 +117,8 @@ body {
     transform: rotate(360deg);
 }
 
-/* Additional styles for the menu items */
+/* hamburger Menu Styles. */
+
 .menu {
     display: none;
 }

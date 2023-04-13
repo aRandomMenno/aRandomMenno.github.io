@@ -1,10 +1,14 @@
 # aRandomMenno.github.io
 Website where all my projects and some info about me are displayed.
 
+# Things about my website:
+- [X] Easter Eggs. **_{WIP.}_**
+- [ ] hmm.
+
 # Todo list:
-- [ ] Make the website multi-page or sum shizz. (Idrk) **_{in progress!}_**
-- [ ] Add all my socials. **_{in progress!}_**
-- [ ] Make funny website. (also good looking.)
+- [X] Make the website multi-page or sum shizz. (Idrk) **_{Still WIP. but IK how to.}_**
+- [X] Add all my socials. **_{Done}_**
+- [ ] Make funny website. (also good looking.) **_{WIP.}_**
 - [ ] Add more links when I think of them.
 - [X] Make an actual good favicon. **_{Done!, aka skit. Credits in Source.}_** 
 - [X] Pick out a good font, Because I dont really like this one. **_{This font is kinda good ig?}_**

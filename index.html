@@ -6,48 +6,44 @@
         <meta name="author" content="aRandomMenno">
         <meta name="description" content="The welcome page">
         <title>aRandomMenno's website</title>
-        <link rel="icon" href="images/page-icon.png" type="image/x-icon"> <!--Image credit: https://pixabay.com/vectors/birds-digital-drawing-stylized-7612651/-->
+        <link rel="icon" href="images/page-icon.png" type="image/x-icon">
         <link rel="stylesheet" href="main.css" type="text/css">
     </head>
 
     <body>
-        <!-- Hamburger menu icon. -->
-        <div class="hamburger" id="hamburger-menu">
-            <span></span>
-            <span></span>
-            <span></span>
-            
-        </div>
-
-        <!-- Menu items. -->
-        <div class="menu" id="menu-items" class="fixed-postion">
+        <div class="s-text">
             <ul>
-                <li><a href='index.html'>Home</a></li>
-                <li><a href='about-me'>About</a></li>
-                <li><a href='#'>Contact</a></li>
+                <p>
+                    <a href='..' class="link">Home</a>
+                    <br><a href='Socials' class="link">Socials</a>
+                    <br><a href="about-me" class="link">About me</a>
+                    <br><a href="#" class="link">　</a>
+                    <br><a href="special-event" class="link">Borger? search for easter eggs!</a>
+                </p>
             </ul>
         </div>
 
-        <script>
-            // JavaScript for the hamburger menu
-            const hamburgerMenu = document.getElementById('hamburger-menu');
-            const menuItems = document.getElementById('menu-items');
-
-            hamburgerMenu.addEventListener('click', function() {
-                this.classList.toggle('active');
-                menuItems.classList.toggle('active');
-            });
-        </script>
-        
+        <span class="default-position">
         <h1><span class="b-text">Welcome to my website!</span></h1>
-        <p><span class="m-text">This website is made to learn HTML, CSS and maybe some JavaScript.</span><br><span class="m-text">Find out more <a class="link" href="about-me">about me</a>!</span></p>
+        <span class="m-text">
+        <p>
+            <span>This website is made to learn HTML, CSS and maybe some JavaScript.</span>
+            <br><span>Find out more <a class="link" href="about-me">about me</a>!
+            <br>Expect some broken things while I try to fix them.</span>
+        </p>
+        </span>
 
         <h2><span class="xl-text">The Retronaut Webring.</span></h2>
-        <p><span class="m-text">This website is part of a webring.<a class="link" href='https://webring.dinhe.net'> The Retronaut</a> Webring.</span><br><span class="m-text"><a class="link" href='https://webring.dinhe.net/prev/https://arandommenno.github.io/'><em>Previous!</em></a><a class="link" href='https://webring.dinhe.net/next/https://arandommenno.github.io/'><em>   Next!</em></a></span></p>
+        <span class="m-text">
+        <p>
+            <span>This website is part of a webring.<a class="link" href='https://webring.dinhe.net'> The Retronaut</a> Webring.</span>
+            <br><span><a class="link" href='https://webring.dinhe.net/prev/https://arandommenno.github.io/'><em>Previous!</em></a>
+            <a class="link" href='https://webring.dinhe.net/next/https://arandommenno.github.io/'><em>　Next!</em></a></span>
+        </p>
+        </span>
 
-        <p></p>
-        
         <p><span class="l-text">&copy; 2023, Menno van Zoelen</span></p>
+        </span>
 
     </body>
 </html>
