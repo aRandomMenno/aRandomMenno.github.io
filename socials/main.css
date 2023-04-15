@@ -1,7 +1,6 @@
 /* Really Important. Don't mess with it. */
 
 html {
-    font-size: medium;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 body {
@@ -9,21 +8,25 @@ body {
     background-color: black;
 }
 
-/* Use this to style a link please. Thanks!*/
+/* Use this to style a link please. Thanks! */
 
 .link {
     color: aquamarine;
     text-decoration: none;
 }
 
-/* Text positions. */
-
-.fixed-postion {
-    top: 7px;
-    right: 7px;
+.link-2 {
+    color: crimson;
+    text-decoration: underline;
 }
 
-.default-position {
+.link-3 {
+    color: darkorange;
+    text-decoration: underline;
+}
+/* Text positions. */
+
+.d-color {
     color: darkorange;
     display: flex;
     justify-content: center;
@@ -39,38 +42,10 @@ body {
 
 /* Font Size's. */
 
-.xs-text {
-    font-size: 10px;
-}
-
-.s-text {
-    font-size: 15px;
-}
-
 .m-text {
     font-size: 20px;
 }
 
-.l-text {
-    font-size: 25px;
-}
-
-.xl-text {
-    font-size: 30px;
-}
-
-.xxl-text {
-    font-size: 35px;
-}
-
-.b-text {
-    font-size: 40px;
-}
-
-.xb-text {
-    font-size: 45px;
-}
-
-.xxb-text {
-    font-size: 50px;
+.s-text {
+    font-size: 15px;
 }
