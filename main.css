@@ -91,6 +91,11 @@ html {
     transform: translate(-50%, -50%);
 }
 
+.chat-pos {
+   top: 100%;
+   left: 0%;
+}
+
 /* Font Size's. */
 
 .m-text {
@@ -99,4 +104,17 @@ html {
 
 .s-text {
     font-size: 15px;
+}
+
+/* For the clock: */
+
+@import url("https://fonts.googleapis.com/css?family=Orbitron");
+
+#clock {
+  font-family: "Orbitron", sans-serif;
+  color: #66ff99;
+  font-size: 46px;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
