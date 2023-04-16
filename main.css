@@ -4,8 +4,16 @@ html {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-
 /* Font Size's. */
+
+.c-1-text {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.l-text {
+    font-size: 25px;
+}
 
 .m-text {
     font-size: 20px;
@@ -45,6 +53,11 @@ html {
 .secret {
     background: url('images/background-secret.png');
     background-position: center;
+}
+
+.countries {
+    background: url('images/background-countries.png');
+    background-position: inherit;
 }
 
 /* Use this to style a link please. Thanks! */
@@ -111,7 +124,7 @@ html {
 #clock {
   font-family: "Orbitron", sans-serif;
   color: #66ff99;
-  font-size: 46px;
+  font-size: 44px;
   text-align: center;
   padding-top: 40px;
   padding-bottom: 40px;
