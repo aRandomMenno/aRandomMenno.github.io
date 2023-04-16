@@ -1,8 +1,21 @@
-/* background and font. */
+/* HTML properties. */
 
 html {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+
+/* Font Size's. */
+
+.m-text {
+    font-size: 20px;
+}
+
+.s-text {
+    font-size: 15px;
+}
+
+/* Backgrounds */
 
 .welcome {
     background: url('images/background.jpg');
@@ -89,16 +102,6 @@ html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-/* Font Size's. */
-
-.m-text {
-    font-size: 20px;
-}
-
-.s-text {
-    font-size: 15px;
 }
 
 /* For the clock: */

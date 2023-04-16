@@ -19,9 +19,10 @@ Website where a lot of things are about me and what I do.
 - [X] Add or make a ChatBox Thingy **_{Done used https://www.cbox.ws/}_**
 - [X] Add a my games page **_{Done.}_**
 - [ ] Signup for more webrings. for more people to see my website. **_{WIP}_**
-- [X] add something that follows your mouse pointer. **_{Added a cat, Source: https://github.com/adryd325/oneko.js/}_**
+- [X] add something that follows your mouse pointer. Notice: only on Welcome page! **_{Added a cat, Source: https://github.com/adryd325/oneko.js/}_**
 - [ ] Add some sort of music player. **_{WIP, which one do you recommend?}_**
 - [ ] Is website done? No ofcourse not!
+- [ ] major code cleanup?
 
 # Things I want to do In the near future:
 
