@@ -1,16 +1,16 @@
-/* I suggest you Don't mess with this. */
+/* background and font. */
 
 html {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.about {
-    background: url('images/background-about.jpg');
+.welcome {
+    background: url('images/background.jpg');
     background-position: center;
 }
 
-.welcome {
-    background: url('images/background.jpg');
+.about {
+    background: url('images/background-about.jpg');
     background-position: center;
 }
 
@@ -89,11 +89,6 @@ html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-.chat-pos {
-   top: 100%;
-   left: 0%;
 }
 
 /* Font Size's. */
