@@ -1,11 +1,37 @@
-/* Really Important. Don't mess with it. */
+/* I suggest you Don't mess with this. */
 
 html {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-body {
-    background-image: url('images/background.jpg');
-    background-color: black;
+
+.about {
+    background: url('images/background-about.jpg');
+    background-position: center;
+}
+
+.welcome {
+    background: url('images/background.jpg');
+    background-position: center;
+}
+
+.social {
+    background: url('images/background-socials.jpg');
+    background-position: center;
+}
+
+.my-games {
+    background: url('images/background-games.jpg');
+    background-position: center;
+}
+
+.events {
+    background: url('images/background-event.jpg');
+    background-position: center;
+}
+
+.secret {
+    background: url('images/background-secret.png');
+    background-position: center;
 }
 
 /* Use this to style a link please. Thanks! */
@@ -24,10 +50,35 @@ body {
     color: darkorange;
     text-decoration: underline;
 }
+
+.link-4 {
+    color: rgba(83, 255, 203, 1);
+    text-decoration: none;
+}
+
+.link-5 {
+    color: crimson;
+    text-decoration: none;
+}
+
 /* Text positions. */
 
 .d-color {
     color: darkorange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.d-color-2 {
+    color: rgba(143, 255, 83, 1);
     display: flex;
     justify-content: center;
     align-items: center;
