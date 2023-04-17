@@ -89,6 +89,12 @@ html {
 
 /* Text positions. */
 
+.ChatBox-pos {
+    position: fixed;
+    bottom: 5px;
+    left: 5px;
+}
+
 .d-color {
     color: darkorange;
     display: flex;
