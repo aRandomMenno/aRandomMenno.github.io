@@ -26,4 +26,6 @@ Website where a lot of things are about me and what I do.
 
 # Things I want to do In the near future:
 
-- [ ] Learn actual programming languages like Java, C/C++/C# or any other. (not for website but still.)
+- [ ] Learn actual programming languages like Java, C/C++ or C# or any other. (not for website but still.)
+- [ ] I am making a discordbot.
+- [ ] Working on a privatr thing. 
