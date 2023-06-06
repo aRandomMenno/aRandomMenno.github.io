@@ -1,3 +1,10 @@
+# IMPORTANT:
+
+    I am int he process of redesiging the enitre website,
+    this will take some time and this will all be released in ONE go.
+
+    You will still be able to view the old site.
+
 # aRandomMenno.github.io
 
 Website where a lot of things are about me and what I do.

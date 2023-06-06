@@ -1,71 +1,53 @@
 <!DOCTYPE html>
 
-<html class="welcome" lang="en">
+<html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="author" content="aRandomMenno">
-        <meta name="description" content="The welcome page.">
-        <title>Menno: Main page.</title>
-        <link rel="icon" href="images/page-icon.png" type="image/x-icon">
-        <link rel="stylesheet" href="main.css" type="text/css">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset = "UTF-8">
+        <meta name = "author" content = "aRandomMenno">
+        <meta name = "description" content = "The welcome page.">
+        <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+
+        <link rel = "stylesheet" href = "./styles.css" type="text/css">
+        <link rel = "icon" type = "image/png" href = "./images/favicon.png">
+
+        <title>aRandomMenno's site.</title>
     </head>
 
     <body>
-        <div class="s-text">
-            <strong>
-                <a href='..' class="link">Home</a>
-                <br><a href='socials' class="link">Socials</a>
-                <br><a href="about-me" class="link">About me</a>
-                <br><a href="my-games" class="link">My games</a>
-                <br><a href="countries" class="link">Countries</a>
-                <br>
-                <br>
-                <br><a href="special-event" class="link">Borger? Search for secrets.</a>
-            </strong>
-        </div>
-        
-        <center class="d-color">
-            <span class="m-text">
-                <h1>Welcome to my website!</h1>
+        <header>
+            <div class="head"><b>Welcome, To my website!</b></div>
+        </header>
 
-                <div>
-                    This website is made by <a href="about-me" class="link-3">me</a> to learn HTML, CSS and maybe some JavaScript.
-                    <br>In the top right corner is a Hamburger Menu to navigate the webpage.
-                    <br>Expect some broken things while I try to fix them.
+        <main>
+            <div class = "borger-box">
+                <div class = "burger-text-place">
+                    <a href='.' class="borger-link">Home.</a>
+                    <br><a href='about' class="borger-link">About.</a>
+                    <br><a href="socials" class="borger-link">Socials.</a>
+                    <br><a href="games" class="borger-link">Games.</a>
+                    <br><a href="projects" class="borger-link">Projects.</a>
                 </div>
-
-                <div id="clock"></div>
-                <script src="clock.js"></script>
-
-                <div>
-                    <span class="c-1-text">Webrings:</span><br><br>
-                    <a class="link" href='https://webring.dinhe.net/prev/https://arandommenno.github.io/'><em><strong> <<< </strong></em></a>
-                    <a class="link-2" href='https://webring.dinhe.net'>The Retronaut  Webring.</a>
-                    <a class="link" href='https://webring.dinhe.net/next/https://arandommenno.github.io/'><em><strong> >>> </strong></em></a>
-                </div>
-                <div>   
-                    <a class="link" href="https://loop.graycot.dev/webring.html?action=prev"><em><strong> <<< </strong></em></a>
-                    <a class="link-2" href="https://loop.graycot.dev/webring.html?action=home" >The Loop ring.</a>
-                    <a class="link" href="https://loop.graycot.dev/webring.html?action=next"><em><strong> >>> </strong></em></a>
-                </div>
-            </span>
-            
-            <div>
-                <span class="s-text">
-                    <br>
-                    <br>
-                    <br>&copy; 2023, Menno van Zoelen
-                    <br>
-                    <br>Tiny disclaimer: not all of the information on my website will be 100% accurate,
-                    <br>e.g. the <a href="my-games/" class="link-2">my games </a>page or my age.
-                </span>
             </div>
-        </center>
 
-        <script src="./oneko.js"></script>
+            <div class = "text">
+                <h1>Hello, my name is Menno.</h1>
+                <p>
+                    I am 15 years old, I live in the netherlands somewhere near Roterdam.
+                    <br>I <span style="color: rgb(255, 50, 100);">&hearts;</span> computers! and I play a lot of <a href="./games" class="w-link">video games</a>.
+                    <br>I also program for fun. as you can see from this website I am an amateur.
+                </p>
+                <h2>Why did I create this site?</h2>
+                <p>
+                    I created this site so people can see what I do and get to know me more,
+                    <br>but I mainly created this site so I can learn CSS & HTML and maybe JS.
+                </p>
+            </div>
+        </main>
 
-        <iframe class="ChatBox-pos" src="https://www5.cbox.ws/box/?boxid=942904&boxtag=eKfCGW" width="300" height="450" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
+        <footer>
+            <a href = "./old-site" class = "link-0" target = "_blank"> -> old site <- </a>
+            <br>&copy; 2023 | Menno van Zoelen.
+        </footer>
     </body>
 </html>
