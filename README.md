@@ -1,12 +1,14 @@
 # Todo list:
 
-- [X] Multipage, "hamburger menu".  **-Done**
+- [x] Multipage, "hamburger menu". **-Done**
 - [ ] Expand "Hamburger menu".
-- [X] Add my socials.  **-Done**
-- [X] Favicon.  **-Done**
-- [X] Good font.  **-Done**
+- [x] Add my socials. **-Done**
+- [x] Favicon. **-Done**
+- [x] Good font. **-Done**
 - [ ] make a chatbox.
-- [X] Custom error page.  **-Done**
+- [x] Custom error page. **-Done**
+- [ ] Add all games to games page.
+- [ ] Add a project to projects page.
 
 # more will be added.
 
