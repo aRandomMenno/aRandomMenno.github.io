@@ -1,0 +1,142 @@
+/*? HTML idk. */
+
+html {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url('../images/mountain.png'); 
+}
+
+/*TODO: body elements. */
+
+.text {
+    font-size: 16px;
+    color: rgb(75, 65, 225);
+}
+
+.w-link {
+    text-decoration: auto;
+    color: rgb(100, 250, 150);
+}
+
+.dutch {
+    background-image:
+        linear-gradient(to bottom, red, white, blue);
+    background-clip: border-box; 
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+
+.page404 {
+    color: rgb(255, 0, 0);
+    font-size: 32px;
+
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.webring-arrow {
+    text-decoration: none;
+    font-style: italic;
+    color: darkgoldenrod;
+}
+
+.webring-text {
+    font-variant: small-caps;
+    text-decoration: none;
+    color: cyan;
+}
+
+/*? Header. */
+
+header {
+    text-align: center;
+    color: rgb(145, 45, 250);
+    font-size: 38px;
+}
+
+.head {
+    position: fixed;
+    
+    left: 30%;
+    height: 50px;
+    width: 40%;
+    top: 10px;
+
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.75);
+    overflow: auto;
+}
+
+/*? Main. */
+
+main {
+    text-align: center;
+    color: white;
+    font-size: 16px;
+
+    position: fixed;
+
+    left: 7%;
+    height: 85%;
+    width: 87%;
+    top: 8%;
+
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.75);
+    overflow: auto;
+}
+
+/*? Footer. */
+
+footer {
+    text-align: center;
+    color: rgb(250, 60, 140);
+    
+    position: fixed;
+
+    bottom: 7px;
+
+    height: 50px;
+    width: 30%;
+    left: 35%;
+
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0.75);
+    overflow: auto;
+
+    font-style: italic;
+}
+
+.link-0 {
+    text-decoration: auto;
+    color: rgb(250, 60, 140);
+}
+
+/*? Menu bar. */
+
+.borger-link {
+    color: rgb(125, 50, 250);
+    text-decoration: none;
+}
+
+.borger-box {
+    text-align: center;
+    font-style: italic;
+
+    position: fixed;
+    height: 120px;
+    width: 100px;
+
+    top: 7px;
+    left: 7px;
+
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+
+    overflow: auto;
+}
