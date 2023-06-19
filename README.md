@@ -5,10 +5,14 @@
 - [x] Add my socials. **-Done**
 - [x] Favicon. **-Done**
 - [x] Good font. **-Done**
-- [ ] make a chatbox. **-Work In Progress! (Discontinued)**
+
 - [x] Custom error page. **-Done**
 - [X] Add nearly all games to games page. **-Done**
 - [ ] Add a project to projects page.
+
+# Discontinued things for my website.
+
+- [ ] make a chatbox. **(Discontinued)**
 
 # more will be added.
 
