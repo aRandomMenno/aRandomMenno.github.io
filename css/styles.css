@@ -8,6 +8,11 @@ html {
 
 /*TODO: body elements. */
 
+.link-1 {
+  text-decoration: none;
+  color: rgb(150, 69, 255);
+}
+
 .text {
   font-size: 16px;
   color: rgb(75, 65, 225);
@@ -114,7 +119,7 @@ footer {
 }
 
 .link-0 {
-  text-decoration: auto;
+  text-decoration: none;
   color: rgb(250, 60, 140);
 }
 
