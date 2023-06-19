@@ -7,7 +7,7 @@
 - [x] Good font. **-Done**
 - [ ] make a chatbox. **-Work In Progress!**
 - [x] Custom error page. **-Done**
-- [ ] Add all games to games page.
+- [X] Add nearly all games to games page. **-Done**
 - [ ] Add a project to projects page.
 
 # more will be added.
