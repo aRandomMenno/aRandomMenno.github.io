@@ -2,9 +2,10 @@
 
 <html lang="en">
     <head>
+        <script src="../javascript/rock_paper_sciossors.js"></script>
         <meta charset = "UTF-8">
         <meta name = "author" content = "aRandomMenno">
-        <meta name = "description" content = "My socials are here!">
+        <meta name = "description" content = "Rock-Paper-Scissors game on website against a bot">
         <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
         <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
 
@@ -16,7 +17,7 @@
 
     <body>
         <header>
-            <div class="head"><b>Socialize...</b></div>
+            <div class="head"><b>Rock, Paper & Scissors.</b></div>
         </header>
 
         <main>
@@ -31,13 +32,28 @@
             </div>
 
             <div class = "text">
-                <h1>Some of my socials.</h1>
-                Find me on<a href="https://github.com/aRandomMenno/" class="link-0" target="_blank"> Github</a>.
-                <br>Find me on<a href="https://www.youtube.com/@StoepTegels4You" class="link-0" target="_blank"> Youtube</a>.
-                <br>Find me on<a href="https://steamcommunity.com/id/StoepTegeltjes/" class="link-0" target="_blank"> Steam</a>.
-                <br>Find me on<a href="https://twitter.com/StoepTegels4You" class="link-0" target="_blank"> Twitter</a>.
-                <br>Find me on discord with <span class="link-0">stackedunderflow</span> (the aRandomMenno handle was already taken)
-                <br>Mail me with <a href="mailto:menno.van.zoelen@gmail.com" class="link-0">Menno.van.zoelen@gmail.com</a>
+                <h1>Choose carefully, you will lose your parents if you don't.</h1>
+                <p>
+                    <div id="score">
+                    <p>
+                        Player<span style="color: red;"> &rarr; </span> <span id="player-score" style="color: chartreuse;">0</span>
+                    </p>
+                    <p>
+                        The site<span style="color: red;"> &rarr; </span><span id="the-site-score" style="color: chartreuse;">0</span>
+                    </p>
+                    </div>
+                </p>
+                <p>
+                    <div id="game">
+                    <button id="rock" class="rock" type="button">rock</button>
+                    <button id="paper" class="paper" type="button">paper</button>
+                    <button id="scissors" class="scissors" type="button">scissors</button>
+                    </div>
+                </p>
+                <h2>Result:</h2>
+                <p>
+                    <div id="result"></div>
+                </p>
             </div>
         </main>
 
