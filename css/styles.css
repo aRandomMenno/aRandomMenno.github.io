@@ -58,21 +58,21 @@ html {
 
 /*? General menu Styling. */
 
-.borger-link {
+.menu-link {
   color: rgb(125, 50, 250);
   text-decoration: none;
 }
 
-.borger-box {
+.menu-styling {
   text-align: center;
   font-style: italic;
 
   position: fixed;
-  height: 100px;
-  width: auto;
+  height: 160px;
+  width: 100px;
 
-  top: 7px;
-  left: 7px;
+  top: 6px;
+  left: 6px;
 
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.8);

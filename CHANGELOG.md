@@ -1,11 +1,21 @@
 # Important:
 
-- the changelog works as follows
-The oldest changes will be at the bottom, and the newest changes will be at the top
+- the changelog works as follows: 
+  - The oldest changes will be at the bottom.
+  - The newest changes will be at the top.
+  - Date is the big text.
+  - Changes for that date displayed under it.
 
 ## Coming changes,
 
 - will be shown here.
+
+## July 2 / 2023
+
+- Fixed links on socials / "modified for air."
+- Renamed the Menu-styling CSS Classes.
+- Very very Minor code clean-up.
+- Maybe more, probably yes.
 
 ## June 29 / 2023
 
@@ -19,12 +29,12 @@ The oldest changes will be at the bottom, and the newest changes will be at the 
 - Removed the "chat" left overs.
 - Minor readme update
 - Updated discord name.
-- Maybe more but I couldn't find more things I changed.
+- Maybe more but I couldn't find / remember more things I changed.
 
 ## June 20 / 2023
 
 - Small fixes.
-- Minor code cleanup.
+- Minor code clean-up.
 - added this CHANGELOG.md
 - Description for the pages now matches the content.
 - expanded the games list & made the it nicer. (I think)
