@@ -11,5 +11,5 @@
 
 ## Discontinued things for my website
 
-* [ ] Make a chat page.  **(Discontinued)**
+* [ ] Make a chat page.  *✕*
   * feel free to contact me on discord about this; I still want to add this but I don't have the knowledge to do it. *0 _ 0*
