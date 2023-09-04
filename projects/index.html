@@ -1,59 +1,67 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="author" content="aRandomMenno">
-        <meta name="description" content="A list of all the projects I am working on / have worked on.">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <script src="/javascript/numbers.js"></script>
+    <link rel="shortcut icon" href="/images/favicon.svg">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/games.css">
 
-        <link rel="stylesheet" href="../css/styles.css" type="text/css">
-        <link rel="icon" type="image/png" href="../images/favicon.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="aRandomMenno">
+    <meta name="description" content="The main page for my third revision of my website.">
+    <meta name="keywords" content="">
 
-        <title>aRandomMenno's site.</title>
-    </head>
+    <title>aRandomWebsite.</title>
+  </head>
 
-    <body>
-        <header>
-            <div class="head"><b>My Projects.</b></div>
-        </header>
+  <body>
+    <header>
+      <div class="nav">
+        <div>
+          <a class="nav-link" href="/">home</a>
+           • <a class="nav-link" href="/about">about</a>
+           • <a class="nav-link" href="/projects">projects</a>
+        </div>
+      </div>
+    </header>
 
-        <main>
-            <div class="menu-styling">
-                <a href='../' class="menu-link">Home.</a>
-                <br><a href="../about/" class="menu-link">About.</a>
-                <br><a href="../socials/" class="menu-link">Socials.</a>
-                <br><a href="../games/" class="menu-link">Games.</a>
-                <br><a href="../projects/" class="menu-link">Projects.</a>
-                <br><a href="../webrings/" class="menu-link">Webrings.</a>
-                <br><a href="../rock-paper-scissors/" class="menu-link">Rock-Paper-Scissors.</a>
-            </div>
+    <main>
+      <div class="left">
+        <br>
+        <p>
+          <span class="project-title">→ <a href="https://github.com/aRandomMenno/aRandomMenno.github.io" class="project-title" target="_blank">aRandomMenno.github.io</a></span> <br>
+          <br>This is the website you are on right now,
+          <br>I made this wbesite just to learn some HTML, CSS (& JS?)
+          <br>There is not much to tell about this website,
+          <br>Other than that this is the second time I completely
+          <br>rewrote the site.
+        </p>
+        <p>
+          <span class="project-title">→ <a href="https://github.com/aRandomMenno/aMennoDiscordBot" class="project-title" target="_blank">aMennoDiscordBot</a></span> <br>
+          <br>There is even less to say about this project...
+          <br>Because I am not actively working on it.
+          <br>And I don't plan on working on it anytime soon.
+        </p>
+      </div>
 
-            <div class="text">
-                <h2>My website.</h2>
-                <p>
-                    <a class="link-0" href="https://github.com/aRandomMenno/aRandomMenno.github.io/" target="_blank">This</a> is the link to the github repo.
-                    <br>I made this website primarily for myself to learn HTML & CSS.
-                    <br>The secondary reason I made this website is for people to learn things about me.
-                </p>
+      <div class="webring">
+        <p>
+          <h2>Quick games...</h2>
+          <span>Geuss the number between 1 & 100</span>
+          <input id="number-guess" type="number" min="1" max="100">
+          <button onclick="checkGuess()">Geuss</button>
+          <br><span id="result"></span>
+        </p>
+      </div>
+    </main>
 
-                <h2>My discord bot.</h2>
-                <p>
-                    <a class="link-0" href="https://github.com/aRandomMenno/CornBaker">This</a> is the link to the code of the bot.
-                    <br>this was an experiment but I stopped working on because I couldn't get the ban command to work.
-                    <br>it was "fun" while it lasted.
-                </p>
-
-                <h2>Coming Soon™</h2>
-                <p>
-                    I want to program more.
-                </p>
-            </div>
-        </main>
-
-        <footer>
-            <br>&copy; 2023 | Menno van Zoelen.
-        </footer>
-    </body>
+    <footer>
+      <div class="copyright">
+        &copy; 2023 • Menno van Zoelen
+      </div>
+    </footer>
+  </body>
 </html>

@@ -10,6 +10,11 @@
 
 - will be shown here.
 
+## September 4 / 2023
+
+- Rewrote entire website.
+- version two of the website is broken... (I might never fix this!)
+
 ## July 2 / 2023
 
 - Fixed links on socials / "modified for air."

@@ -1,169 +1,125 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono');
 
-/*? General Styling */
+/*? General Styling. */
 
 html {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  background-image: url("../images/mountain.png");
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+  color: rgb(0, 0, 0);
 }
 
-/*? Link styling / "Special" words styling */
+/*? classes */
 
-.link-0 {
+.version{
   text-decoration: none;
-  color: rgb(250, 60, 140);
+  color: rgb(0, 255, 255);
 }
-
-.link-1 {
+.notice {
+  font-weight: bold;
+  color: rgb(225, 25, 25);
+  font-size: 30px;
+}
+.retro {
   text-decoration: none;
-  color: rgb(150, 69, 255);
+  color: rgba(255, 255, 255);
 }
-
-.w-link {
-  text-decoration: auto;
-  color: rgb(100, 250, 150);
-}
-
-/*? Default text Style */
-
-.text {
-  font-size: 16px;
-  color: rgb(75, 65, 225);
+.link {
   text-decoration: none;
+  color: rgb(50, 255, 50);
 }
-
-/*! Fancy colors for the country of my about page. */
-
-.dutch {
-  background-image: linear-gradient(to bottom, red, white, blue);
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-/*? Webring styling. */
-
-.webring-arrow {
+.project-title {
+  font-size: 30px;
   text-decoration: none;
-  font-style: italic;
-  color: darkgoldenrod;
+  color: rgb(50, 255, 50);
 }
-
-.webring-text {
-  font-variant: small-caps;
+.social-link {
   text-decoration: none;
-  color: cyan;
+  color: black;
+}
+.social-contact {
+  font-size: 26px;
+  font-weight: bold;
 }
 
-/*? General menu Styling. */
+.nav {
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 150, 42, 0.8);
 
-.menu-link {
-  color: rgb(125, 50, 250);
-  text-decoration: none;
-}
+  font-size: 22px;
+  line-height: 45px;
+  letter-spacing: 1px;
 
-.menu-styling {
   text-align: center;
-  font-style: italic;
-
   position: fixed;
-  height: 160px;
-  width: 100px;
+  overflow: hidden;
 
-  top: 6px;
-  left: 6px;
-
+  top: 1%;
+  right: 1%;
+  height: 8%;
+  width: 48.5%;
   border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.8);
-
-  overflow: auto;
 }
-
-/*? general header Styling. */
-
-header {
-  text-align: center;
-  color: rgb(145, 45, 250);
-  font-size: 38px;
-}
-
-.head {
-  position: fixed;
-
-  left: 30%;
-  height: 50px;
-  width: 40%;
-  top: 10px;
-
-  border-radius: 15px;
-  background-color: rgba(0, 0, 0, 0.75);
-  overflow: auto;
-}
-
-/*? General main Styling. */
-
-main {
-  text-align: center;
+.nav-link {
+  text-decoration: none;
   color: white;
-  font-size: 16px;
-
-  position: fixed;
-
-  left: 7%;
-  height: 85%;
-  width: 87%;
-  top: 8%;
-
-  border-radius: 15px;
-  background-color: rgba(0, 0, 0, 0.75);
-  overflow: auto;
 }
 
-/*? General footer Styling. */
+.left {
+  color: rgb(0, 0, 0);
+  background-color: rgba(90, 75, 200, 0.8);
 
-footer {
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: 1px;
+
   text-align: center;
-  color: rgb(250, 60, 140);
-
   position: fixed;
+  overflow: hidden;
 
-  bottom: 7px;
+  top: 1%;
+  left: 1%;
+  height: 98%;
+  width: 48.5%;
+  border-radius: 10px;
+}
 
-  height: 50px;
-  width: 30%;
-  left: 35%;
+.webring {
+  color: rgb(0, 0, 0);
+  background-color: rgba(50, 100, 200, 0.8);
 
-  border-radius: 12px;
-  background-color: rgba(0, 0, 0, 0.75);
+  font-size: 22px;
+  line-height: 30px;
+
+  text-align: center;
+  position: fixed;
   overflow: auto;
 
-  font-style: italic;
+  top: 10%;
+  right: 1%;
+  height: 83%;
+  width: 48.5%;
+  border-radius: 10px;
+}
+.wr-nav {
+  text-decoration: none;
+  color: rgb(255, 40, 205);
 }
 
-/*?: Rock, paper & scissors. */
+.copyright {
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 80, 80, 0.8);
 
-.rock, .paper, .scissors {
-  font-size: 16px;
-  font-family: 'Roboto Mono', monospace;
-  font-weight: bold;
-  color: rgb(240, 175, 0);
+  font-family: cursive;
+  font-size: 22px;
+  line-height: 46px;
+
   text-align: center;
+  position: fixed;
+  overflow: hidden;
 
-  border-radius: 5px;
-  width: 95px;
-  height: 30px;
-  border: 3px solid rgb(50, 50, 250);
-  background: transparent;
-
-  cursor: pointer;
-}
-
-.rock:hover, .paper:hover, .scissors:hover {
-  background-color: rgba(50, 50, 250, 0.35);
-}
-
-.rps-results {
-  color: rgb(50, 200, 75);
-  font-weight: bold;
+  bottom: 1%;
+  right: 1%;
+  height: 5%;
+  width: 48.5%;
+  border-radius: 10px;
 }

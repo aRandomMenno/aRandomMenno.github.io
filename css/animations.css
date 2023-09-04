@@ -1,0 +1,15 @@
+.rainbow {
+  background-image:
+    linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet, red);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow-animation 60s linear infinite;
+}
+
+.dutch {
+  background-image: linear-gradient(to bottom, red, white, blue);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

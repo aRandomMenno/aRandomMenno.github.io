@@ -1,15 +1,12 @@
 
 # Todo list:
 
-* [x] Multipage, "hamburger menu".  **-Done**
-* [X] Expand "Hamburger menu".  **-Done**
-* [x] Add my socials.  **-Done**
-* [x] Favicon.  **-Done**
-* [x] Good font.  **-Done**
-* [x] Custom error page.  **-Done**
-* [X] Add nearly all games to games page.  **-Done**
-* [X] Add 1 or more projects to projects page. **-Done**
-  * [ ] Make more projects and add them to the projects
+* [X] Home page. *✓*
+* [x] Socials / Contacts. *✓*
+* [x] Favicon.  *✓*
+* [x] 'Good' font.  *✓*
+* [x] Custom error page.  *✓*
+* [X] Projects. *✓*
 * [ ] Get more idea's for my website.
 
 ## Discontinued things for my website
