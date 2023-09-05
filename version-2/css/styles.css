@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono');
+
+/*? General Styling */
+
+html {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-image: url("../images/mountain.png");
+}
+
+/*? Link styling / "Special" words styling */
+
+.link-0 {
+  text-decoration: none;
+  color: rgb(250, 60, 140);
+}
+
+.link-1 {
+  text-decoration: none;
+  color: rgb(150, 69, 255);
+}
+
+.w-link {
+  text-decoration: auto;
+  color: rgb(100, 250, 150);
+}
+
+/*? Default text Style */
+
+.text {
+  font-size: 16px;
+  color: rgb(75, 65, 225);
+  text-decoration: none;
+}
+
+/*! Fancy colors for the country of my about page. */
+
+.dutch {
+  background-image: linear-gradient(to bottom, red, white, blue);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*? Webring styling. */
+
+.webring-arrow {
+  text-decoration: none;
+  font-style: italic;
+  color: darkgoldenrod;
+}
+
+.webring-text {
+  font-variant: small-caps;
+  text-decoration: none;
+  color: cyan;
+}
+
+/*? General menu Styling. */
+
+.menu-link {
+  color: rgb(125, 50, 250);
+  text-decoration: none;
+}
+
+.menu-styling {
+  text-align: center;
+  font-style: italic;
+
+  position: fixed;
+  height: 160px;
+  width: 100px;
+
+  top: 6px;
+  left: 6px;
+
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+
+  overflow: auto;
+}
+
+/*? general header Styling. */
+
+header {
+  text-align: center;
+  color: rgb(145, 45, 250);
+  font-size: 38px;
+}
+
+.head {
+  position: fixed;
+
+  left: 30%;
+  height: 50px;
+  width: 40%;
+  top: 10px;
+
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.75);
+  overflow: auto;
+}
+
+/*? General main Styling. */
+
+main {
+  text-align: center;
+  color: white;
+  font-size: 16px;
+
+  position: fixed;
+
+  left: 7%;
+  height: 85%;
+  width: 87%;
+  top: 8%;
+
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.75);
+  overflow: auto;
+}
+
+/*? General footer Styling. */
+
+footer {
+  text-align: center;
+  color: rgb(250, 60, 140);
+
+  position: fixed;
+
+  bottom: 7px;
+
+  height: 50px;
+  width: 30%;
+  left: 35%;
+
+  border-radius: 12px;
+  background-color: rgba(0, 0, 0, 0.75);
+  overflow: auto;
+
+  font-style: italic;
+}
+
+/*?: Rock, paper & scissors. */
+
+.rock, .paper, .scissors {
+  font-size: 16px;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: bold;
+  color: rgb(240, 175, 0);
+  text-align: center;
+
+  border-radius: 5px;
+  width: 95px;
+  height: 30px;
+  border: 3px solid rgb(50, 50, 250);
+  background: transparent;
+
+  cursor: pointer;
+}
+
+.rock:hover, .paper:hover, .scissors:hover {
+  background-color: rgba(50, 50, 250, 0.35);
+}
+
+.rps-results {
+  color: rgb(50, 200, 75);
+  font-weight: bold;
+}
