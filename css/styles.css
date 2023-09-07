@@ -50,7 +50,7 @@ html {
 
   text-align: center;
   position: fixed;
-  overflow: hidden;
+  overflow: auto;
 
   top: 1%;
   right: 1%;
@@ -73,7 +73,7 @@ html {
 
   text-align: center;
   position: fixed;
-  overflow: hidden;
+  overflow: auto;
 
   top: 1%;
   left: 1%;
@@ -88,7 +88,7 @@ html {
 
   font-size: 22px;
   line-height: 30px;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
 
   text-align: center;
   position: fixed;
@@ -112,11 +112,11 @@ html {
   font-family: cursive;
   font-size: 22px;
   line-height: 46px;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
 
   text-align: center;
   position: fixed;
-  overflow: hidden;
+  overflow: auto;
 
   bottom: 1%;
   right: 1%;

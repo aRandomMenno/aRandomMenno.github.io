@@ -24,11 +24,11 @@
 
   font-size: 22px;
   line-height: 45px;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
 
   text-align: center;
   position: fixed;
-  overflow: hidden;
+  overflow: auto;
 
   top: 1%;
   right: 35%;
@@ -44,11 +44,11 @@
   font-family: cursive;
   font-size: 22px;
   line-height: 48px;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
 
   text-align: center;
   position: fixed;
-  overflow: hidden;
+  overflow: auto;
 
   bottom: 1%;
   right: 35%;
