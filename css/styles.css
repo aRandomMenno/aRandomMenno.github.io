@@ -4,6 +4,7 @@
 
 html {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-image: url(/images/background.png);
 
   color: rgb(0, 0, 0);
 }
@@ -89,6 +90,7 @@ html {
 
   font-size: 22px;
   line-height: 30px;
+  letter-spacing: 0.5px;
 
   text-align: center;
   position: fixed;
@@ -112,6 +114,7 @@ html {
   font-family: cursive;
   font-size: 22px;
   line-height: 46px;
+  letter-spacing: 0.5px;
 
   text-align: center;
   position: fixed;
