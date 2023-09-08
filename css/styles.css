@@ -82,6 +82,25 @@ html {
   border-radius: 10px;
 }
 
+.left-bottom {
+  color: rgb(0, 0, 0);
+  background-color: rgba(90, 75, 200);
+
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: 1px;
+
+  text-align: center;
+  position: fixed;
+  overflow: auto;
+
+  bottom: 1%;
+  left: 1%;
+  height: 20%;
+  width: 48.5%;
+  border-radius: 10px;
+}
+
 .webring {
   color: rgb(0, 0, 0);
   background-color: rgba(50, 100, 200, 0.8);
