@@ -1,0 +1,144 @@
+/*? The begin of something special. shift == 5 */
+:root {
+  --clr-text: rgb(0, 0, 0);
+  --clr-accent: rgb(220, 115, 150);
+  --clr-background: rgba(210, 115, 150, 0.7);
+  --clr-link: rgba(255, 255, 255, 1);
+}
+
+html {
+  background-image: url(/images/background.png);
+
+  background-color: palevioletred;
+  color: var(--clr-text);
+  cursor: crosshair;
+}
+body {
+  font-family: cursive;
+  font-size: 20px;
+
+  overflow: auto;
+}
+
+/*! Classes: */
+.info {
+  overflow: auto;
+  width: 73vh;
+  height: 30vh;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  position: absolute;
+
+  border: 10px double blueviolet;
+  background-color: rgba(137, 43, 226, 0.4);
+  border-radius: 10px;
+  padding: 0.5em;
+
+  color: black;
+  font-family: cursive;
+  text-align: center;
+}
+
+.copy {
+  font-family: cursive;
+  text-align: center;
+  position: fixed;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  color: black;
+  background-color: rgba(0, 0, 255, 0.3);
+  
+  padding: 0.5em;
+  border: 6px double blue;
+  border-radius: 12px;
+}
+.en {
+  font-family: cursive;
+  top: 85%;
+  left: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+  margin-bottom: 1em;
+
+  font-size: 20px;
+  font-family: cursive;
+  border: 3.5px solid red;
+  border-radius: 7.5px;
+
+  color: black;
+  background-color: rgba(255, 0, 0, 0.3);
+  cursor: help;
+}
+.nl {
+  font-family: cursive;
+  top: 80%;
+  left: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+  margin-bottom: 1em;
+
+  font-size: 20px;
+  font-family: cursive;
+  border: 3.5px solid red;
+  border-radius: 7.5px;
+
+  color: black;
+  background-color: rgba(255, 0, 0, 0.3);
+  cursor: help;
+}
+.caesar-cipher {
+  font-family: cursive;
+  top: 2.5%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.05);
+}
+.next {
+  text-decoration: none;
+  color: rgb(0, 201, 0);
+  font-family: cursive;
+  font-style: italic;
+}
+
+/*! WARNING, DO NOT TOUCH!*/
+/*! scroll bar: */
+::-webkit-scrollbar {
+    width: 15px;
+    height: 15px; 
+    background-color: #00000000;
+}
+
+
+::-webkit-scrollbar-thumb {
+    border: 1px solid #000;
+    background-color: blueviolet
+}
+
+
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment {
+    height: 15px;
+    width: 15px;
+    display: block;
+    background-repeat: no-repeat;
+    border: 1px solid blueviolet;  
+    background-color: black;
+}
+
+
+::-webkit-scrollbar-button:vertical:decrement {
+    background-image: url();
+}
+
+
+::-webkit-scrollbar-button:vertical:increment {
+    background-image: url();
+}

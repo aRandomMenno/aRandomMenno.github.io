@@ -1,5 +1,9 @@
 
-# Todo list:
+# I am stepping away from the internet for a bit!
+
+* Do not worry about I am okay I'm just a tad bit addicted to the internet.
+
+## Todo list:
 
 * [X] Home page. *✓*
 * [x] Socials / Contacts. *✓*

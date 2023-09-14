@@ -1,47 +1,69 @@
-/*! Hi. */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono');
+
+:root {
+  --clr-text: #000000;
+}
+
 html {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   background-image: url(/images/background.png);
 
-  color: rgb(0, 0, 0);
+  background-color: palevioletred;
+  color: var(--clr-maintext);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.25;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
 }
 
 /*? classes */
 
-.version{
+.version {
   text-decoration: none;
   color: rgb(0, 255, 255);
 }
+
 .notice {
   font-weight: bold;
   color: rgb(225, 25, 25);
   font-size: 30px;
 }
+
 .retro {
   text-decoration: none;
   color: rgba(255, 255, 255);
 }
+
 .link {
   text-decoration: none;
   color: rgb(50, 255, 50);
 }
+
 .project-title {
   font-size: 30px;
   text-decoration: none;
   color: rgb(50, 255, 50);
 }
+
 .social-link {
   text-decoration: none;
   color: black;
 }
+
 .social-contact {
   font-size: 26px;
   font-weight: bold;
 }
 
 .nav {
-  color: rgb(0, 0, 0);
   background-color: rgba(255, 150, 42, 0.8);
 
   font-size: 22px;
@@ -58,13 +80,13 @@ html {
   width: 48.5%;
   border-radius: 10px;
 }
+
 .nav-link {
   text-decoration: none;
   color: white;
 }
 
 .left {
-  color: rgb(0, 0, 0);
   background-color: rgba(90, 75, 200, 0.8);
 
   font-size: 22px;
@@ -83,7 +105,6 @@ html {
 }
 
 .left-bottom {
-  color: rgb(0, 0, 0);
   background-color: rgba(90, 75, 200);
 
   font-size: 22px;
@@ -102,7 +123,6 @@ html {
 }
 
 .webring {
-  color: rgb(0, 0, 0);
   background-color: rgba(50, 100, 200, 0.8);
 
   font-size: 22px;
@@ -119,13 +139,13 @@ html {
   width: 48.5%;
   border-radius: 10px;
 }
+
 .wr-nav {
   text-decoration: none;
   color: rgb(255, 40, 205);
 }
 
 .copyright {
-  color: rgb(0, 0, 0);
   background-color: rgba(255, 80, 80, 0.8);
 
   font-family: cursive;
