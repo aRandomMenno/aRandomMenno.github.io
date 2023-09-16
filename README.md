@@ -2,6 +2,8 @@
 # I am stepping away from the internet for a bit!
 
 * Do not worry about I am okay I'm just a tad bit addicted to the internet.
+  * This does not mean I will stop working on my site entirely... 
+    * I will still work on it, just less frequent.
 
 ## Todo list:
 
