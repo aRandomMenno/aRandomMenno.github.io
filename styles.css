@@ -1,15 +1,17 @@
-/*? The begin of something special. shift == 5 */
+/* TODO shift == 5, forwards */                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      /* 	i`r←ncdao5←ajpmo``i'←]\^fr\m_n */
 :root {
   --clr-text: rgb(0, 0, 0);
-  --clr-accent: rgb(220, 115, 150);
-  --clr-background: rgba(210, 115, 150, 0.7);
-  --clr-link: rgba(255, 255, 255, 1);
+  --clr-accent: rgb(216, 112, 147);
+  --clr-accent-background-transparent: rgba(216, 112, 147, 0.4);
+  --clr-background: rgba(255, 0, 100, 0.65);
+  --clr-link: rgb(255, 255, 255);
+  --clr-transparent: #00000000;
 }
 
 html {
-  background-image: url(/images/background.png);
+  background-image: url(/images/take-a-break.png);
 
-  background-color: palevioletred;
+  background-color: var(--clr-background);
   color: var(--clr-text);
   cursor: crosshair;
 }
@@ -23,20 +25,20 @@ body {
 /*! Classes: */
 .info {
   overflow: auto;
-  width: 73vh;
-  height: 30vh;
+  width: 75vh;
+  height: 35vh;
 
   top: 50%;
   left: 50%;
   transform: translate(-50%, -70%);
   position: absolute;
 
-  border: 10px double blueviolet;
-  background-color: rgba(137, 43, 226, 0.4);
+  border: 10px double var(--clr-accent);
+  background-color: var(--clr-accent-background-transparent);
   border-radius: 10px;
   padding: 0.5em;
 
-  color: black;
+  color: var(--clr-text);
   font-family: cursive;
   text-align: center;
 }
@@ -49,7 +51,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 
-  color: black;
+  color: var(--clr-text);
   background-color: rgba(0, 0, 255, 0.3);
   
   padding: 0.5em;
@@ -70,7 +72,7 @@ body {
   border: 3.5px solid red;
   border-radius: 7.5px;
 
-  color: black;
+  color: var(--clr-text);
   background-color: rgba(255, 0, 0, 0.3);
   cursor: help;
 }
@@ -88,22 +90,14 @@ body {
   border: 3.5px solid red;
   border-radius: 7.5px;
 
-  color: black;
+  color: var(--clr-text);
   background-color: rgba(255, 0, 0, 0.3);
   cursor: help;
 }
-.caesar-cipher {
-  font-family: cursive;
-  top: 2.5%;
-  left: 50%;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  text-decoration: none;
-  color: rgba(0, 0, 0, 0.05);
-}
+
 .next {
   text-decoration: none;
-  color: rgb(0, 201, 0);
+  color: rgb(255, 0, 0);
   font-family: cursive;
   font-style: italic;
 }
@@ -113,13 +107,13 @@ body {
 ::-webkit-scrollbar {
     width: 15px;
     height: 15px; 
-    background-color: #00000000;
+    background-color: var(--clr-transparen);
 }
 
 
 ::-webkit-scrollbar-thumb {
-    border: 1px solid #000;
-    background-color: blueviolet
+    border: 0.5px solid rgba(255, 255, 255, 1);
+    background-color: var(--clr-accent);
 }
 
 
@@ -129,8 +123,8 @@ body {
     width: 15px;
     display: block;
     background-repeat: no-repeat;
-    border: 1px solid blueviolet;  
-    background-color: black;
+    border: 1px solid var(--clr-link);
+    background-color: var(--clr-accent);
 }
 
 

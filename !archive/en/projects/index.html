@@ -2,28 +2,35 @@
 
 <html lang="en">
   <head>
+    <!--? Javascript.-->
     <script src="/javascript/numbers.js"></script>
+    <!--* I don't really know what this is for. -->
+    <meta content="My personal website!!!" property="og:title"/>
+    <meta content="Welcome, to my crappy site. I made it myself. Currently on an internet 'break' & focusing on life?" property="og:description"/>
+    <meta content="https://aRandomMenno.github.io/" property="og:url"/>
+    <meta content="/images/" property="og:image"/>
+    <meta content="#F5A9B8" data-react-helmet="true" name="theme-color"/>
+    <!--* CSS stuff-->
     <link rel="shortcut icon" href="/images/favicon.svg">
     <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/games.css">
-
+    <!--* I don't really know what this is for. -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="aRandomMenno">
-    <meta name="description" content="The main page for my third revision of my website.">
-    <meta name="keywords" content="">
-
-    <title>aRandomWebsite.</title>
+    <meta name="description" content="Welcome, to my crappy site. I made it myself. This page has information about me.">
+    <meta name="keywords" content="Menno ">
+    <!--! TITLE -->
+    <title>Menno's Playground.</title>
   </head>
 
   <body>
     <header>
       <div class="nav">
-        <a class="nav-link" href="/">home</a>
-          • <a class="nav-link" href="/about">about</a>
-          • <a class="nav-link" href="/projects">projects</a>
-          • <a class="nav-link" href="/blogs">blog</a>
+        <a class="nav-link" href="/!archive/en">home</a>
+          • <a class="nav-link" href="/!archive/en/about">about</a>
+          • <a class="nav-link" href="/!archive/en/projects">projects</a>
+          • <a class="nav-link" href="/!archive/en/blogs">blog</a>
       </div>
     </header>
 
@@ -48,7 +55,7 @@
         <p>
           <span class="project-title">→ <a href="https://github.com/aRandomMenno/Auto-Box" class="project-title" target="_blank">Auto-Box</a></span> <br>
           <br>This is a 'program' written in Python that will
-          <br>Automaticly open boxes in <a href="https://play.google.com/store/apps/details?id=br.com.tapps.cowevolution&pli=1" target="_blank" class="retro">cow evolution</a>.
+          <br>Automatically open boxes in <a href="https://play.google.com/store/apps/details?id=br.com.tapps.cowevolution&pli=1" target="_blank" class="retro">cow evolution</a>.
           <br>Works by mirroring your screen to your computer,
           <br>and then using PyAutoGUI & opencv-python to find,
           <br>moveto & click on the screen.
@@ -58,9 +65,9 @@
       <div class="webring">
         <p>
           <h2>Quick games...</h2>
-          <span>Geuss the number between 1 & 100</span>
+          <span>Guess the number between 1 & 100</span>
           <input id="number-guess" type="number" min="1" max="100">
-          <button onclick="checkGuess()">Geuss</button>
+          <button onclick="checkGuess()">Guess</button>
           <br><span id="result"></span>
         </p>
       </div>
