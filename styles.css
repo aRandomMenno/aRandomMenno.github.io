@@ -18,7 +18,6 @@ html {
 body {
   font-family: cursive;
   font-size: 20px;
-
   overflow: auto;
 }
 
@@ -46,23 +45,24 @@ body {
 .copy {
   font-family: cursive;
   text-align: center;
-  position: fixed;
-  top: 95%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: absolute;
+
+  bottom: 0px;
+  right: 0px;
 
   color: var(--clr-text);
-  background-color: rgba(0, 0, 255, 0.3);
+  font-size: 16px;
   
   padding: 0.5em;
-  border: 6px double blue;
+  margin: 5px;
+  border: 4px solid rgb(255, 0, 0);
+  background-color: rgba(255, 0, 0, 0.6);
   border-radius: 12px;
 }
 .en {
-  font-family: cursive;
   top: 85%;
   left: 50%;
-  position: fixed;
+  position: absolute;
   transform: translate(-50%, -50%);
   text-decoration: none;
   margin-bottom: 1em;
@@ -77,10 +77,9 @@ body {
   cursor: help;
 }
 .nl {
-  font-family: cursive;
   top: 80%;
   left: 50%;
-  position: fixed;
+  position: absolute;
   transform: translate(-50%, -50%);
   text-decoration: none;
   margin-bottom: 1em;
@@ -94,6 +93,39 @@ body {
   background-color: rgba(255, 0, 0, 0.3);
   cursor: help;
 }
+.source {
+  text-decoration: none;
+  margin: 0.5em;
+  margin: 5px;
+
+  font-size: 20px;
+  font-family: cursive;
+  border: 4px double rgb(30, 255, 0);
+  border-radius: 7.5px;
+
+  color: var(--clr-text);
+  background-color: rgba(30, 255, 0, 0.4);
+  cursor: help;
+}
+.socials {
+  text-decoration: none;
+  margin: 0.5em;
+  margin: 5px;
+
+  font-size: 20px;
+  font-family: cursive;
+  border: 4px double rgb(30, 255, 0);
+  border-radius: 7.5px;
+
+  color: var(--clr-text);
+  background-color: rgba(30, 255, 0, 0.3);
+  cursor: help;
+}
+
+.no-deco {
+  text-decoration: none;
+  cursor: crosshair;
+}
 
 .next {
   text-decoration: none;
@@ -102,7 +134,7 @@ body {
   font-style: italic;
 }
 
-/*! WARNING, DO NOT TOUCH!*/
+/*! WARNING, DO NOT TOUCH! */
 /*! scroll bar: */
 ::-webkit-scrollbar {
     width: 15px;
