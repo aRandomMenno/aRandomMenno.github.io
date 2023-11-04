@@ -1,165 +1,96 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono');
-
-:root {
-  --clr-text: #000000;
+@font-face {
+    font-family: "custom";
+    src: url(/recourses/fonts/raster.ttf);
 }
 
 html {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  background-image: url(/images/background.png);
+  /* background: rgb(255,255,255); */
+  /* background: linear-gradient(90deg, #80ff80 0%, rgba(200,50,128,1) 50%, rgba(255,200,0,1) 90%); */
+  background-image: url(/recourses/astrology-7598174.png);
+  background-position: center;
+  background-size: cover;
+  word-spacing: 3px;
+  font-family: "custom";
+  color: tomato;
+  font-size: 24px;
 
-  background-color: palevioletred;
-  color: var(--clr-maintext);
+  width: 100vw;
+  height: 100vh;
+
+  scroll-behavior: smooth;
+  text-align: center;
+  word-wrap: break-word;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  line-height: 1.25;
+main {
+  /* border: 2px red solid; */
+  margin: 4px;
+  padding: 5px;
 
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-
-  height: 100vh;
+  justify-content: space-around;
 }
 
-/*? classes */
-
-.version {
-  text-decoration: none;
-  color: rgb(0, 255, 255);
+header {
+  width: 95vw;
+  border-bottom: 5px hsla(335, 75%, 50%, 1) solid;
+  /* border: 2px black solid; */
+  border-radius: 32px;
+  padding-bottom: 1.5vh;
+  position: absolute;
+  font-size: 40px;
+  top: 1.5vh;
 }
 
-.notice {
-  font-weight: bold;
-  color: rgb(225, 25, 25);
-  font-size: 30px;
+footer {
+  width: 95vw;
+  border-top: 5px rgb(255, 255, 255) solid;
+  /* border: 2px black solid; */
+  border-radius: 32px;
+  padding-top: 1.5vh;
+  position: absolute;
+  bottom: 1.5vh;
 }
 
-.retro {
-  text-decoration: none;
-  color: rgba(255, 255, 255);
+nav {
+  /* border: 2px green solid; */
+  margin: 2px;
 }
 
-.link {
-  text-decoration: none;
-  color: rgb(50, 255, 50);
+div {
+  /* border: 2px blue solid; */
+  margin: 2px;
+  padding: 2px;
 }
 
-.project-title {
-  font-size: 30px;
-  text-decoration: none;
-  color: rgb(50, 255, 50);
+button {
+  margin: 2px;
+  padding: 4px;
+  padding-left: 12px;
+  padding-right: 12px;
+  
+  border: 3px black solid;
+  border-radius: 12px;
+
+  background: rgb(255, 210, 210);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background 0.5s ease-in;
 }
 
-.social-link {
-  text-decoration: none;
+button:hover {
+  background: rgb(255, 141, 141);
+}
+
+
+a {
   color: black;
+  cursor: help;
 }
-
-.social-contact {
-  font-size: 26px;
-  font-weight: bold;
-}
-
-.nav {
-  background-color: rgba(255, 150, 42, 0.8);
-
-  font-size: 22px;
-  line-height: 45px;
-  letter-spacing: 1px;
-
-  text-align: center;
-  position: fixed;
-  overflow: auto;
-
-  top: 1%;
-  right: 1%;
-  height: 8%;
-  width: 48.5%;
-  border-radius: 10px;
-}
-
-.nav-link {
-  text-decoration: none;
-  color: white;
-}
-
-.left {
-  background-color: rgba(90, 75, 200, 0.8);
-
-  font-size: 22px;
-  line-height: 30px;
-  letter-spacing: 1px;
-
-  text-align: center;
-  position: fixed;
-  overflow: auto;
-
-  top: 1%;
-  left: 1%;
-  height: 98%;
-  width: 48.5%;
-  border-radius: 10px;
-}
-
-.left-bottom {
-  background-color: rgba(90, 75, 200);
-
-  font-size: 22px;
-  line-height: 30px;
-  letter-spacing: 1px;
-
-  text-align: center;
-  position: fixed;
-  overflow: auto;
-
-  bottom: 1%;
-  left: 1%;
-  height: 20%;
-  width: 48.5%;
-  border-radius: 10px;
-}
-
-.webring {
-  background-color: rgba(50, 100, 200, 0.8);
-
-  font-size: 22px;
-  line-height: 30px;
-  letter-spacing: 1px;
-
-  text-align: center;
-  position: fixed;
-  overflow: auto;
-
-  top: 10%;
-  right: 1%;
-  height: 83%;
-  width: 48.5%;
-  border-radius: 10px;
-}
-
-.wr-nav {
-  text-decoration: none;
-  color: rgb(255, 40, 205);
-}
-
-.copyright {
-  background-color: rgba(255, 80, 80, 0.8);
-
-  font-family: cursive;
-  font-size: 22px;
-  line-height: 46px;
-  letter-spacing: 1px;
-
-  text-align: center;
-  position: fixed;
-  overflow: auto;
-
-  bottom: 1%;
-  right: 1%;
-  height: 5%;
-  width: 48.5%;
-  border-radius: 10px;
+a:hover {
+  color: rgb(200, 100, 100);
+  transition: color 0.75s ease-in;
 }
