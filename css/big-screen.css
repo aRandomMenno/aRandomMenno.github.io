@@ -56,7 +56,7 @@
 
   div {
     width: 1150px;
-    border: 2px blue solid;
+    /* border: 2px blue solid; */
     margin: 2px;
     padding: 10px;
   }
