@@ -12,9 +12,10 @@
     <meta content="#F5A9B8" data-react-helmet="true" name="theme-color" />
 
     <!-- ? - CSS stuff. -->
-    <link rel="shortcut icon" href="/recourses/favicon.png">
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="shortcut icon" href="recourses/favicon.png">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/scrollbar.css">
+    <link rel="stylesheet" href="css/big-screen.css">
 
     <!-- ? - Script Links. -->
     <script src="js/scripts.js"></script>
@@ -30,13 +31,15 @@
   </head>
 
   <br><br><br>
+  <div id="popup" style="display: none;" class="popup">
+    <p>I do not recommend you make the window smaller than 800px in height, this might make some text unreadable.</p>
+    <button id="close">Close</button>
+  </div>
 
   <body id="b">
     <main>
-      <header id="a">
+      <header id="a"> Welcome To My Site! </header>
 
-        Welcome To My Site!
-      </header>
       <nav>
         <button onclick="a(1)">Home</button>
         <button onclick="a(2)">About</button>
@@ -44,62 +47,80 @@
         <button onclick="a(6)">Webrings</button>
         <button onclick="a(4)">Contact</button>
         <button onclick="a(5)">Credits</button>
-        
       </nav>
-      <div class="" id="1">
-        <br>
-        Hello, my name is Menno and welcome to my little site on the internet.
-        I've made this site because I love the internet and computers.
-        <br><br>
-        I live in the
-        <a class="link" href="https://en.wikipedia.org/wiki/Netherlands" target="_blank">Netherlands</a>
-        in a city called
-        <a class="link" href="https://en.wikipedia.org/wiki/Spijkenisse" target="_blank">Spijkenisse</a>.
-        If you want to know more about me, click the about button above.
-        <br><br>
-        If you find a more readable font-color let me know and I'll take a look at it!
+
+      <div class="" id="1" home>
+        <p>
+          Hello, my name is Menno and welcome to my little site on the internet.
+          I've made this site because I love the internet and computers.
+        </p>
+        <p>
+          I live in the
+          <a class="link" href="https://en.wikipedia.org/wiki/Netherlands" target="_blank">Netherlands</a>
+          in a city called
+          <a class="link" href="https://en.wikipedia.org/wiki/Spijkenisse" target="_blank">Spijkenisse</a>.
+          If you want to know more about me, click the about button above.
+        </p>
+        <p>If you find a more readable font-color let me know and I'll take a look at it!</p>
       </div>
-      <div hidden class="" id="2">
-        <br>
-        One of my greatest passions is programming, which has become more than just a hobby; it's a way of life.
-        I enjoy working with various programming languages, with Python, HTML, and CSS being my primary choices. 
-        They allow me to bring my creative ideas to life on the web. 
-        <br><br>
-        When I'm not immersed in the digital world, I have other interests as well.
-        I am an avid member of the scouting community, and I find joy in the adventures and camaraderie it brings. It's a perfect balance to my digital endeavors.
-        <br><br>
-        As a cat lover, I can't resist the charm of these feline companions.
-        Their independence and playfulness make them the perfect pets, and they often inspire me in many ways.
-        <br><br>
-        I also once tried my hand at C++ programming, but I must admit, it was quite a challenge!
-        Nevertheless, I'm always eager to learn and explore new horizons in the ever-evolving world of technology.
+
+      <div hidden class="" id="2" about>
+        <p>
+          One of my greatest passions is programming, which has become more than just a hobby; it's a way of life.
+          I enjoy working with various programming languages, with Python, HTML, and CSS being my primary choices.
+          They allow me to bring my creative ideas to life on the web.
+        </p>
+        <p>
+          When I'm not immersed in the digital world, I have other interests as well.
+          I am an avid member of the scouting community, and I find joy in the adventures and camaraderie it brings.
+          It's
+          a perfect balance to my digital endeavors.
+        </p>
+        <p>
+          As a cat lover, I can't resist the charm of these feline companions.
+          Their independence and playfulness make them the perfect pets, and they often inspire me in many ways.
+        </p>
+        <p>
+          I also once tried my hand at C++ programming, but I must admit, it was quite a challenge!
+          Nevertheless, I'm always eager to learn and explore new horizons in the ever-evolving world of technology.
+        </p>
       </div>
-      <div hidden class="" id="3">
-        <br>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem sunt maiores cumque, eius modi corrupti impedit
-        placeat nisi sit nobis similique aut est quasi. Alias veritatis nihil voluptatem saepe autem?
+
+      <div hidden class="" id="3" projects>
+        <p>
+          <h3>My website, aka this one.</h3>
+          I've mainly made this website so I can improve my coding skills in html, css and js.
+        </p>
       </div>
-      <div hidden class="" id="4">
-        <br>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet placeat rem perspiciatis quibusdam? Rem
-        doloribus voluptatibus, cumque debitis reprehenderit officiis ullam, a fuga, excepturi sit suscipit perspiciatis
-        sed sapiente dolorum?
+      <div hidden class="" id="4" contact>
+        <p>
+          <h4>My socials:</h4>
+          <a href="https://twitter.com/arandommenno" target="_blank">Twitter</a><br>
+          <a href="https://www.youtube.com/@aRandomMenno" target="_blank">Youtube</a><br>
+          <a href="https://steamcommunity.com/id/aRandomMenno/" target="_blank">Steam</a><br>
+          <a href="" target="_blank"> </a><br>
+        </p>
+        <p>
+          <h4>Contact me:</h4>
+          <a href="https://www.github.com/aRandomMenno" target="_blank">Github</a><br>
+          <a href="" target="_blank"></a><br>
+          <a href="" target="_blank"> </a><br>
+        </p>
       </div>
-      <div hidden class="" id="5">
-        <br>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse reiciendis labore non quaerat praesentium ea
-        soluta? Ipsam beatae, corporis possimus, est libero alias repellat officia quisquam ullam expedita quis
-        temporibus. <br>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt non in ducimus autem ipsum harum magnam vero
-        doloremque? Laborum porro doloremque veritatis et officia aliquam. Esse maxime quibusdam pariatur maiores.
+      <div hidden class="" id="5" credits>
+        <p>
+          N/A Credits
+        </p>
       </div>
-      <div hidden class="" id="6">
+      <div hidden class="" id="6" webrings>
         <a href="https://webring.dinhe.net/prev/https://arandommenno.github.io/"> ⟪⟪</a>
-        retronaut webring
-        <a class="next" href="https://webring.dinhe.net/next/https://arandommenno.github.io/">⟫⟫</a>
+        <a href="https://webring.dinhe.net/">Retronaut Webring</a>
+        <a href="https://webring.dinhe.net/next/https://arandommenno.github.io/">⟫⟫</a>
       </div>
-      <div hidden class="" id="">
-        lor
+      <div hidden class="" id="7">
+        <p>
+          404 article not found
+        </p>
       </div>
       <footer id="c">
         &copy Menno van Zoelen ~ 2023

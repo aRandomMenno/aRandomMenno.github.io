@@ -3,9 +3,25 @@
     src: url(/recourses/fonts/raster.ttf);
 }
 
+#popup {
+  width: 250px;
+  height: 300px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.699);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
 html {
-  /* background: rgb(255,255,255); */
-  /* background: linear-gradient(90deg, #80ff80 0%, rgba(200,50,128,1) 50%, rgba(255,200,0,1) 90%); */
   background-image: url(/recourses/astrology-7598174.png);
   background-position: center;
   background-size: cover;
@@ -14,8 +30,8 @@ html {
   color: tomato;
   font-size: 24px;
 
-  width: 100vw;
-  height: 100vh;
+  width: 99vw;
+  height: 175vh;
 
   scroll-behavior: smooth;
   text-align: center;
@@ -24,8 +40,8 @@ html {
 
 main {
   /* border: 2px red solid; */
-  margin: 4px;
-  padding: 5px;
+  margin: 2px;
+  padding: 2px;
 
   display: flex;
   flex-direction: column;
@@ -46,28 +62,29 @@ header {
 
 footer {
   width: 95vw;
-  border-top: 5px rgb(255, 255, 255) solid;
+  border-top: 5px hsla(335, 75%, 50%, 1) solid;
   /* border: 2px black solid; */
   border-radius: 32px;
   padding-top: 1.5vh;
   position: absolute;
-  bottom: 1.5vh;
+  bottom: -73.5vh;
 }
 
 nav {
   /* border: 2px green solid; */
   margin: 2px;
+  padding: 2px;
 }
 
 div {
-  /* border: 2px blue solid; */
+  border: 2px blue solid;
   margin: 2px;
-  padding: 2px;
+  padding: 10px;
 }
 
 button {
   margin: 2px;
-  padding: 4px;
+  padding: 2px;
   padding-left: 12px;
   padding-right: 12px;
   
@@ -78,10 +95,13 @@ button {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 24px;
   cursor: pointer;
-  transition: background 0.5s ease-in;
+  transition: background 500ms ease;
 }
 
 button:hover {
+  background: rgb(255, 141, 141);
+}
+button.active {
   background: rgb(255, 141, 141);
 }
 
@@ -93,4 +113,10 @@ a {
 a:hover {
   color: rgb(200, 100, 100);
   transition: color 0.75s ease-in;
+}
+
+@media only screen and (max-width: 950px) {
+  html {
+    width: 98vw;
+  }
 }
