@@ -1,0 +1,15 @@
+@media only screen and (min-width: 1280px) {
+  header {
+    width: 1150px;
+    border-bottom: 5px hsla(335, 75%, 50%, 1) solid;
+    border-radius: 32px;
+    padding-bottom: 1.5vh;
+    position: absolute;
+    font-size: 40px;
+    top: 1.5vh;
+  }
+
+  div {
+    width: 1150px;
+  }
+}

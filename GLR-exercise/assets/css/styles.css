@@ -1,0 +1,84 @@
+html {
+  background-image: url(/assets/images/bgfieldflowers.gif);
+  background-size: 15%;
+  background-color: rgba(0, 0, 0, 0.8);
+  word-spacing: 3px;
+  color: rgb(0, 40, 0);
+  font-size: 24px;
+  font-weight: 600;
+  width: 99vw;
+
+  scroll-behavior: smooth;
+  text-align: center;
+  word-wrap: break-word;
+  cursor: default;
+}
+
+main {
+  margin: 2px;
+  padding: 2px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+header {
+  width: 95vw;
+  border-bottom: 5px rgb(200, 0, 0) solid;
+  border-radius: 32px;
+  padding-bottom: 1.5vh;
+  position: absolute;
+  font-size: 40px;
+  top: 1.5vh;
+}
+
+nav {
+  margin: 2px;
+  padding: 2px;
+  padding-top: 115px;
+}
+
+div {
+  margin: 2px;
+  padding: 10px;
+}
+
+img {
+  width: 90vw;
+  max-width: 1150px;
+  padding: 12px;
+}
+
+button {
+  margin: 2px;
+  padding: 2px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border: 3px black solid;
+  border-radius: 12px;
+  background: rgb(255, 255, 255);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background 500ms ease;
+}
+
+button:hover {
+  background: rgb(100, 200, 200);
+}
+
+c {
+  color: rgb(200, 0, 0);
+}
+
+a {
+  color: rgb(200, 0, 0);
+}
+
+@media only screen and (max-width: 950px) {
+  html {
+    width: 98vw;
+  }
+}
