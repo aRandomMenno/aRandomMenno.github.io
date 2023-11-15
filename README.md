@@ -1,10 +1,13 @@
 
-# My little website
+# My little website / pebble internet.
 
-This is my personal website on github.
+> This is my personal website on github.
 
-## TODO LIST
+## What is this?
 
-- [ ] uhhhh, IDK.
-- [ ] Get a READABLE font color.
-- [x] Redesign the site 10 billion+ times...
+This is my personal pebble on the internet there is information about and you can find some contact info.
+
+## Idea's:
+
+- [ ] Find / get suggested a readable font color.
+- [ ] Make a page for a 'diary' where my goal is to write at least twice a month.

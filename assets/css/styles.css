@@ -9,6 +9,7 @@ html {
   background-size: cover;
   word-spacing: 3px;
   font-family: "custom";
+  cursor: default;
   color: tomato;
   font-size: 24px;
 
@@ -56,6 +57,7 @@ nav {
   /* border: 2px green solid; */
   margin: 2px;
   padding: 2px;
+  padding-top: 115px;
 }
 
 div {
@@ -89,7 +91,6 @@ button.active {
 
 c {
   color: black;
-  cursor: help;
 }
 
 c:hover {
@@ -99,7 +100,6 @@ c:hover {
 
 a {
   color: black;
-  cursor: help;
 }
 a:hover {
   color: rgb(200, 100, 100);
