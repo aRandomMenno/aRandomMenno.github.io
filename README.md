@@ -1,5 +1,5 @@
 
-# My little website / pebble on internet.
+# My little website / pebble on the internet.
 
 > This is my personal website on github.
 
