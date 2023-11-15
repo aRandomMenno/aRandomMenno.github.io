@@ -1,27 +1,7 @@
 @media only screen and (min-width: 1280px) {
-  html {
-
-  }
-
   header {
     width: 1150px;
-    border-bottom: 5px hsla(335, 75%, 50%, 1) solid;
-    /* border: 2px black solid; */
-    border-radius: 32px;
-    padding-bottom: 1.5vh;
-    position: absolute;
-    font-size: 40px;
     top: 1.5vh;
-  }
-
-  footer {
-    width: 1150px;
-    border-top: 5px hsla(335, 75%, 50%, 1) solid;
-    /* border: 2px black solid; */
-    border-radius: 32px;
-    padding-top: 1.5vh;
-    position: absolute;
-    bottom: -23.5vh;
   }
 
   nav {
