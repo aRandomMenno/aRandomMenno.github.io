@@ -1,27 +1,22 @@
-function a(elementId) {
-  for (let i = 1; i <= 7; i++) {
-    const element = document.getElementById(i.toString());
-    const button = document.querySelector(`button[onclick="a(${i})"]`);
-    if (i === elementId) {
-      element.hidden = false;
-      button.classList.add('active');
-    } else {
-      element.hidden = true;
-      button.classList.remove('active');
-    }
+
+// function discord() {
+//   var discordContainer = document.querySelector('.container');
+//   if (discordContainer.hasAttribute('hidden')) {
+//     discordContainer.removeAttribute('hidden');
+//     discordContainer.style.display = 'block'; // Explicitly set display to block
+//   } else {
+//     discordContainer.setAttribute('hidden', '');
+//     discordContainer.style.display = 'none'; // Explicitly set display to none
+//   }
+// }
+
+function discord() {
+  var discordContainer = document.querySelector('.container');
+  if (discordContainer.classList.contains('fade-in')) {
+    discordContainer.classList.remove('fade-in');
+    discordContainer.classList.add('fade-out');
+  } else {
+    discordContainer.classList.remove('fade-out');
+    discordContainer.classList.add('fade-in');
   }
 }
-
-
-window.addEventListener('resize', function() {
-  var height = window.innerHeight;
-  var popup = document.getElementById('popup');
-  if (height < 800 && !localStorage.getItem('hasPopupBeenShown')) {
-    popup.style.display = 'flex';
-    document.getElementById('close').addEventListener('click', function() {
-      popup.style.display = 'none';
-    });
-    // Set the flag in localStorage
-    localStorage.setItem('hasPopupBeenShown', 'true');
-  }
-});

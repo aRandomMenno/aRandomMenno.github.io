@@ -1,13 +1,6 @@
 
-# My little website / pebble on the internet.
+# dusty rock in space
 
-> This is my personal website on github.
+> This website is a link hub for my socials
 
-## What is this?
-
-This is my personal pebble on the internet, on this website there is information about me and you can find some contact info.
-
-## Idea's:
-
-- [ ] Find / get suggested a readable font color.
-- [ ] Make a page for a 'diary' where my goal is to write at least twice a month.
+## yea not very exciting is it?
