@@ -20,3 +20,5 @@ function discord() {
     discordContainer.classList.add('fade-in');
   }
 }
+
+console.log('loaded script.js')
