@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
   <head>
     <!-- ? Embed thingies. -->
     <meta content="aRandomMenno's socials hub" property="og:title"/>
@@ -9,9 +9,9 @@
     <meta content="#F5A9B8" data-react-helmet="true" name="theme-color"/>
     <!-- ? CSS stuff. -->
     <link rel="shortcut icon" href="/assets/images/favicon.png">
-    <link rel="stylesheet" href="/assets/css/styles-v2.css">
+    <link rel="stylesheet" href="/assets/css/styles-LoveCalc.css">
     <link rel="stylesheet" href="/assets/css/scrollbar.css">
-
+    
     <!-- ? - METADATA. -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,17 +19,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="aRandomMenno">
     <meta name="description" content="a weird rock in space.">
-    <title>aRandomMenno • Info</title>
+    <title>aRandomMenno • love calculator</title>
   </head>
-
+  
   <body>
     <div class="container">
-      Hi, I'm Menno, <br>
-      And in my opinion computers are awesome! <br>
-      I'm very passionate about computers and software. <br>
-      And I'm very interested in ethical hacker, <br>
-      Although I am very not good at it I do enjoy hacking. <br>
-      <br><a href="/" style="font-size: 24px;">Home</a>
+      <span>Love Calculator</span>
+      <form id="love-form">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="text" id="crush" placeholder="Your Crush's Name" required>
+        <button type="submit">Calculate</button>
+      </form>
+      <div id="result" class="result"></div>
+      <br><a href="/webThings/">Go back</a>
     </div>
+    <script src="/assets/js/LoveCalc-script.js"></script>
   </body>
 </html>
