@@ -1,0 +1,174 @@
+
+:root {
+  --color-background: #070F2B;
+  --color-text: #4AA9AF;
+  --color-div-background: #3E31AE;
+  --color-div-border: #1B1A55;
+  --color-link: #9290C3;
+}
+
+@font-face {
+  font-family: 'custom';
+  src: url(/assets/fonts/raster.ttf);
+}
+
+html {
+  background-color: var(--color-background);
+  word-spacing: 3px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 24px;
+  color: var(--color-text);
+  scroll-behavior: smooth;
+  word-wrap: break-word;
+}
+
+.contain-flex {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100px 200px 200px 200px 200px 200px 25px 100px 150px;
+  grid-auto-columns: 1fr;
+  gap: 8px 8px;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  grid-template-areas:
+    "header header header header header"
+    "site site site dcBot dcBot"
+    "site site site dcBot dcBot"
+    "taps taps img dcBot dcBot"
+    "taps taps tmp tmp tmp"
+    "taps taps tmp tmp tmp"
+    "a a a a a"
+    "b nav nav nav c"
+    "footer footer footer footer footer";
+  margin: 1 auto;
+  margin: 2vw;
+  width: auto;
+  height: auto;
+}
+
+.header {
+  grid-area: header;
+  align-content: center;
+  border-radius: 6px;
+  width: auto;
+  height: 125px;
+  overflow: auto;
+  padding: 8px;
+
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.img {
+  z-index: -1;
+  grid-area: img;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 97%;
+  height: 97%;
+  overflow: hide;
+  padding: 8px;
+}
+
+.site {
+  grid-area: site;
+  background-color: var(--color-div-background);
+  border: 3px solid var(--color-div-border);
+  border-radius: 6px;
+  width: 95%;
+  height: 95%;
+  overflow: auto;
+  padding: 8px;
+}
+
+.dcBot {
+  grid-area: dcBot;
+  background-color: var(--color-div-background);
+  border: 3px solid var(--color-div-border);
+  border-radius: 6px;
+  width: 95%;
+  height: 95%;
+  overflow: auto;
+  padding: 8px;
+}
+
+.taps {
+  grid-area: taps;
+  background-color: var(--color-div-background);
+  border: 3px solid var(--color-div-border);
+  border-radius: 6px;
+  width: 95%;
+  height: 95%;
+  overflow: auto;
+  padding: 8px;
+}
+
+.tmp {
+  grid-area: tmp;
+  background-color: var(--color-div-background);
+  border: 3px solid var(--color-div-border);
+  border-radius: 6px;
+  width: 95%;
+  height: 95%;
+  overflow: auto;
+  padding: 8px;
+}
+
+.footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  width: 99%;
+  height: 87%;
+  overflow: auto;
+  padding: 8px;
+}
+
+.nav {
+  grid-area: nav;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-div-background);
+  border: 3px solid var(--color-div-border);
+  border-radius: 6px;
+  width: 97%;
+  height: 84%;
+  overflow: auto;
+  padding: 8px;
+}
+
+@media only screen and (max-width: 840px) {
+  .img {
+    display: none;
+  }
+  
+}
+
+a {
+  color: var(--color-link);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+h2 {
+  text-align: center;
+}
