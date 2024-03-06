@@ -1,6 +1,12 @@
 
-# dusty rock in space
+# aRandomMenno.github.io
 
-> This website is a link hub for my socials
+> Making a rock in space, and pretending it does not exist.
 
-## yea not very exciting is it?
+## Todo list:
+
+- [ ] info page.
+- [ ] about me page.
+- [ ] testing page.
+- [ ] make/steal a good favicon.
+- [ ] think of more things to put on my website.
