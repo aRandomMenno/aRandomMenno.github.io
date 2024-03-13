@@ -5,7 +5,7 @@
 
 ## Todo list
 
-- [ ] projects page.
-- [ ] testing page.
-- [ ] make/steal a good favicon.
+- [X] projects page.
+- [X] testing page.
+- [X] make/steal a good favicon.
 - [ ] think of more things to put on my website.
