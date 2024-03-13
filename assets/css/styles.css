@@ -13,13 +13,13 @@
 }
 
 html {
+  background-image: url('/assets/gifs/outerspace-70.gif');
   word-spacing: 3px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 24px;
   color: var(--color-text);
   scroll-behavior: smooth;
   word-wrap: break-word;
-  background-image: url('/assets/gifs/outerspace-70.gif');
 }
 
 .contain-flex {
@@ -59,9 +59,9 @@ html {
   align-content: center;
   border-radius: 6px;
   width: auto;
-  height: 125px;
+  height: auto;
   overflow: auto;
-  padding: 8px;
+  padding: 16px;
 
   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-style: italic;
@@ -85,8 +85,8 @@ html {
   justify-content: center;
   align-items: center;
   border-radius: 6px;
-  width: 99%;
-  height: 87%;
+  width: auto;
+  height: auto;
   overflow: auto;
   padding: 8px;
 }
@@ -112,7 +112,7 @@ html {
   border: 3px solid var(--color-div-border);
   border-radius: 6px;
   width: 97%;
-  height: 84%;
+  height: 90%;
   overflow: auto;
   padding: 8px;
 }
@@ -122,7 +122,7 @@ html {
   background-color: var(--color-div-background);
   border: 3px solid var(--color-div-border);
   border-radius: 6px;
-  width: 95%;
+  width: 94%;
   height: 95%;
   overflow: auto;
   padding: 12px;
@@ -156,7 +156,7 @@ html {
     border: 3px solid var(--color-div-border);
     border-radius: 6px;
     width: 90%;
-    height: 100%;
+    height: auto;
     overflow: auto;
     padding: 8px;
   }
@@ -166,7 +166,7 @@ html {
     text-align: center;
     border-radius: 6px;
     width: 90%;
-    height: 100%;
+    height: auto;
     overflow: auto;
     padding: 8px;
   }
@@ -177,7 +177,7 @@ html {
     border: 3px solid var(--color-div-border);
     border-radius: 6px;
     width: 90%;
-    height: 100%;
+    height: auto;
     overflow: auto;
     padding: 8px;
   }
@@ -189,7 +189,7 @@ html {
     border: 3px solid var(--color-div-border);
     border-radius: 6px;
     width: 90%;
-    height: 100%;
+    height: auto;
     overflow: auto;
     padding: 8px;
   }
@@ -199,7 +199,7 @@ html {
     border: 3px solid var(--color-div-border);
     border-radius: 6px;
     width: 90%;
-    height: 100%;
+    height: auto;
     overflow: auto;
     padding: 8px;
   }
@@ -214,5 +214,9 @@ a:hover {
 }
 
 h2 {
+  text-align: center;
+}
+
+p {
   text-align: center;
 }

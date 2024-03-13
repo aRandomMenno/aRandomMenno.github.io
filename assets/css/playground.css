@@ -20,10 +20,10 @@ html {
   color: var(--color-text);
   scroll-behavior: smooth;
   word-wrap: break-word;
-  background-image: url('/assets/gifs/outerspace-70.gif');
 }
 
 .contain-flex {
+  
   display: flex;
   justify-content: center;
   align-content: center;
@@ -34,7 +34,7 @@ html {
   max-width: 1200px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 100px 200px 200px 200px 200px 200px 30px 100px 100px;
+  grid-template-rows: 150px 100px 100px 100px 100px 100px 100px 125px 75px;
   grid-auto-columns: 1fr;
   gap: 8px 8px;
   grid-auto-flow: row;
@@ -44,13 +44,13 @@ html {
   align-items: center;
   grid-template-areas:
     "header header header header header"
-    "site site site dcBot dcBot"
-    "site site site dcBot dcBot"
-    "taps taps img dcBot dcBot"
-    "taps taps tmp tmp tmp"
-    "taps taps tmp tmp tmp"
-    "a a a a a"
-    "b nav nav nav c"
+    "playground-nav playground-nav playground-nav playground-nav d"
+    "playground-nav playground-nav playground-nav playground-nav d"
+    "playground-nav playground-nav playground-nav playground-nav d"
+    "playground-nav playground-nav playground-nav playground-nav e"
+    "playground-nav playground-nav playground-nav playground-nav e"
+    "a a a a e"
+    "nav nav nav nav nav"
     "footer footer footer footer footer";
   margin: 1 auto;
   margin: 2vw;
@@ -72,59 +72,13 @@ html {
   font-weight: bold;
 }
 
-.img {
-  z-index: -1;
-  grid-area: img;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  width: auto;
-  height: auto;
-  overflow: hide;
-  padding: 8px;
-}
-
-.site {
-  grid-area: site;
+.playground-nav {  
+  grid-area: playground-nav;
   background-color: var(--color-div-background);
   border: 3px solid var(--color-div-border);
   border-radius: 6px;
-  width: 95%;
-  height: 95%;
-  overflow: auto;
-  padding: 8px;
-}
-
-.dcBot {
-  grid-area: dcBot;
-  background-color: var(--color-div-background);
-  border: 3px solid var(--color-div-border);
-  border-radius: 6px;
-  width: 95%;
-  height: 95%;
-  overflow: auto;
-  padding: 8px;
-}
-
-.taps {
-  grid-area: taps;
-  background-color: var(--color-div-background);
-  border: 3px solid var(--color-div-border);
-  border-radius: 6px;
-  width: 95%;
-  height: 95%;
-  overflow: auto;
-  padding: 8px;
-}
-
-.tmp {
-  grid-area: tmp;
-  background-color: var(--color-div-background);
-  border: 3px solid var(--color-div-border);
-  border-radius: 6px;
-  width: 95%;
-  height: 95%;
+  width: 100%;
+  height: 100%;
   overflow: auto;
   padding: 8px;
 }
@@ -135,8 +89,8 @@ html {
   justify-content: center;
   align-items: center;
   border-radius: 6px;
-  width: 99%;
-  height: 87%;
+  width: auto;
+  height: auto;
   overflow: auto;
   padding: 8px;
 }
@@ -149,8 +103,8 @@ html {
   background-color: var(--color-div-background);
   border: 3px solid var(--color-div-border);
   border-radius: 6px;
-  width: 97%;
-  height: 84%;
+  width: 85%;
+  height: 70%;
   overflow: auto;
   padding: 8px;
 }
@@ -166,74 +120,42 @@ html {
   }
   
   .header {
+    grid-area: header;
     align-content: center;
     border-radius: 6px;
-    width: 90%;
+    width: auto;
     height: auto;
     overflow: auto;
     padding: 8px;
-
-    text-align: center;
+  
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: italic;
     font-weight: bold;
   }
-  
-  .img {
-    display: none;
-  }
-  
-  .site {
+
+  .playground-nav {  
     background-color: var(--color-div-background);
     border: 3px solid var(--color-div-border);
     border-radius: 6px;
     width: 90%;
-    height: auto;
-    overflow: auto;
-    padding: 8px;
-  }
-  
-  .dcBot {
-    background-color: var(--color-div-background);
-    border: 3px solid var(--color-div-border);
-    border-radius: 6px;
-    width: 90%;
-    height: auto;
-    overflow: auto;
-    padding: 8px;
-  }
-  
-  .taps {
-    background-color: var(--color-div-background);
-    border: 3px solid var(--color-div-border);
-    border-radius: 6px;
-    width: 90%;
-    height: auto;
-    overflow: auto;
-    padding: 8px;
-  }
-  
-  .tmp {
-    background-color: var(--color-div-background);
-    border: 3px solid var(--color-div-border);
-    border-radius: 6px;
-    width: 90%;
-    height: auto;
+    height: 100%;
     overflow: auto;
     padding: 8px;
   }
   
   .footer {
+    display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 6px;
-    width: 90%;
+    width: 80%;
     height: auto;
     overflow: auto;
     padding: 8px;
   }
   
   .nav {
+    display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--color-div-background);
@@ -244,7 +166,6 @@ html {
     overflow: auto;
     padding: 8px;
   }
-  
 }
 
 a {
