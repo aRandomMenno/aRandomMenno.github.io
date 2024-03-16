@@ -13,14 +13,13 @@
 }
 
 html {
-  background-image: url('/assets/gifs/outerspace-70.gif');
+  background-image: url('/assets/gifs/galaxy.gif');
   word-spacing: 3px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 24px;
   color: var(--color-text);
   scroll-behavior: smooth;
   word-wrap: break-word;
-  background-image: url('/assets/gifs/outerspace-70.gif');
 }
 
 .contain-flex {

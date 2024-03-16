@@ -10,8 +10,11 @@
 
     <!-- & CSS stuff. -->
     <link rel="shortcut icon" href="/assets/images/favicon.png">
-    <link rel="stylesheet" href="/assets/css/playground.css">
+    <link rel="stylesheet" href="/assets/css/forms.css">
     <link rel="stylesheet" href="/assets/css/scrollbar.css">
+
+    <!-- & JS stuff. -->
+    <script src="/assets/js/form-submission.js" defer></script>
     
     <!-- & - METADATA. -->
     <meta charset="UTF-8">
@@ -20,14 +23,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="aRandomMenno">
     <meta name="description" content="a weird rock in space.">
-    <title>aRandomMenno • Playground</title>
+    <title>aRandomMenno • Homepage</title>
   </head>
 
   <body>
     <div class="contain-flex">
       <div class="container">
         <div class="header">
-          <span style="font-size: 50px;">Hi, this the page that leads to my testing.</span>
+          <span style="font-size: 50px;">Welcome, to my little website!</span>
         </div>
 
         <div class="nav"><span style="font-size: 32px;">
@@ -37,18 +40,19 @@
           <a href="#">Soon™</a>
         </span></div>
 
-        <div class="playground-nav">
-          <h2>What will I find here?</h2>
+        <div class="form">
           <p>
-            You will find (old) test using html, css & js. <br>
-            However I might put very little test here. <br>
-          </p>
-          <h2>Links:</h2>
-          <p>
-            <a href="/playground/submitFormTest/">Form submission testing</a>. <br>
-            soon™
+            <h2>Testing form</h2>
+            <form id="form">
+              <input type="text" id="in1" placeholder="hello" required>
+              <input type="text" id="in2" placeholder="world" required>
+              <input type="text" id="in3" placeholder="testing" required>
+              <button type="submit">Submit.</button>
+            </form>
+            <div id="result" class="result"></div>
           </p>
         </div>
+
 
         <div class="footer">
           &copy; Menno van Zoelen 2023&NonBreakingSpace;<b>•</b>&NonBreakingSpace;A random person in the Netherlands.
