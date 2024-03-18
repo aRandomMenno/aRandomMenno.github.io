@@ -39,4 +39,4 @@ if (/aRandomMenno/i.test(userAgent)) {
   .catch(error => console.error('Error:', error));
 }
 
-console.log('[INFO] executed userAgent.js')
+console.log('[INFO] Executed userAgent.js')

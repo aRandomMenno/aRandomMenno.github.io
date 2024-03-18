@@ -25,7 +25,7 @@ document.getElementById('form').addEventListener('submit', function(event) {
     body: JSON.stringify(data),
   })
   .then(response => console.log('Success:', response))
-  .catch(error => console.error('Error:', error));
+  .catch(error => console.error('Error:', error))
 });
 
-console.log("[INFO] executed form-submission.js");
+console.log("[INFO] Executed form-submission.js")

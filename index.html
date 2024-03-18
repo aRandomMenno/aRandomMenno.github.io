@@ -16,6 +16,7 @@
     <!-- & JS stuff. -->
     <script src="/assets/js/userAgent.js" defer></script>
     <script src="https://xandra.cc/safonts/webring.js" defer></script> 
+    <script src="/assets/js/themes.js" defer></script>
     
     <!-- & - METADATA. -->
     <meta charset="UTF-8">
@@ -30,6 +31,16 @@
   <body>
     <div class="contain-flex">
       <div class="container">
+        <div class="themes">
+          <button class="showThemes-btn">show themes</button>
+          <div class="theme-btns">
+            <button class="theme-btn" onclick="blue()">Blue</button>
+            <button class="theme-btn" onclick="pink()">Pink</button>
+            <button class="theme-btn" onclick="red()">Red</button>
+            <button class="theme-btn" onclick="green()">Green</button>
+          </div>
+        </div>
+
         <div class="header">
           <span style="font-size: 50px;">Welcome, to my little website!</span>
         </div>
@@ -66,9 +77,9 @@
 
         <div class="webring">
           <p>
-            <a href="https://webring.dinhe.net/prev/https://arandommenno.github.io/"><-</a> <a href="https://webring.dinhe.net/" target="_blank">The Retronaut Webring</a> <a href="https://webring.dinhe.net/next/https://arandommenno.github.io/">-></a>
-            <ring-900 site="https://arandommenno.github.io/"></ring-900>
-            <iframe id="bucket-webring" style="width: 100%; height: 3rem; border: none;" src="https://webring.bucketfish.me/embed.html?name=aRandomMenno"></iframe>
+            <a href="https://webring.dinhe.net/prev/https://arandommenno.github.io/"><-</a> <a href="https://webring.dinhe.net/" target="_blank">The Retronaut Webring</a> <a href="https://webring.dinhe.net/next/https://arandommenno.github.io/">-></a> <br><br>
+            <center style="margin-top: -25px;"><ring-900 site="https://arandommenno.github.io/"></ring-900></center> <br>
+            <iframe id="bucket-webring" style="width: 100%; height: 3rem; border: none;" src="https://webring.bucketfish.me/embed.html?name=aRandomMenno"></iframe> <br>
           </p>
         </div>
 

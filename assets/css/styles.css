@@ -1,6 +1,5 @@
 
 :root {
-  --color-background: #070F2B;
   --color-text: #4AA9AF;
   --color-div-background: #3E31AE;
   --color-div-border: #1B1A55;
@@ -8,18 +7,21 @@
 }
 
 @font-face {
-  font-family: 'custom';
+  font-family: 'Noita-font';
   src: url(/assets/fonts/raster.ttf);
 }
 
 html {
   background-image: url('/assets/gifs/galaxy.gif');
   word-spacing: 3px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Noita-font';
+  font-weight: 400;
+  font-style: normal;
   font-size: 24px;
   color: var(--color-text);
   scroll-behavior: smooth;
   word-wrap: break-word;
+  cursor: default;
 }
 
 .contain-flex {
@@ -33,7 +35,7 @@ html {
   max-width: 1200px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 100px 200px 200px 200px 200px 100px 150px;
+  grid-template-rows: 100px 200px 200px 200px 200px 100px 140px;
   grid-auto-columns: 1fr;
   gap: 8px 8px;
   grid-auto-flow: row;
@@ -62,10 +64,9 @@ html {
   height: auto;
   overflow: auto;
   padding: 16px;
-
-  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Noita-font';
+  font-weight: 400;
   font-style: italic;
-  font-weight: bold;
 }
 
 .main {
@@ -145,9 +146,9 @@ html {
     padding: 8px;
     text-align: center;
   
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Noita-font';
+    font-weight: 400;
     font-style: italic;
-    font-weight: bold;
   }
   
   .main {
@@ -206,6 +207,7 @@ html {
 }
 
 a {
+  cursor: crosshair;
   color: var(--color-link);
   text-decoration: none;
 }
@@ -219,4 +221,33 @@ h2 {
 
 p {
   text-align: center;
+}
+
+.themes {
+  top: 0px;
+  left: 0px;
+  padding: 6px;
+  position: fixed;
+}
+
+.theme-btns {
+ display: none;
+}
+
+.showThemes-btn {
+  margin-bottom: 8px;
+}
+
+.theme-btn {
+  margin-right: 4px;
+}
+
+button {
+  cursor: crosshair;
+  padding: 3px;
+  padding-left: 10px; padding-right: 10px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(0, 255, 200);
+  border-radius: 3px;
+  border: 1px solid rgb(0, 50, 255);
 }
