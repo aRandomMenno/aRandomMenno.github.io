@@ -1,10 +1,23 @@
 
+
 :root {
-  --color-background: #070F2B;
-  --color-text: #4AA9AF;
-  --color-div-background: #3E31AE;
-  --color-div-border: #1B1A55;
-  --color-link: #9290C3;
+  --color-text: #ffffff;
+  --color-div-background: #658ef2;
+  --color-div-border: #7a71f8;
+  --color-link: #000000;
+  
+  --color-handle-scrollbar: #3bcae5;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background-color: var(--color-div-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-handle-scrollbar);
+  border-radius: 5px;
 }
 
 @font-face {
@@ -188,7 +201,7 @@ p {
 
 .themes {
   top: 0px;
-  left: 0px;
+  left: 8px;
   padding: 6px;
   position: fixed;
 }
