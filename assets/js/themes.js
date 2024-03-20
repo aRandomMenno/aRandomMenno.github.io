@@ -26,6 +26,15 @@ const themePink = `:root {
   --color-handle-scrollbar: #7c40b6;
 }`;
 
+const themePurple = `:root {
+  --color-text: #ffffff;
+  --color-div-background: #773398;
+  --color-div-border: #512889;
+  --color-link: #000000;
+  
+  --color-handle-scrollbar: #ff5ccc;
+}`;
+
 const themeRed = `:root {
   --color-text: #ffffff;
   --color-div-background: #79021c;
@@ -55,6 +64,8 @@ document.addEventListener('DOMContentLoaded', function() {
       case 'green':
         green();
         break;
+      case 'purple':
+        purple()
     }
   }
 });
@@ -62,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
 function applyTheme(themeCSS) {
   const existingStyles = document.getElementById('dynamic-theme-styles');
   if (existingStyles) {
-     existingStyles.remove();
+    existingStyles.remove();
   }
  
   const styleElement = document.createElement('style');
@@ -91,21 +102,21 @@ function green() {
   localStorage.setItem('selectedTheme', 'green');
   applyTheme(themeGreen);
 }
- 
 
+function purple() {
+  localStorage.setItem('selectedTheme', 'purple');
+  applyTheme(themePurple);
+}
 
-document.addEventListener('DOMContentLoaded', function() {
-  var showThemesBtn = document.querySelector('.showThemes-btn');
-  var themeBtnsDiv = document.querySelector('.theme-btns');
+var showThemesBtn = document.querySelector('.showThemes-btn');
+var themeBtnsDiv = document.querySelector('.theme-btns');
 
-  function toggleThemes() {
-    if (themeBtnsDiv.style.display === 'none') {
-      themeBtnsDiv.style.display = 'block';
-    } else {
-      themeBtnsDiv.style.display = 'none';
-    }
+function toggleThemes() {
+  if (themeBtnsDiv.style.display === 'none') {
+    themeBtnsDiv.style.display = 'unset';
+  } else {
+    themeBtnsDiv.style.display = 'none';
   }
-  showThemesBtn.addEventListener('click', toggleThemes);
-});
+}
 
 console.log("[INFO] Executed themes.js")

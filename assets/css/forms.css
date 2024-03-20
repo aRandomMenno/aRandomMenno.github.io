@@ -208,12 +208,14 @@ input {
 }
 
 button {
-  width: 125px;
+  width: fit-content;
+  height: fit-content;
   padding: 10px;
   border-radius: 8px;
   border: none;
   font-size: 24px;
   background-color: var(--color-div-background);
+  border: 3px solid var(--color-div-border);
   color: var(--color-text);
   cursor: pointer;
 }
@@ -228,20 +230,38 @@ button {
 }
 
 .themes {
-  top: 0px;
+  
+  top: 8px;
   left: 8px;
   padding: 6px;
   position: fixed;
 }
 
 .theme-btns {
- display: none;
+  display: none;
 }
 
 .showThemes-btn {
+  font-size: 14px;
   margin-bottom: 8px;
+  cursor: crosshair;
+  padding: 3px;
+  padding-left: 10px; padding-right: 10px;
+  color: rgb(0, 0, 0);
+  background-color: var(--color-div-background);
+  border-radius: 3px;
+  border: 1px solid var(--color-div-border);
 }
 
 .theme-btn {
-  margin-right: 4px;
+  font-size: 14px;
+  width: fit-content;
+  height: fit-content;
+  cursor: crosshair;
+  padding: 3px;
+  padding-left: 10px; padding-right: 10px;
+  color: rgb(0, 0, 0);
+  background-color: var(--color-div-background);
+  border-radius: 3px;
+  border: 1.5px solid var(--color-div-border);
 }
