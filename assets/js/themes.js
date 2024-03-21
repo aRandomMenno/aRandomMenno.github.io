@@ -45,11 +45,8 @@ const themeRed = `:root {
 }`;
 
 document.addEventListener('DOMContentLoaded', function() {
-  // Retrieve the saved theme from localStorage
   var activeTheme = localStorage.getItem('selectedTheme');
-  console.log(activeTheme)
 
-  // Apply the saved theme if it exists
   if (activeTheme) {
     switch (activeTheme) {
       case 'blue':
@@ -75,11 +72,9 @@ function applyTheme(themeCSS) {
   if (existingStyles) {
     existingStyles.remove();
   }
- 
   const styleElement = document.createElement('style');
   styleElement.id = 'dynamic-theme-styles';
   styleElement.innerHTML = themeCSS;
- 
   document.head.appendChild(styleElement);
 }
  
