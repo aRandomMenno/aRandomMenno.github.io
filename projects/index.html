@@ -4,12 +4,12 @@
 <html lang='en-US'>
   <head>
     <!-- & Embed thingies. -->
-    <meta content='MarshMenno's palace' property='og:title'/>
-    <meta property='og:type' content='website'/>
-    <meta content='A random palace I made on the internet.' property='og:description'/>
-    <meta content='https://aRandomMenno.github.io/' property='og:url'/>
+    <meta content="MarshMenno's palace" property='og:title'>
+    <meta property='og:type' content='website'>
+    <meta content='A random palace on the internet I made.' property='og:description'>
+    <meta content='https://aRandomMenno.github.io/' property='og:url'>
     <meta content='/assets/img/misc/marshMellow.png' property='og:image'>
-    <meta content='#F5A9B8' data-react-helmet='true' name='theme-color'/>
+    <meta content='#F5A9B8' data-react-helmet='true' name='theme-color'>
 
     <!-- & CSS stuff. -->
     <link rel='shortcut icon' href='/assets/img/favicon.png'>
@@ -20,28 +20,36 @@
     <script src='/assets/js/redirect.js' defer></script>
 
     <!-- & METADATA. -->
-    <meta charset='UTF-8'>
+    <meta charset='UTF-8' />
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name='theme-color' content=''>
+    <meta name='theme-color' content='dark'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <meta name='author' content='aRandomMenno'>
-    <meta name='description' content='a weird rock in space.'>
+    <meta name='description' content='A random palace on the internet I made.'>
     <title>MarshMellow • Projects</title>
   </head>
 
-  <copyright> Copyright: MarshMenno 2023 - 2024</copyright>
-  <navigation> <a onclick="redirect('home')"> Homepage</a>&NoBreak; -<a onclick="redirect('projects')">&NoBreak; Projects </a> </navigation>
+  <copyright>
+    Copyright: MarshMenno 2023 - 2024 <span id='redacted'>&NoBreak; / Agree with my <a onclick='redirect("privacy")'>privacy</a> policy? <button id='privacy-button' onclick='acceptPrivacy("home")''>yes?</button></span> 
+  </copyright>
+  <navigation>
+    <a onclick='redirect("home")'>Homepage</a>
+    &NonBreakingSpace;-&NonBreakingSpace;
+    <a onclick='redirect("projects")'>Projects</a>
+    &NonBreakingSpace;-&NonBreakingSpace;
+  </navigation>
 
   <body>
     <div class='d'>
       <h2>aRandomMenno.github.io (this website)</h2>
       <p>
-        I initially made this website as a hobby project to learn html and css, but it grew and I am now also learning JavaScript, <br>
+        I initially made this website as a hobby project to learn html and css, but it grew and I am now also learning
+        JavaScript, <br>
         I rewrote this website many times and I think every time I did that the website got 'better'. <br>
         I hope this is the last time I decided to rewrite my entire website.
       </p>
     </div>
-
+  
     <div class='d'>
       <h2>MarshMellow Bot (discord Bot)</h2>
       <p>
@@ -52,10 +60,12 @@
 
     <div class='d'>
       <p>
-        <h2>TappsBox (archived)</h2>
-        This is a small Python program that uses opencv-Python to find an image on screen move the mouse to it with PyAutoGUI and click on it. <br>
-        I rewrote this a couple of times because I found some new optimization technics. <br>
-        This project was archived by me because I don't feel like working om it anymore. if you want to optimize it further you mat fork it.
+      <h2>TappsBox (archived)</h2>
+      This is a small Python program that uses opencv-Python to find an image on screen move the mouse to it with PyAutoGUI
+      and click on it. <br>
+      I rewrote this a couple of times because I found some new optimization technics. <br>
+      This project was archived by me because I don't feel like working om it anymore. if you want to optimize it further
+      you mat fork it.
       </p>
     </div>
     
@@ -65,8 +75,10 @@
       <h2> <a onclick="redirect('RiMusic')">RiMusic</a> by Fast4x</h2>
       <p>
         This is a music player, which is just an application which can play any video/music from YouTube (Music) <br>
-        It is a fork of <a onclick="redirect('ViMusic')">ViMusic</a> which is probably abandoned by it's creator/maintainer. <br>
-        This is my primary music app, the app also caches any music played so you can play your favorite songs offline for free! <br>
+        It is a fork of <a onclick="redirect('ViMusic')">ViMusic</a> which is probably abandoned by it's creator/maintainer.
+        <br>
+        This is my primary music app, the app also caches any music played so you can play your favorite songs offline for
+        free! <br>
         (In settings you can change the size of the cached songs so your device doesn't get filled up with only music.) <br>
         I switched to ViMusic first (from Spotify), but after I found RiMusic I immediately switched to it. <br>
       </p>
