@@ -1,94 +1,64 @@
+
 <!DOCTYPE html>
-<html lang="en-US">
+
+<html lang='en-US'>
   <head>
     <!-- & Embed thingies. -->
-    <meta content="aRandomMenno's socials hub" property="og:title"/>
-    <meta property="og:type" content="website"/>
-    <meta content="a weird rock in space." property="og:description"/>
-    <meta content="https://aRandomMenno.github.io/" property="og:url"/>
-    <meta content="#F5A9B8" data-react-helmet="true" name="theme-color"/>
+    <meta content='MarshMenno's palace' property='og:title'/>
+    <meta property='og:type' content='website'/>
+    <meta content='A random palace on the internet I made.' property='og:description'/>
+    <meta content='https://aRandomMenno.github.io/' property='og:url'/>
+    <meta content='#F5A9B8' data-react-helmet='true' name='theme-color'/>
 
     <!-- & CSS stuff. -->
-    <link rel="shortcut icon" href="/assets/images/favicon.png">
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel='shortcut icon' href='/assets/img/favicon.png'>
+    <link rel='stylesheet' href='/assets/css/styles.css'>
 
     <!-- & JS stuff. -->
-    <script src="/assets/js/userAgent.js"></script>
-    <script src="https://xandra.cc/safonts/webring.js"></script> 
+    <script src='/assets/js/userAgent.js' defer></script>
+    <script src="/assets/js/redirect.js"></script>
+    <script src='https://xandra.cc/safonts/webring.js' defer></script>
     
-    
-    <!-- & - METADATA. -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="theme-color" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="aRandomMenno">
-    <meta name="description" content="a weird rock in space.">
+    <!-- & METADATA. -->
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='theme-color' content=''>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta name='author' content='aRandomMenno'>
+    <meta name='description' content='A random palace on the internet I made.'>
     <title>aRandomMenno • Homepage</title>
   </head>
 
+  <copyright> Copyright: MarshMenno 2023 - 2024 <span id='redacted'>&NoBreak; / Agree with my <a onclick="redirect('privacy')">privacy</a> policy? <button id='privacy-button' onclick="acceptPrivacy('home')">yes?</button></span></copyright>
+  <navigation> <a onclick="redirect('home')">Homepage</a>&NonBreakingSpace;-&NonBreakingSpace;<a onclick="redirect('projects')">Projects</a>&NonBreakingSpace;-&NonBreakingSpace; <a onclick="redirect('socials')"></a></navigation>
+
   <body>
-    <div class="contain-flex">
-      <div class="container">
-        <div class="themes">
-          <button class="showThemes-btn" onclick="toggleThemes()">show themes</button>
-          <div class="theme-btns">
-            <button class="theme-btn" onclick="blue()">Blue</button>
-            <button class="theme-btn" onclick="pink()">Pink</button>
-            <button class="theme-btn" onclick="red()">Red</button>
-            <button class="theme-btn" onclick="green()">Green</button>
-            <button class="theme-btn" onclick="purple()">Purple</button>
-          </div>
-        </div>
-        <script src="/assets/js/themes.js"></script>
+    <div class='d'>
+      <p>
+        Hi, I am Menno<s1 id='marshMenno'>MarshMenno</s1>, <br> I am a boy born in the Netherlands, and I live in <a onclick="redirect('Spijkenisse')"></a>Spijkenisse. <br>
+        <br>
+        I enjoy Programming, I think it's quite relaxing. I mainly program in Python, or JavaScript. I also like tech, like computers I have a raspberry Pi 5 but I haven't used it for anything but I do have idea's what to use it for I just need to find the motivation to start working on those idea's. <br>
+        <br>
+        When programming I mostly live by one simple motto: "My code doesn't work, I don't know why. I change some things, it now works, I don't know why." <br>
+        The previous rewrite of the site was actually quite plain and simple with a theme switcher, however I probably wont bring back the theme switcher. sorry :(<br>
+      </p>
+    </div>
 
-        <div class="header">
-          <span style="font-size: 50px;">Welcome, to my little website!</span>
-        </div>
+    <div class="d">
+      <center><a href="https://webring.dinhe.net/prev/https://arandommenno.github.io/"><-</a> <a href="https://webring.dinhe.net/" target="_blank">The Retronaut Webring</a> <a href="https://webring.dinhe.net/next/https://arandommenno.github.io/">-></a>
+      <ring-900 site="https://arandommenno.github.io/"></ring-900></center>
+      <iframe id="bucket-webring" style="width: 100%; height: 3rem; border: none;" src="https://webring.bucketfish.me/embed.html?name=aRandomMenno"></iframe>
+    </div>
 
-        <div class="nav"><span style="font-size: 32px;">
-          <a href="/">Home</a> <b>•</b>
-          <a href="/projects">Projects</a> <b>•</b>
-          <a href="/playground">Playground</a> <b>•</b>
-          <a href="#">Soon™</a>
-        </span></div>
+    <div class='d'>
+      In the future when I am working etc, I would like to emigrate to <a onclick="">Finland</a>, the reason for this is because I think it is a very interesting country, and in the winter there is a lot of snow! and in the Netherlands we almost never get snow these days.
+    </div>
 
-        <div class="main">
-          <p>
-            This website is maintained as a hobby, and to develop basic web development skills. <br>
-            Most of the text in <b style="color: #000000; cursor: help;">black</b> are links.
-            <br>
-            Consider joining my <a href="https://discord.gg/vRpeAcKruF">discord</a>! For fun or to contact me. :)<br> 
-          </p>
-        </div>
-
-        <div class="about">
-          <h2>About me!</h2>
-          <p>
-            Hi, I'm Menno and I'm a cat person. <br>
-            I'm a 16 y/o dutch boy, I currently live in the Netherlands. <br>
-            In a city called <a href="https://en.wikipedia.org/wiki/Spijkenisse" target="_blank">Spijkenisse</a> which is located near <a href="https://en.wikipedia.org/wiki/Rotterdam" target="_blank">Rotterdam</a>. <br>
-            I really like Computers and tech, but I actually know very little about them, and with this website I started to change that. <br>
-            I also really like programming, but I also don't know very much about programming. <br>
-            And I like to change that, because this year, I will start my software developer course. <br>
-            When programming I mostly follow one rule: 'code does not work, I do not know why. I change some lines, code works, I do not know why.'
-            This website is actually quite simple and plain, that is because I have no inspiration to make it playful and such. <br>
-            <br> In the future when I am working etc, I would like to emigrate to <a href="https://en.wikipedia.org/wiki/Finland" target="_blank">Finland</a>, the reason for this is because I think it is a very interesting country, and in the winter there is a lot of snow! and in the Netherlands we almost never get snow these days.
-          </p>
-        </div>
-
-        <div class="webring">
-          <p>
-            <a href="https://webring.dinhe.net/prev/https://arandommenno.github.io/"><-</a> <a href="https://webring.dinhe.net/" target="_blank">The Retronaut Webring</a> <a href="https://webring.dinhe.net/next/https://arandommenno.github.io/">-></a> <br><br>
-            <center style="margin-top: -25px;"><ring-900 site="https://arandommenno.github.io/"></ring-900></center> <br>
-            <iframe id="bucket-webring" style="width: 100%; height: 3rem; border: none;" src="https://webring.bucketfish.me/embed.html?name=aRandomMenno"></iframe> <br>
-          </p>
-        </div>
-
-        <div class="footer">
-          &copy; Menno van Zoelen 2023&NonBreakingSpace;<b>•</b>&NonBreakingSpace;A random person in the Netherlands.
-        </div>
-      </div>
+    <div class='d'>
+      <h2>Various of my social accounts:</h2>
+      my discord server: <a onclick="redirect('discord')">press me!</a> <br>
+      my YouTube: <a onclick="redirect('yt')">press me!</a> <br>
+      my Github: <a onclick="redirect('github')">press me!</a> <br>
     </div>
   </body>
 </html>

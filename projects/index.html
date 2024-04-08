@@ -1,95 +1,74 @@
+
 <!DOCTYPE html>
-<html lang="en-US">
+
+<html lang='en-US'>
   <head>
     <!-- & Embed thingies. -->
-    <meta content="aRandomMenno's socials hub" property="og:title"/>
-    <meta property="og:type" content="website"/>
-    <meta content="a weird rock in space." property="og:description"/>
-    <meta content="https://aRandomMenno.github.io/" property="og:url"/>
-    <meta content="#F5A9B8" data-react-helmet="true" name="theme-color"/>
+    <meta content='MarshMenno's palace' property='og:title'/>
+    <meta property='og:type' content='website'/>
+    <meta content='A random palace I made on the internet.' property='og:description'/>
+    <meta content='https://aRandomMenno.github.io/' property='og:url'/>
+    <meta content='#F5A9B8' data-react-helmet='true' name='theme-color'/>
 
     <!-- & CSS stuff. -->
-    <link rel="shortcut icon" href="/assets/images/favicon.png">
-    <link rel="stylesheet" href="/assets/css/projects.css">
-    
-    <!-- & - METADATA. -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="theme-color" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="aRandomMenno">
-    <meta name="description" content="a weird rock in space.">
+    <link rel='shortcut icon' href='/assets/img/favicon.png'>
+    <link rel='stylesheet' href='/assets/css/styles.css'>
+
+    <!-- & JS stuff. -->
+    <script src='/assets/js/userAgent.js' defer></script>
+    <script src='/assets/js/redirect.js' defer></script>
+
+    <!-- & METADATA. -->
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='theme-color' content=''>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta name='author' content='aRandomMenno'>
+    <meta name='description' content='a weird rock in space.'>
     <title>aRandomMenno • Projects</title>
   </head>
 
+  <copyright> Copyright: MarshMenno 2023 - 2024</copyright>
+  <navigation> <a onclick="redirect('home')"> Homepage</a>&NoBreak; -<a onclick="redirect('projects')">&NoBreak; Projects </a> </navigation>
+
   <body>
-    <div class="contain-flex">
-      <div class="container">
-        <div class="themes">
-          <button class="showThemes-btn" onclick="toggleThemes()">show themes</button>
-          <div class="theme-btns">
-            <button class="theme-btn" onclick="blue()">Blue</button>
-            <button class="theme-btn" onclick="pink()">Pink</button>
-            <button class="theme-btn" onclick="red()">Red</button>
-            <button class="theme-btn" onclick="green()">Green</button>
-            <button class="theme-btn" onclick="purple()">Purple</button>
-          </div>
-        </div>
-        <script src="/assets/js/themes.js"></script>
+    <div class='d'>
+      <h2>aRandomMenno.github.io (this website)</h2>
+      <p>
+        I initially made this website as a hobby project to learn html and css, but it grew and I am now also learning JavaScript, <br>
+        I rewrote this website many times and I think every time I did that the website got 'better'. <br>
+        I hope this is the last time I decided to rewrite my entire website.
+      </p>
+    </div>
 
-        <div class="header"><a href="https://www.youtube.com/watch?v=oseM5Zxgg78A" target="_blank" style="color: #ffffff; text-decoration: none; cursor: default;">
-          <span style="font-size: 50px;">Some of the things I have made.</span>
-        </div></a>
+    <div class='d'>
+      <h2>MarshMellow Bot (discord Bot)</h2>
+      <p>
+        This will be the main discord bot for my <a onclick="redirect('discord')">discord</a> server, <br>
+        If I ever feel like continuing working on the bot... :)
+      </p>
+    </div>
 
-        <div class="nav"><span style="font-size: 32px;">
-          <a href="/">Home</a> <b>•</b>
-          <a href="/projects">Projects</a> <b>•</b>
-          <a href="/playground">Playground</a> <b>•</b>
-          <a href="#">Soon™</a>
-        </span></div>
+    <div class='d'>
+      <p>
+        <h2>TappsBox (archived)</h2>
+        This is a small Python program that uses opencv-Python to find an image on screen move the mouse to it with PyAutoGUI and click on it. <br>
+        I rewrote this a couple of times because I found some new optimization technics. <br>
+        This project was archived by me because I don't feel like working om it anymore. if you want to optimize it further you mat fork it.
+      </p>
+    </div>
+    
+    <div><h2 style="margin: 26px; color: rgb(96, 255, 24);">Projects from other people:</h2></div>
 
-        <div class="site">
-          <h2>My website:</h2>
-          <p>
-            My website is my favorite project actually, this is because out of all projects I started, <br> 
-            which most of them I abandoned quickly without it ever seeing the light, I've spend the most time on it. <br>
-            This website is not the first look at html I've had, in high school first year I've had a small <br> 
-            bit of html lessons, but I forget them nearly instantly because I didn't do anything with it. <br>
-            <br><a href="https://github.com/aRandomMenno/aRandomMenno.github.io" target="_blank">Source code.</a>
-          </p>
-        </div>
-
-        <div class="dcBot">
-          <h2>My discord bot:</h2>
-          <p>
-            I've worked on this discord bot before but I couldn't get it work properly, so I stopped working on it. <br>
-            But now I actually think I am going to start working on it again in the near future. <br>
-            <br><a href="https://github.com/aRandomMenno/PixelPartyRobot" target="_blank">Source code.</a>
-          </p>
-        </div>
-
-        <div class="img">
-          <Img src="/assets/images/favicon.png" width="200px" height="200px"></Img>
-        </div>
-
-        <div class="taps">
-          <h2>TappsBox script:</h2>
-          <p>
-            This is a simple script will automatically click on the boxes in Tapps evolution games. <br>
-            I don't remember exactly but I think this was my first Python "project". <br>
-            I've actually stopped working on it and thats why I archived it on the github page. <br>
-            <br><a href="https://github.com/aRandomMenno/TappsBox" target="_blank">Source code.</a>
-          </p>
-        </div>
-
-        <div class="tmp" style="align-content: center;">
-          <h2>More coming soon™</h2>
-        </div>
-
-        <div class="footer">
-          &copy; Menno van Zoelen 2023&NonBreakingSpace;<b>•</b>&NonBreakingSpace;A random person in the Netherlands.
-        </div>
-      </div>
+    <div class='d'>
+      <h2> <a onclick="redirect('RiMusic')">RiMusic</a> by Fast4x</h2>
+      <p>
+        This is a music player, which is just an application which can play any video/music from YouTube (Music) <br>
+        It is a fork of <a onclick="redirect('ViMusic')">ViMusic</a> which is probably abandoned by it's creator/maintainer. <br>
+        This is my primary music app, the app also caches any music played so you can play your favorite songs offline for free! <br>
+        (In settings you can change the size of the cached songs so your device doesn't get filled up with only music.) <br>
+        I switched to ViMusic first (from Spotify), but after I found RiMusic I immediately switched to it. <br>
+      </p>
     </div>
   </body>
 </html>
