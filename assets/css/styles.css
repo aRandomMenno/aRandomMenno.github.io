@@ -94,6 +94,11 @@ h2 {
   margin: 0px;
   margin-bottom: 12px; margin-top: 12px;
 }
+h3 {
+  color: var(--color-title);
+  margin: 0px;
+  margin-bottom: 12px; margin-top: 12px;
+}
 
 p {
   margin: 0px;
