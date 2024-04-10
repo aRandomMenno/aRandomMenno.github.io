@@ -1,3 +1,4 @@
+
 @font-face {
   font-family: DKPorcupine;
   src: url(/assets/font/DKPorcupinePickle-VPG0.ttf);
@@ -20,7 +21,7 @@
 html {
   display: flex;
   justify-content: center;
-  margin-bottom: 72px; margin-top: 64px;
+  margin-top: 80px;
   line-break: strict;
   cursor: default;
   font-family: DKPorcupine;
@@ -29,16 +30,17 @@ html {
   font-weight: 600;
   color: var(--color-text);
   overflow-x: hidden;
+  letter-spacing: 2.5px;
 }
 
 body {
-  padding: 16px;
+  padding: 8px;
   margin: 8px;
   border-radius: 16px;
   background-image: url(/assets/img/galaxy.gif);
-  width: 100vw - 32px;
   height: auto;
   display: flex;
+  justify-content: center;
   flex-direction: column;
 }
 
@@ -46,9 +48,6 @@ button {
   background: var(--color-background);
   border: 2px solid var(--color-divBorder);
   border-radius: 16px;
-  
-  font-size: 24px;
-
   cursor: pointer;
   font-family: DKPorcupine;
   font-size: 24px;
@@ -77,8 +76,8 @@ a:hover {
 
 .d {
   margin: 8px;
-  padding: 16px;
-  padding-bottom: 20px; padding-top: 20px;
+  padding: 12px;
+  padding-bottom: 16px; padding-top: 16px;
   border: 2.5px solid var(--color-divBorder);
   border-radius: 8px;
 }
@@ -94,6 +93,7 @@ h2 {
   margin: 0px;
   margin-bottom: 12px; margin-top: 12px;
 }
+
 h3 {
   color: var(--color-title);
   margin: 0px;
@@ -122,7 +122,7 @@ copyright {
   left: 0;
   height: 64px;
   width: 100vw;
-  padding: 6px;
+  padding: 8px;
   background: var(--color-background);
   border-top: 3px solid rgb(205, 0, 49);
   justify-content: center;
@@ -131,26 +131,16 @@ copyright {
 
 navigation {
   display: flex;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   height: 64px;
   width: 100vw;
+  padding: 8px;
   background: var(--color-background);
   border-bottom: 3px solid rgb(205, 0, 49);
-
   justify-content: center;
   align-items: center;
-}
-
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: transparent;
-  background: rgba(255, 0, 0, 0.8);
-  border-radius: 12px;
 }
 
 ::-webkit-scrollbar {
@@ -159,21 +149,18 @@ navigation {
 
 @media only screen and (min-width: 1300px) {
   body {
-    width: 1100px;
+    width: 1200px;
   }
 }
 
 @media only screen and (max-width: 1299px ) {
   body {
-    width: 85vw;
+    width: 92.5vw;
   }
 }
 
-/* @media only screen and (max-width: 800px) {
-  copyright {
-    height: 96px;
-  }
-  html {
-    margin-bottom: 96px;
-  }
-} */
+.d404 {
+  padding: 32px;
+  font-size: 32px;
+  line-height: 48px;
+}
