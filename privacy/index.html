@@ -4,7 +4,7 @@
 <html lang='en-US'>
   <head>
     <!-- & Embed thingies. -->
-    <meta content="MarshMenno's palace" property='og:title'>
+    <meta content='MarshMenno's palace' property='og:title'>
     <meta property='og:type' content='website'>
     <meta content='A random palace on the internet I made.' property='og:description'>
     <meta content='https://aRandomMenno.github.io/' property='og:url'>
@@ -17,6 +17,8 @@
 
     <!-- & JS stuff. -->
     <script src='/assets/js/redirect.js' defer></script>
+    <script src='/assets/js/userAgent.js' defer></script>
+    <script>console.error('%cI kindly request that you do not mess with my discord webhook. Thank you!', 'font-size: 48px; font-weight: 600; padding: 16px; color: violet;');</script>
 
     <!-- & METADATA. -->
     <meta charset='UTF-8' />
@@ -37,12 +39,12 @@
     </div>
     
     <div class='d'>
-      2. Send the information mentioned above to a website (<a onclick="redirect('yt')">vercel.app</a>) which will send a
+      2. Send the information mentioned above to a website (<a onclick='redirect("yt")'>vercel.app</a>) which will send a
       fancy embed in my discord server.
     </div>
     
     <div class='d'>
-      <span id='notAccepted'>Do you accept? <button onclick='acceptPrivacy("privacy")'>Yes</button></span><span id='accepted' style='display: none;'>You agreed to my privacy policy! :0</span>
+      <span id='notAccepted'>Do you accept? <button onclick='acceptPrivacy()'>Yes</button></span><span id='accepted' style='display: none;'>You agreed to my privacy policy! :0  You can go to the <a onclick='redirect("home")'>homepage</a>.</span>
     </div>
   </body>
 </html>

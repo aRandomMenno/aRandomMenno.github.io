@@ -4,7 +4,7 @@ function redirect(place) {
   if (place == 'home') { window.location.href = 'https://aRandomMenno.github.io' }
   if (place == 'projects') { window.location.href = 'https://aRandomMenno.github.io/projects' }
   if (place == 'privacy') { window.location.href = 'https://aRandomMenno.github.io/privacy' }
-  if (place == 'blog') { window.location.href = 'https://aRandomMenno.github.io/blog';}
+  if (place == 'blog') { window.location.href = 'https://aRandomMenno.github.io/blog' }
   if (place == 'Spijkenisse') { window.open('https://en.wikipedia.org/wiki/Spijkenisse', '_blank') }
   if (place == 'Finland') { window.open('https://en.wikipedia.org/wiki/Finland', '_blank') }
   if (place == 'github') { window.open('https://github.com/arandomMenno/', '_blank') }
@@ -15,5 +15,5 @@ function redirect(place) {
 }
 
 function april2024(place) {
-  if (place == 10) { window.open('https://aRandomMenno.github.io/blog/2024/april/10') }
+  if (place == 10) { window.location.href = 'https://aRandomMenno.github.io/blog/2024/april/10' }
 }

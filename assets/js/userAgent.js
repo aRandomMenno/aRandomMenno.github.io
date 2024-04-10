@@ -1,7 +1,5 @@
 
 const privacyAccept = localStorage.getItem('privacyAccept');
-const linkLoc = window.location
-console.log(linkLoc)
 
 if (privacyAccept === null) {
   localStorage.setItem('privacyAccept', 'false');
@@ -21,20 +19,9 @@ if (privacyAccept === null) {
   localStorage.setItem('privacyAccept', 'false');
 }
 
-function acceptPrivacy(page) {
-  if (page == 'home') {
-    const redacted = document.getElementById('redacted')
-    redacted.remove();
-    localStorage.setItem('privacyAccept', 'true');
-    location.reload();
-  } else if (page == 'privacy') {
-    const notAccepted = document.getElementById('notAccepted');
-    const Accepted = document.getElementById('accepted');
-    localStorage.setItem('privacyAccept', 'true');
-    notAccepted.style.display = 'none';
-    Accepted.style.display = 'unset';
-    location.reload();
-  }
+function acceptPrivacy() {
+  localStorage.setItem('privacyAccept', 'true');
+  location.reload();
 }
 
 let userAgent = navigator.userAgent;
@@ -51,20 +38,16 @@ if (privacyAccept == 'true') {
     let visits = Number(localStorage.getItem('visits'));
     let visitsNew = visits + 1;
     localStorage.setItem('visits', visitsNew);
-  }
-
-  if (UID === null) {
+  } if (UID === null) {
     let UID = crypto.randomUUID();
     localStorage.setItem('UID', UID);
-  }
-
-  if (DNT == 1) {
+  } if (DNT == 1) {
     localStorage.setItem('DNT', 'true');
   } else {
     localStorage.setItem('DNT', 'false');
   }
 } else {
-  console.log('has not yet agreed to privacy policy.');
+  console.warn('User has not yet agreed to privacy policy.');
 }
 
 if (/Windows|Win64|Win32/i.test(userAgent)) {
@@ -83,26 +66,26 @@ if (/Windows|Win64|Win32/i.test(userAgent)) {
   OS = 'iPadOS';
 }
 
-// Connect to a Vercel app and check for the unique UID with some IDfk.
+const DISCORD_WEBHOOK = 'aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTIyNzY4MjExMjY2MDgzNjQzMy9uaVV2OU8zRmYycmZoMlFMX2ZDZm5NNkZsaEkxdjBzNVdjZjNKb19LRFBpVmxVd2xvSnB4M0JaaTBaUWlCX3NhaVlyQw';
 
-// if (/aRandomMenno/i.test(userAgent)) {
-//   console.log('[INFO] No embed send!');
-// } else {
-//   let data = {
-//     'embeds':
-//       [{
-//         'title': 'A visitor has just visited my website!',
-//         'description': `User Agent: ${userAgent} \n\nDo not track: ${DNT} \nLanguage: ${lang} \nOperating System: ${OS}\nVisit count: ${visits} \nUnique UID: ${UID}`,
-//         'color': 9055202
-//       }]
-//   };
-//   fetch(atob(https://vercel.app/), {
-//     method: 'POST',
-//     headers: { 'Content-Type': 'application/json' },
-//     body: JSON.stringify(data)
-//   })
-//   .then(response => console.log('Success:', response))
-//   .catch(error => console.error('Error:', error));
-// }
+if (/MarshMenno/i.test(userAgent)) {
+  console.log('[INFO] No embed send!');
+} else {
+  let data = {
+    'embeds':
+      [{
+        'title': 'A visitor found my website!',
+        'description': `User Agent: ${userAgent} \n\nDo not track: ${DNT} \nLanguage: ${lang} \nOperating System: ${OS}\nVisit count: ${visits} \nUnique UID: ${UID}`,
+        'color': 15277667
+      }]
+  };
+  fetch(atob(DISCORD_WEBHOOK), {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(data)
+  })
+  .then(response => console.log('Success:', response))
+  .catch(error => console.error('Error:', error));
+}
 
 console.log('[INFO] Executed userAgent.js');
