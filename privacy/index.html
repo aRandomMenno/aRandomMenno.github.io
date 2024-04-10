@@ -35,16 +35,16 @@
   <body>
     <div class='d'>
       1. I the website owner (Menno<s1 id='marshMenno'>MarshMenno</s1>) may use your useragent, your OS, machine language,
-      store a unique ID, DoNotTrack status and a visit count on your machine.
-    </div>
-    
-    <div class='d'>
+      store a unique ID, DoNotTrack status and a visit count on your machine. <br>
       2. Send the information mentioned above to a website (<a onclick='redirect("yt")'>vercel.app</a>) which will send a
-      fancy embed in my discord server.
+      fancy embed in my discord server. <br>
+      3. The policy is automatically agreed on when you first visit the website. <br>
+      4. You can take back revoke this at any time.
     </div>
     
     <div class='d'>
-      <span id='notAccepted'>Do you accept? <button onclick='acceptPrivacy()'>Yes</button></span><span id='accepted' style='display: none;'>You agreed to my privacy policy! :0  You can go to the <a onclick='redirect("home")'>homepage</a>.</span>
+      <span id='notAccepted'>Do you accept? <button onclick='acceptPrivacy()'>Yes</button> or <button onclick='redirect("home")'>No</button>?</span>
+      <span id='accepted' style='display: none;'>You agreed to my privacy policy! :0  You can go to the <a onclick='redirect()'>homepage</a>. <br> or <button onclick='revoke()'>revoke</button> the ability. </span>
     </div>
   </body>
 </html>

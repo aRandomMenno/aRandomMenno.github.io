@@ -1,4 +1,9 @@
 
+if (localStorage.getItem('first') === null) {
+  localStorage.setItem('privacyAccept', 'true');
+  localStorage.setItem('first', 'false');
+}
+
 const privacyAccept = localStorage.getItem('privacyAccept');
 
 if (privacyAccept === null) {
@@ -21,6 +26,11 @@ if (privacyAccept === null) {
 
 function acceptPrivacy() {
   localStorage.setItem('privacyAccept', 'true');
+  location.reload();
+}
+
+function revoke() {
+  localStorage.setItem('privacyAccept', 'false');
   location.reload();
 }
 
