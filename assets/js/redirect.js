@@ -20,3 +20,5 @@ function redirect(place) {
 function april2024(place) {
   window.location.href = `https://aRandomMenno.github.io/blog/2024/april/${place}`;
 }
+
+console.log('Loaded redirect.js')
