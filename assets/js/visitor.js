@@ -75,7 +75,7 @@ var userAgent = navigator.userAgent;
 var lang = navigator.language;
 var OS = 'No OS found in user agent, maybe a niche linux distro or possibly a webcrawler.';
 
-if (window.location.href.toLowerCase() == 'https://arandommenno.github.io/' && privacy == 'true') {
+if (window.location.href.toLowerCase() == 'https://arandommenno.github.io' && privacy == 'true') {
   const WebhookLink = 'aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTIyNzY4MjExMjY2MDgzNjQzMy9uaVV2OU8zRmYycmZoMlFMX2ZDZm5NNkZsaEkxdjBzNVdjZjNKb19LRFBpVmxVd2xvSnB4M0JaaTBaUWlCX3NhaVlyQw';
   if (/MarshMenno/i.test(userAgent)) {
     console.log('No embed send, welcome it with many names! :)');
