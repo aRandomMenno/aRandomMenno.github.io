@@ -10,42 +10,42 @@ var UUID = localStorage.getItem('UUID');
 var visits = localStorage.getItem('visits');
 
 if (/Windows|Win64|Win32/i.test(userAgent)) {
-  OS = 'Windows';
+    OS = 'Windows';
 } else if (/Macintosh|MacIntel|MacPPC|Mac68K/i.test(userAgent)) {
-  OS = 'Mac OS';
+    OS = 'Mac OS';
 } else if (/Android/i.test(userAgent)) {
-  OS = 'Android';
+    OS = 'Android';
 } else if (/CrOS/i.test(userAgent)) {
-  OS = 'Chrome OS';
+    OS = 'Chrome OS';
 } else if (/Linux|X11/i.test(userAgent)) {
-  OS = 'Linux';
+    OS = 'Linux';
 } else if (/iPhone/i.test(userAgent)) {
-  OS = 'iOS';
+    OS = 'iOS';
 } else if (/iPad/i.test(userAgent)) {
-  OS = 'iPadOS';
+    OS = 'iPadOS';
 }
 
 const data = {
-'embeds':
-    [{
-        'title': 'A visitor found my website!',
-        'description': `User Agent: ${userAgent} \n\nDo not track: ${DNT} \nLanguage: ${lang} \nOperating System: ${OS}\nVisit count: ${visits} \nUUID: ${UUID}`,
-        'color': 15277667
-    }]
+    'embeds':
+        [{
+            'title': 'A visitor found my website!',
+            'description': `User Agent: ${userAgent} \n\nDo not track: ${DNT} \nLanguage: ${lang} \nOperating System: ${OS}\nVisit count: ${visits} \nUUID: ${UUID}`,
+            'color': 15277667
+        }]
 };
 
 const WebhookLink = 'aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTIyNzY4MjExMjY2MDgzNjQzMy9uaVV2OU8zRmYycmZoMlFMX2ZDZm5NNkZsaEkxdjBzNVdjZjNKb19LRFBpVmxVd2xvSnB4M0JaaTBaUWlCX3NhaVlyQw';
 if (/MarshMenno/i.test(userAgent)) {
-  console.info('No embed send, welcome it with many names! :)');
-  console.log(data)
+    console.info('No embed send, welcome it with many names! :)');
+    console.log(data)
 } else {
-  console.info(data)
-  fetch(atob(WebhookLink), {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(data)
-  })
-  .then(response => console.info('Success:', response))
-  .catch(error => console.error('Error:', error));
+    console.info(data)
+    fetch(atob(WebhookLink), {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+    })
+        .then(response => console.info('Success:', response))
+        .catch(error => console.error('Error:', error));
 }
 
