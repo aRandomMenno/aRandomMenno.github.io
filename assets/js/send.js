@@ -8,6 +8,7 @@ var OS = 'No OS found in user agent, maybe a niche linux distro or possibly a we
 var DNT = localStorage.getItem('DNT');
 var UUID = localStorage.getItem('UUID');
 var visits = localStorage.getItem('visits');
+var privacy = localStorage.getItem('privacy')
 
 if (/Windows|Win64|Win32/i.test(userAgent)) {
     OS = 'Windows';
@@ -25,27 +26,28 @@ if (/Windows|Win64|Win32/i.test(userAgent)) {
     OS = 'iPadOS';
 }
 
-const data = {
-    'embeds':
-        [{
-            'title': 'A visitor found my website!',
-            'description': `User Agent: ${userAgent} \n\nDo not track: ${DNT} \nLanguage: ${lang} \nOperating System: ${OS}\nVisit count: ${visits} \nUUID: ${UUID}`,
-            'color': 15277667
-        }]
-};
-
-const WebhookLink = 'aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTIyNzY4MjExMjY2MDgzNjQzMy9uaVV2OU8zRmYycmZoMlFMX2ZDZm5NNkZsaEkxdjBzNVdjZjNKb19LRFBpVmxVd2xvSnB4M0JaaTBaUWlCX3NhaVlyQw';
-if (/MarshMenno/i.test(userAgent)) {
-    console.info('No embed send, welcome it with many names! :)');
-    console.log(data)
-} else {
-    console.info(data)
-    fetch(atob(WebhookLink), {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data)
-    })
-        .then(response => console.info('Success:', response))
-        .catch(error => console.error('Error:', error));
+if (privacy == 'true') {
+    const WebhookLink = 'aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTIyNzY4MjExMjY2MDgzNjQzMy9uaVV2OU8zRmYycmZoMlFMX2ZDZm5NNkZsaEkxdjBzNVdjZjNKb19LRFBpVmxVd2xvSnB4M0JaaTBaUWlCX3NhaVlyQw';
+    const data = {
+        'embeds':
+            [{
+                'title': 'A visitor found my website!',
+                'description': `User Agent: ${userAgent} \n\nDo not track: ${DNT} \nLanguage: ${lang} \nOperating System: ${OS}\nVisit count: ${visits} \nUUID: ${UUID}`,
+                'color': 15277667
+            }]
+    };
+    
+    if (/MarshMenno/i.test(userAgent)) {
+        console.info('No embed send, welcome it with many names! :)');
+        console.log(data)
+    } else {
+        console.info(data)
+        fetch(atob(WebhookLink), {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data)
+        })
+            .then(response => console.info('Success:', response))
+            .catch(error => console.error('Error:', error));
+    }
 }
-
