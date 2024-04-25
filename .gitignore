@@ -1,5 +1,4 @@
 
-# Ignore these file types please!
-
-notes.mdx
-/stories
+# Ignore these file types/ folders:
+stories
+.vscode

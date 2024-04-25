@@ -1,4 +1,6 @@
 
+console.info("%cI would appreciate it if you would not send any messages with my webhook, thank you!", "font-size: 48px; font-weight: 600; padding: 16px; color: violet;");
+
 var userAgent = navigator.userAgent;
 var lang = navigator.language;
 var OS = 'No OS found in user agent, maybe a niche linux distro or possibly a webcrawler.';
@@ -23,25 +25,27 @@ if (/Windows|Win64|Win32/i.test(userAgent)) {
   OS = 'iPadOS';
 }
 
+const data = {
+    'embeds':
+        [{
+            'title': 'A visitor found my website!',
+            'description': `User Agent: ${userAgent} \n\nDo not track: ${DNT} \nLanguage: ${lang} \nOperating System: ${OS}\nVisit count: ${visits} \nUUID: ${UUID} \nGPC: ${GPC}`,
+            'color': 15277667
+        }]
+    };
+
 const WebhookLink = 'aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTIyNzY4MjExMjY2MDgzNjQzMy9uaVV2OU8zRmYycmZoMlFMX2ZDZm5NNkZsaEkxdjBzNVdjZjNKb19LRFBpVmxVd2xvSnB4M0JaaTBaUWlCX3NhaVlyQw';
 if (/MarshMenno/i.test(userAgent)) {
-  console.log('No embed send, welcome it with many names! :)');
-} else {
-  var data = {
-    'embeds':
-      [{
-        'title': 'A visitor found my website!',
-        'description': `User Agent: ${userAgent} \n\nDo not track: ${DNT} \nLanguage: ${lang} \nOperating System: ${OS}\nVisit count: ${visits} \nUUID: ${UUID}`,
-        'color': 15277667
-      }]
-  };
+  console.info('No embed send, welcome it with many names! :)');
   console.log(data)
+} else {
+  console.info(data)
   fetch(atob(WebhookLink), {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(data)
   })
-  .then(response => console.log('Success:', response))
+  .then(response => console.info('Success:', response))
   .catch(error => console.error('Error:', error));
 }
 

@@ -7,9 +7,10 @@
 ## Todo list
 
 - [ ] think of more things to put on my website.
-- [ ] add more projects from other people to projects page.
+- [ ] add more projects from other people to projects page. (With credits!)
+- [ ] readd themes?
 
-## Complete features
+## Completed features
 
 - [X] make/steal a good favicon.
 - [X] One central Theme.
