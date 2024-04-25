@@ -7,14 +7,8 @@ if (first == null) {
     console.info('Welcome back dear visitor!')
 }
 
-
-
 const privacy = localStorage.getItem('privacy');
 if (privacy == 'true') {
-    try {
-        const r = document.getElementById('redacted')
-        r.remove();
-    } catch (error) { }
     try {
         const a = document.getElementById('a');
         a.style.display = 'unset';

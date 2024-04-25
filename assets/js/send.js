@@ -26,13 +26,13 @@ if (/Windows|Win64|Win32/i.test(userAgent)) {
 }
 
 const data = {
-    'embeds':
-        [{
-            'title': 'A visitor found my website!',
-            'description': `User Agent: ${userAgent} \n\nDo not track: ${DNT} \nLanguage: ${lang} \nOperating System: ${OS}\nVisit count: ${visits} \nUUID: ${UUID} \nGPC: ${GPC}`,
-            'color': 15277667
-        }]
-    };
+'embeds':
+    [{
+        'title': 'A visitor found my website!',
+        'description': `User Agent: ${userAgent} \n\nDo not track: ${DNT} \nLanguage: ${lang} \nOperating System: ${OS}\nVisit count: ${visits} \nUUID: ${UUID}`,
+        'color': 15277667
+    }]
+};
 
 const WebhookLink = 'aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTIyNzY4MjExMjY2MDgzNjQzMy9uaVV2OU8zRmYycmZoMlFMX2ZDZm5NNkZsaEkxdjBzNVdjZjNKb19LRFBpVmxVd2xvSnB4M0JaaTBaUWlCX3NhaVlyQw';
 if (/MarshMenno/i.test(userAgent)) {
