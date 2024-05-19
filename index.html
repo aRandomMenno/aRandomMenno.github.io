@@ -20,6 +20,7 @@
     <script src='/assets/js/redirect.js' defer></script>
     <script src='/assets/js/send.js' defer></script>
     <script src='https://xandra.cc/safonts/webring.js' defer></script>
+    <script src="/assets/js/IDefinitelyDon'tHateChrome.js"></script>
 
     <!-- & METADATA. -->
     <meta charset='UTF-8'>
@@ -45,7 +46,7 @@
     &NonBreakingSpace;\&NonBreakingSpace;
 </navigation>
 
-<body>
+<body id='chrome-is-stupid'>
     <div class='d'>
         <p>
             Hi, I am Menno<s1 id='marshMenno'>MarshMenno</s1>, <br>
@@ -104,5 +105,14 @@
         my Github: <a onclick='redirect("github")'>press me!</a> <br>
     </div>
 </body>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var userAgent = navigator.userAgent.toLowerCase();
+        if (userAgent.includes('chrome')) {
+            document.querySelectorAll('.d').forEach(function(element) { element.style.marginBottom = '8px'; });
+        }
+    });
+</script>
 
 </html>

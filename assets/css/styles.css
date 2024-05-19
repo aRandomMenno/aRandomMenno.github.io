@@ -1,166 +1,190 @@
 
 @font-face {
-  font-family: DKPorcupine;
-  src: url(/assets/font/DKPorcupinePickle.ttf);
+    font-family: DKPorcupine;
+    src: url(/assets/font/DKPorcupinePickle.ttf);
 }
 
 :root {
-  --color-title: rgb(150, 60, 192);
-  --color-text: rgb(200, 60, 192);
-  --color-textLink: rgb(200, 96, 192);
-  --color-divBackground: rgb(128, 0, 255);
-  --color-divBorder: rgb(200, 200, 200);
+    --color-title: rgb(150, 60, 192);
+    --color-text: rgb(200, 60, 192);
+    --color-textLink: rgb(200, 96, 192);
+    --color-divBackground: rgb(128, 0, 255);
+    --color-divBorder: rgb(200, 200, 200);
 
-  --color-background: rgb(20, 0, 60);
+    --color-background: rgb(20, 0, 60);
 
-  --color-buttonBackground: rgb(20, 0, 60);
-  --color-buttonBackgroundHover: rgba(60, 0, 60, 0.6);
-  --color-buttonBorder: rgb(196, 24, 64);
+    --color-buttonBackground: rgb(20, 0, 60);
+    --color-buttonBackgroundHover: rgba(60, 0, 60, 0.6);
+    --color-buttonBorder: rgb(196, 24, 64);
 }
 
 html {
-  display: flex;
-  justify-content: center;
-  margin-top: 80px;
-  line-break: strict;
-  cursor: default;
-  font-family: DKPorcupine;
-  font-size: 24px;
-  line-height: 40px;
-  font-weight: 600;
-  color: var(--color-text);
-  overflow-x: hidden;
-  letter-spacing: 2.5px;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    line-break: strict;
+    cursor: default;
+    font-family: DKPorcupine;
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: 600;
+    color: var(--color-text);
+    overflow-x: hidden;
+    letter-spacing: 2.5px;
 }
 
 body {
-  padding: 8px;
-  margin: 8px;
-  border-radius: 16px;
-  background-image: url(/assets/img/galaxy.gif);
-  height: auto;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+    padding: 8px;
+    margin: 8px;
+    border-radius: 16px;
+    background-image: url(/assets/img/galaxy.gif);
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 88px; margin-bottom: 80px;
 }
 
 button {
-  background: var(--color-background);
-  border: 2px solid var(--color-divBorder);
-  border-radius: 16px;
-  cursor: pointer;
-  font-family: DKPorcupine;
-  font-size: 24px;
-  padding: 4px;
-  padding-left: 8px; padding-right: 8px;
-  font-weight: 600;
-  color: var(--color-text);
+    background: var(--color-background);
+    border: 2px solid var(--color-divBorder);
+    border-radius: 16px;
+    cursor: pointer;
+    font-family: DKPorcupine;
+    font-size: 24px;
+    padding: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-weight: 600;
+    color: var(--color-text);
 }
 
 button:hover {
-  background: var(--color-buttonBackgroundHover);
-  padding: 8px;
-  padding-left: 12px; padding-right: 12px;
+    background: var(--color-buttonBackgroundHover);
+    padding: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
 }
 
 a {
-  color: var(--color-textLink);
-  text-decoration: none;
+    color: var(--color-textLink);
+    text-decoration: none;
 }
 
 a:hover {
-  font-style: italic;
-  text-decoration: underline;
-  cursor: pointer;
+    font-style: italic;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .d {
-  margin: 8px;
-  padding: 12px;
-  padding-bottom: 16px; padding-top: 16px;
-  border: 2.5px solid var(--color-divBorder);
-  border-radius: 8px;
+    margin: 8px;
+    padding: 12px;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    border: 2.5px solid var(--color-divBorder);
+    border-radius: 8px;
 }
 
 s1 {
-  animation: rainbow 4s linear infinite;
-  vertical-align: super;
-  font-size: 16px;
+    animation: rainbow 4s linear infinite;
+    vertical-align: super;
+    font-size: 16px;
 }
 
 h2 {
-  color: var(--color-title);
-  margin: 0px;
-  margin-bottom: 12px; margin-top: 12px;
+    color: var(--color-title);
+    margin: 0px;
+    margin-bottom: 12px;
+    margin-top: 12px;
 }
 
 h3 {
-  color: var(--color-title);
-  margin: 0px;
-  margin-bottom: 12px; margin-top: 12px;
+    color: var(--color-title);
+    margin: 0px;
+    margin-bottom: 12px;
+    margin-top: 12px;
 }
 
 p {
-  margin: 0px;
-  margin-bottom: 4px; margin-top: 12px;
+    margin: 0px;
+    margin-bottom: 4px;
+    margin-top: 12px;
 }
 
 /* @ Maybe change to all sorts of green shades? */
 @keyframes rainbow {
-  0% { color: red; }
-  20% { color: orange; }
-  40% { color: yellow; }
-  60% { color: green; }
-  80% { color: blue; }
-  100% { color: violet; }
+    0% {
+        color: red;
+    }
+
+    20% {
+        color: orange;
+    }
+
+    40% {
+        color: yellow;
+    }
+
+    60% {
+        color: green;
+    }
+
+    80% {
+        color: blue;
+    }
+
+    100% {
+        color: violet;
+    }
 }
 
 copyright {
-  display: flex;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  height: 64px;
-  width: 100vw;
-  padding: 8px;
-  background: var(--color-background);
-  border-top: 3px solid rgb(205, 0, 49);
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 64px;
+    width: 100vw;
+    padding: 8px;
+    background: var(--color-background);
+    border-top: 3px solid rgb(205, 0, 49);
+    justify-content: center;
+    align-items: center;
 }
 
 navigation {
-  display: flex;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 64px;
-  width: 100vw;
-  padding: 8px;
-  background: var(--color-background);
-  border-bottom: 3px solid rgb(205, 0, 49);
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 64px;
+    width: 100vw;
+    padding: 8px;
+    background: var(--color-background);
+    border-bottom: 3px solid rgb(205, 0, 49);
+    justify-content: center;
+    align-items: center;
 }
 
 ::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
 @media only screen and (min-width: 1300px) {
-  body {
-    width: 1200px;
-  }
+    body {
+        width: 1200px;
+    }
 }
 
-@media only screen and (max-width: 1299px ) {
-  body {
-    width: 92.5vw;
-  }
+@media only screen and (max-width: 1299px) {
+    body {
+        width: 92.5vw;
+    }
 }
 
 .d404 {
-  padding: 32px;
-  font-size: 32px;
-  line-height: 48px;
+    padding: 32px;
+    font-size: 32px;
+    line-height: 48px;
 }

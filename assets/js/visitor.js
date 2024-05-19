@@ -1,5 +1,5 @@
 
-const first = localStorage.getItem('first')
+var first = localStorage.getItem('first')
 if (first == null) {
     localStorage.setItem('first', "false")
     localStorage.setItem('privacy', 'true')
@@ -7,19 +7,19 @@ if (first == null) {
     console.info('Welcome back dear visitor!')
 }
 
-const privacy = localStorage.getItem('privacy');
+var privacy = localStorage.getItem('privacy');
 if (privacy == 'true') {
     try {
-        const a = document.getElementById('a');
+        var a = document.getElementById('a');
         a.style.display = 'unset';
-        const b = document.getElementById('b');
+        var b = document.getElementById('b');
         b.style.display = 'none';
     } catch (error) { }
 } else if (privacy == 'false') {
     try {
-        const a = document.getElementById('a');
+        var a = document.getElementById('a');
         a.style.display = 'none';
-        const b = document.getElementById('b');
+        var b = document.getElementById('b');
         b.style.display = 'unset';
     } catch (error) { }
 }
