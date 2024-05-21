@@ -31,7 +31,7 @@ if (privacy == 'true') {
     var data = {
         'embeds':
             [{
-                'title': 'A someone or something has visited my website!',
+                'title': 'Someone or something has visited my website!',
                 'description': `User Agent: ${userAgent} \n\nDo not track: ${DNT} \nLanguage: ${lang} \nOperating System: ${OS}\nVisit count: ${visits} \nUUID: ${UUID}`,
                 'color': 15277667
             }]
