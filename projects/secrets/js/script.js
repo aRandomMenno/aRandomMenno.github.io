@@ -22,6 +22,8 @@ document.getElementById('encoderForm').addEventListener('submit', function(event
     }
 });
 
+// $ Test Comment for my extension!
+
 function encodeMessage(message, keyword) {
     const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%^&*()_+-=[]{}|;:,.<>?/'.toLowerCase();
     const keywordLength = keyword.length;
