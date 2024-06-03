@@ -1,4 +1,3 @@
-
 let first = localStorage.getItem('first')
 if (first == null) {
     localStorage.setItem('first', "false")
@@ -49,11 +48,11 @@ if (DNT == 1) {
     let DNT = localStorage.getItem('DNT');
 }
 
-function accept() {
+function okidoki() {
     localStorage.setItem('privacy', 'true');
     location.reload();
 }
-function revoke() {
+function nope() {
     localStorage.setItem('privacy', 'false');
     location.reload();
 }
