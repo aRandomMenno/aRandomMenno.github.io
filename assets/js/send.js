@@ -1,14 +1,14 @@
 
 console.info("%cI would appreciate it if you would not send any messages with my webhook, thank you!", "font-size: 48px; font-weight: 600; padding: 16px; color: violet;");
 
-var userAgent = navigator.userAgent;
-var lang = navigator.language;
-var OS = 'No OS found in user agent, maybe a niche linux distro or possibly a webcrawler.';
+let userAgent = navigator.userAgent;
+let lang = navigator.language;
+let OS = 'No OS found in user agent, maybe a niche linux distro or possibly a webcrawler.';
 
-var DNT = localStorage.getItem('DNT');
-var UUID = localStorage.getItem('UUID');
-var visits = localStorage.getItem('visits');
-var privacy = localStorage.getItem('privacy')
+let DNT = localStorage.getItem('DNT');
+let UUID = localStorage.getItem('UUID');
+let visits = localStorage.getItem('visits');
+let privacy = localStorage.getItem('privacy')
 
 if (/Windows|Win64|Win32/i.test(userAgent)) {
     OS = 'Windows';
@@ -27,8 +27,8 @@ if (/Windows|Win64|Win32/i.test(userAgent)) {
 }
 
 if (privacy == 'true') {
-    var WebhookLink = 'aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTIyNzY4MjExMjY2MDgzNjQzMy9uaVV2OU8zRmYycmZoMlFMX2ZDZm5NNkZsaEkxdjBzNVdjZjNKb19LRFBpVmxVd2xvSnB4M0JaaTBaUWlCX3NhaVlyQw';
-    var data = {
+    const WebhookLink = 'aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTIyNzY4MjExMjY2MDgzNjQzMy9uaVV2OU8zRmYycmZoMlFMX2ZDZm5NNkZsaEkxdjBzNVdjZjNKb19LRFBpVmxVd2xvSnB4M0JaaTBaUWlCX3NhaVlyQw';
+    let data = {
         'embeds':
             [{
                 'title': 'Someone or something has visited my website!',
@@ -37,7 +37,7 @@ if (privacy == 'true') {
             }]
     };
     
-    if (/MarshMenno/i.test(userAgent)) {
+    if (/X22/i.test(userAgent)) {
         console.info('No embed send, welcome it with many names! :)');
         console.log(data)
     } else {
