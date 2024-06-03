@@ -26,7 +26,7 @@
     <script src='/assets/js/redirect.js' defer></script>
     <script src='/assets/js/send.js' defer></script>
     <script src='https://xandra.cc/safonts/webring.js' defer></script>
-    <script src="/assets/js/IDefinitelyDon'tHateChrome.js"></script>
+    <script src="/assets/js/chrome.js"></script>
 
     <!-- & METADATA. -->
     <meta charset='UTF-8'>
@@ -49,10 +49,12 @@
     <a onclick='redirect("projects")'>Projects</a>
     &NonBreakingSpace;-&NonBreakingSpace;
     <a onclick='redirect("blog")'>Blog</a>
+    &NonBreakingSpace;-&NonBreakingSpace;
+    <a onclick='redirect("notes")'>Notes</a>
     &NonBreakingSpace;\&NonBreakingSpace;
 </navigation>
 
-<body id='chrome-is-stupid'>
+<body id='chrome'>
     <div class='d'>
         <p>
             Hi, I am Menno<s1>MarshMenno</s1>, <br>
@@ -111,14 +113,5 @@
         my Github: <a onclick='redirect("github")'>press me!</a> <br>
     </div>
 </body>
-
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        var userAgent = navigator.userAgent.toLowerCase();
-        if (userAgent.includes('chrome')) {
-            document.querySelectorAll('.d').forEach(function(element) { element.style.marginBottom = '8px'; });
-        }
-    });
-</script>
 
 </html>
