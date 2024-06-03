@@ -1,0 +1,56 @@
+
+@font-face {
+    font-family: My font;
+    src: url(/assets/font/DKPorcupinePickle.ttf);
+}
+
+:root {
+    --color-title: rgb(150, 60, 192);
+    --color-text: rgb(200, 60, 192);
+    --color-textLink: rgb(200, 96, 192);
+    --color-divBackground: rgb(128, 0, 255);
+    --color-divBorder: rgb(200, 200, 200);
+
+    --color-background: rgb(20, 0, 60);
+
+    --color-buttonBackground: rgb(20, 0, 60);
+    --color-buttonBackgroundHover: rgba(60, 0, 60, 0.6);
+    --color-buttonBorder: rgb(196, 24, 64);
+}
+
+textarea,
+input {
+    background: var(--color-background);
+    border: 2px solid var(--color-divBorder);
+    border-radius: 16px;
+    font-family: My font;
+    font-size: 24px;
+    padding: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-weight: 600;
+    color: var(--color-text);
+    max-width: 700px; min-width: 50px;
+    max-height: 400px; min-height: 150px;
+
+    margin-bottom: 24px;
+}
+input {
+    max-width: 700px; max-height: unset;
+    min-width: unset; min-height: unset;
+    width: 70vw;
+}
+
+button {
+    width: 128px;
+    height: 40px;
+}
+
+p {
+    border-radius: 16px;
+    font-family: My font;
+    font-size: 24px;
+    padding: 12px;
+    font-weight: 600;
+    color: var(--color-text);
+}

@@ -6,19 +6,20 @@
 
 ## Todo list
 
-- [ ] think of more things to put on my website.
-- [ ] add more projects from other people to projects page. (With credits!)
-- [ ] readd themes?
+- [ ] Think of more things to put on my website.
+- [ ] Add more projects from other people to projects page. (With credits!)
+- [ ] Readd themes?
 
 ## Completed features
 
-- [X] make/steal a good favicon.
+- [X] Make/steal a good favicon.
 - [X] One central Theme.
-- [X] Add discord server invite link & other socials.
-- [X] Add some sort of JavaScript. (see useragent.js)
 - [X] Find a niche font.
+- [X] Add discord server invite link & other socials.
+- [X] Add some sort of JavaScript. (see useragent.js and notes.js)
+- [X] There is now a page where you can makes notes to yourself. :)
 
 ## Old feature's
 
-- [X] add themes, like you can switch the colors of the divs from the current purple to for example orange. (was on an old version)
-- [X] testing page.
+- [X] Add themes, like you can switch the colors of the divs from the current purple to for example orange. (was on an old version)
+- [X] Testing page.
