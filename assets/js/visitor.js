@@ -1,3 +1,4 @@
+
 var first = localStorage.getItem('first')
 if (first == null) {
     localStorage.setItem('first', "false")
@@ -39,22 +40,14 @@ if (UUID == null) {
     localStorage.setItem('UUID', UUID);
 }
 
-var DNT = navigator.doNotTrack;
-if (DNT == 1) {
-    localStorage.setItem('DNT', 'true');
-    var DNT = localStorage.getItem('DNT');
-} else {
-    localStorage.setItem('DNT', 'false');
-    var DNT = localStorage.getItem('DNT');
-}
-
-function okidoki() {
-    localStorage.setItem('privacy', 'true');
-    location.reload();
-}
-function nope() {
-    localStorage.setItem('privacy', 'false');
-    location.reload();
-}
+// @ deprecated apparently...
+// var DNT = navigator.doNotTrack;
+// if (DNT == 1) {
+//     localStorage.setItem('DNT', 'true');
+//     var DNT = localStorage.getItem('DNT');
+// } else {
+//     localStorage.setItem('DNT', 'false');
+//     var DNT = localStorage.getItem('DNT');
+// }
 
 console.info('Loaded visitor.js');

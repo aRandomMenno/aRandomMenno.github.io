@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang='en-US'>
+<html lang='en-US' style="overflow: hidden;">
 
 <head>
     <!-- & Embed thingies. -->
@@ -14,17 +14,19 @@
 
     <!-- & CSS stuff. -->
     <link rel='stylesheet' href='/assets/css/styles.css'>
-    <!-- ! Browsers are stupid... -->
-    <style>
-        body {
-            margin-bottom: 88px;
-        }
-    </style>
 
     <!-- & JS stuff. -->
     <script src='/assets/js/redirect.js' defer></script>
-    <script src='/assets/js/visitor.js' defer></script>
-    <script src="/assets/js/chrome.js"></script>
+    <script>
+        function okidoki() {
+            localStorage.setItem('privacy', 'true');
+            location.reload();
+        }
+        function nope() {
+            localStorage.setItem('privacy', 'false');
+            location.reload();
+        }
+    </script>
 
     <!-- & METADATA. -->
     <meta charset='UTF-8'>
@@ -36,9 +38,8 @@
     <title>MarshMellow • Privacy</title>
 </head>
 
-<navigation> The Privacy Policy. </navigation>
 
-<copyright>
+<navigation>
     &NonBreakingSpace;\&NonBreakingSpace;
     <a onclick='redirect("home")'>Homepage</a>
     &NonBreakingSpace;-&NonBreakingSpace;
@@ -48,26 +49,30 @@
     &NonBreakingSpace;-&NonBreakingSpace;
     <a onclick='redirect("notes")'>Notes</a>
     &NonBreakingSpace;/&NonBreakingSpace;
-</copyright>
+</navigation>
 
 <body id='chrome'>
-    <div class='d'>
-        <p>
-            By visiting this website you agree to the following: <br>
-            1. I may Store a UUID in the local storage of the browser. <br>
-            2. I may Store your do not track me status in the local storage of the browser. <br>
-            3. I may use your useragent. <br>
-            4. I may store a visit count in the local storage of the browser. <br>
-            5. I may send the data mentioned above to a discord channel which you can view by joining my discord.
-        </p>
-    </div>
+    <div class='temp'>
+        <div class='d'>
+            <p>
+                By visiting this website you agree to the following: <br>
+                1. I may Store a UUID in the local storage of the browser. <br>
+                2. I may Store your do not track me status in the local storage of the browser. <br>
+                3. I may use your useragent. <br>
+                4. I may store a visit count in the local storage of the browser. <br>
+                5. I may send the data mentioned above to a discord channel which you can view by joining my discord.
+            </p>
+        </div>
 
-    <div class='d'>
-        <p>
-            <span id='a'> If you don't agree <button onclick='nope()'>Revoke</button> else, do nothing. </span>
-            <span id='b' style='display: none;'>Changed your mind? <button onclick='okidoki()'>Accept</button></span>
-        </p>
+        <div class='d'>
+            <p>
+                <span id='a'> If you don't agree <button onclick='nope()'>Revoke</button> else, do nothing. </span>
+                <span id='b' style='display: none;'>Changed your mind? <button onclick='okidoki()'>Accept</button></span>
+            </p>
+        </div>
     </div>
+    <copyright> The Privacy Policy. </copyright>
 </body>
+
 
 </html>

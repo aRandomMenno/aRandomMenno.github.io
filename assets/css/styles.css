@@ -5,14 +5,12 @@
 }
 
 :root {
+    --color-background: rgb(20, 0, 60);
     --color-title: rgb(150, 60, 192);
     --color-text: rgb(200, 60, 192);
     --color-textLink: rgb(200, 96, 192);
     --color-divBackground: rgb(128, 0, 255);
     --color-divBorder: rgb(200, 200, 200);
-
-    --color-background: rgb(20, 0, 60);
-
     --color-buttonBackground: rgb(20, 0, 60);
     --color-buttonBackgroundHover: rgba(60, 0, 60, 0.6);
     --color-buttonBorder: rgb(196, 24, 64);
@@ -22,6 +20,7 @@ html {
     display: flex;
     justify-content: center;
     margin: 0;
+    padding: 0;
     line-break: strict;
     cursor: default;
     font-family: My font;
@@ -29,21 +28,21 @@ html {
     line-height: 40px;
     font-weight: 600;
     color: var(--color-text);
-    overflow-x: hidden;
     letter-spacing: 2.5px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 
 body {
-    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     margin: 8px;
+    padding: 8px;
     border-radius: 16px;
     background-image: url(/assets/img/galaxy.gif);
-    height: auto;
-    display: flex;
-
-    flex-direction: column;
-    margin-top: 88px;
-    min-height: 100vh;
+    width: 92.5vw; 
+    max-width: 1200px;
 }
 
 button {
@@ -81,6 +80,12 @@ a:hover {
     padding-top: 16px;
     border: 2.5px solid var(--color-divBorder);
     border-radius: 8px;
+}
+
+.temp {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0.96;
 }
 
 s1 {
@@ -137,47 +142,34 @@ p {
 }
 
 copyright {
-    display: flex;
-    position: fixed;
-    bottom: 0;
-    left: 0;
+    margin-bottom: -16px;
     height: 64px;
-    width: 100vw;
-    padding: 8px;
+    width: 92.5vw; max-width: 1200px;
     background: var(--color-background);
     border-top: 3px solid rgb(205, 0, 49);
+    border-left: 3px solid rgb(205, 0, 49); border-right: 3px solid rgb(205, 0, 49);
+    border-top-left-radius: 16px; border-top-right-radius: 16px;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
 navigation {
-    display: flex;
-    position: absolute;
-    top: 0;
-    left: 0;
+    margin-top: -16px;
     height: 64px;
-    width: 100vw;
-    padding: 8px;
+    width: 92.5vw; max-width: 1200px;
+    /* padding: 8px; */
     background: var(--color-background);
     border-bottom: 3px solid rgb(205, 0, 49);
+    border-left: 3px solid rgb(205, 0, 49); border-right: 3px solid rgb(205, 0, 49);
+    border-bottom-left-radius: 16px; border-bottom-right-radius: 16px;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
 ::-webkit-scrollbar {
     display: none;
-}
-
-@media only screen and (min-width: 1300px) {
-    body {
-        width: 1200px;
-    }
-}
-
-@media only screen and (max-width: 1299px) {
-    body {
-        width: 92.5vw;
-    }
 }
 
 .d404 {
