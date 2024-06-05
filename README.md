@@ -7,6 +7,7 @@
 ## Todo list
 
 - [ ] Think of more things to put on my website.
+- [ ] Add a guest book?
 - [ ] Add more projects from other people to projects page. (With credits!)
 - [ ] Readd themes?
 
@@ -16,7 +17,7 @@
 - [X] One central Theme.
 - [X] Find a niche font.
 - [X] Add discord server invite link & other socials.
-- [X] Add some sort of JavaScript. (see useragent.js and notes.js)
+- [X] Add some sort of JavaScript. (see assets/js)
 - [X] There is now a page where you can makes notes to yourself. :)
 
 ## Old feature's
