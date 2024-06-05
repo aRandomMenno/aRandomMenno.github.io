@@ -7,7 +7,6 @@
 ## Todo list
 
 - [ ] Think of more things to put on my website.
-- [ ] Add a guest book?
 - [ ] Add more projects from other people to projects page. (With credits!)
 - [ ] Readd themes?
 
@@ -19,6 +18,7 @@
 - [X] Add discord server invite link & other socials.
 - [X] Add some sort of JavaScript. (see assets/js)
 - [X] There is now a page where you can makes notes to yourself. :)
+- [X] Add a guest book. thank you [Astral](https://astralvrz.github.io/)!
 
 ## Old feature's
 

@@ -5,15 +5,15 @@
 }
 
 :root {
-    --color-background: rgb(20, 0, 60);
-    --color-title: rgb(150, 60, 192);
-    --color-text: rgb(200, 60, 192);
-    --color-textLink: rgb(200, 96, 192);
-    --color-divBackground: rgb(128, 0, 255);
-    --color-divBorder: rgb(200, 200, 200);
-    --color-buttonBackground: rgb(20, 0, 60);
-    --color-buttonBackgroundHover: rgba(60, 0, 60, 0.6);
-    --color-buttonBorder: rgb(196, 24, 64);
+    --color-background: #14003c;
+    --color-title: #963cc0;
+    --color-text: #c83cc0;
+    --color-textLink: #c860c0;
+    --color-divBackground: #8000ff;
+    --color-divBorder: #c8c8c8;
+    --color-buttonBackground: #14003c;
+    --color-buttonBackgroundHover: #3c003c99;
+    --color-buttonBorder: #c41840;
 }
 
 html {
