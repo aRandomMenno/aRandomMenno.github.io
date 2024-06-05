@@ -55,5 +55,5 @@ try {
         updateUI();
     }
 } catch (error) {
-    console.error(`Error loading notes.js _> ${error}`);
+    console.error(`Error loading notes.js -> ${error}`);
 }
