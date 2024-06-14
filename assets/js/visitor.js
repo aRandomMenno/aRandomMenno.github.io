@@ -7,23 +7,6 @@ if (first == null) {
     console.info('Welcome back dear visitor!')
 }
 
-var privacy = localStorage.getItem('privacy');
-if (privacy == 'true') {
-    try {
-        var a = document.getElementById('a');
-        a.style.display = 'unset';
-        var b = document.getElementById('b');
-        b.style.display = 'none';
-    } catch (error) { }
-} else if (privacy == 'false') {
-    try {
-        var a = document.getElementById('a');
-        a.style.display = 'none';
-        var b = document.getElementById('b');
-        b.style.display = 'unset';
-    } catch (error) { }
-}
-
 var visits = localStorage.getItem('visits');
 if (visits == null) {
     localStorage.setItem('visits', '1');
@@ -34,20 +17,9 @@ if (visits == null) {
     localStorage.setItem('visits', visitsNew);
 }
 
-var UUID = localStorage.getItem('UUID');
 if (UUID == null) {
-    var UUID = crypto.randomUUID();
+    var UUID = localStorage.getItem('UUID') || crypto.randomUUID();
     localStorage.setItem('UUID', UUID);
 }
-
-// @ deprecated apparently...
-// var DNT = navigator.doNotTrack;
-// if (DNT == 1) {
-//     localStorage.setItem('DNT', 'true');
-//     var DNT = localStorage.getItem('DNT');
-// } else {
-//     localStorage.setItem('DNT', 'false');
-//     var DNT = localStorage.getItem('DNT');
-// }
 
 console.info('Loaded visitor.js');

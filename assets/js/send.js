@@ -1,13 +1,13 @@
 
 const WebhookLink = 'aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTIyNzY4MjExMjY2MDgzNjQzMy9uaVV2OU8zRmYycmZoMlFMX2ZDZm5NNkZsaEkxdjBzNVdjZjNKb19LRFBpVmxVd2xvSnB4M0JaaTBaUWlCX3NhaVlyQw==';
-console.info("%cI would appreciate it if you would not send any messages with my webhook, thank you!", "font-size: 48px; font-weight: 600; padding: 16px; color: violet;");
+console.info("%cI would appreciate it if you would not send any messages with my webhook, thank you! and let me know if there is a better way to hide the webhook link.", "font-size: 24px; font-weight: 600; padding: 16px; color: violet;");
 
 var userAgent = navigator.userAgent;
 var lang = navigator.languages;
 var OS = 'No OS found in user agent, maybe a niche linux distro or possibly a webcrawler.';
 
-// @ Global Privacy Control is not supported every! (most browsers...)
-var GPC =navigator.globalPrivacyControl;
+// @ Global Privacy Control is not supported everywhere! (most browsers don't only firefox...)
+var GPC = navigator.globalPrivacyControl;
 var UUID = localStorage.getItem('UUID');
 var visits = localStorage.getItem('visits');
 var privacy = localStorage.getItem('privacy')
@@ -29,25 +29,37 @@ if (/Windows|Win64|Win32/i.test(userAgent)) {
 }
 
 if (privacy == 'true') {
-    var data = {
-        'embeds':
-            [{
-                'title': 'Someone or something has visited my website!',
-                'description': `User Agent -> ${userAgent} \n\nGlobal Privacy Control -> ${GPC} \nLanguage(s) -> ${lang} \nOperating System -> ${OS}\nVisit count -> ${visits} \nUUID -> ${UUID}`,
-                'color': 15277667
-            }]
-    };
     if (/X22/i.test(userAgent)) {
         console.info('No embed send, welcome it with many names! :)');
-        console.log(data)
-    } else {
-        console.info(data)
-        fetch(atob(WebhookLink), {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(data)
-        })
-            .then(response => console.info('Success:', response))
-            .catch(error => console.error('Error:', error));
     }
+    
+    else if (GPC == true) {
+        var data = {
+            'embeds':
+                [{
+                    'title': 'Someone or something has visited my website!',
+                    'description': `User Agent -> ${userAgent} \n\nLanguage(s) -> ${lang} \nOperating System -> ${OS}\nVisit count -> ${visits} \nUUID -> REDACTED`,
+                    'color': 15277667
+                }]
+        };
+    }
+    
+    else {
+        var data = {
+            'embeds':
+                [{
+                    'title': 'Someone or something has visited my website!',
+                    'description': `User Agent -> ${userAgent} \n\nLanguage(s) -> ${lang} \nOperating System -> ${OS}\nVisit count -> ${visits} \nUUID -> ${UUID}`,
+                    'color': 15277667
+                }]
+        };
+    }
+    console.info(data)
+    fetch(atob(WebhookLink), {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+    })
+    .then(response => console.info('Success:', response))
+    .catch(error => console.error('Error:', error));
 }
