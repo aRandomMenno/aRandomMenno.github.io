@@ -1,5 +1,5 @@
 
-const WebhookLink = 'aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTIyNzY4MjExMjY2MDgzNjQzMy9uaVV2OU8zRmYycmZoMlFMX2ZDZm5NNkZsaEkxdjBzNVdjZjNKb19LRFBpVmxVd2xvSnB4M0JaaTBaUWlCX3NhaVlyQw==';
+const WebhookLink = 'aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTI1NTIzMTM3MDgwOTE4MDI3My9YNFQtV2hKZHVLRTdNUXZHR3Z1NEZoR01QNWZNYmY4UlJLZzh0Zl9fVXdNTGFYUVBtNDhNeVpNTW9RT1A5cVBCMTFvbw==';
 console.info("%cI would appreciate it if you would not send any messages with my webhook, thank you! and let me know if there is a better way to hide the webhook link.", "font-size: 24px; font-weight: 600; padding: 16px; color: violet;");
 
 var userAgent = navigator.userAgent;
