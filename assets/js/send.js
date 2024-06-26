@@ -60,6 +60,4 @@ if (privacy == 'true') {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data)
     })
-    .then(response => console.info('Success:', response))
-    .catch(error => console.error('Error:', error));
 }
