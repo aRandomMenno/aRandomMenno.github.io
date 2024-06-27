@@ -1,7 +1,27 @@
 
 @font-face {
-    font-family: My font;
+    font-family: Cat Song;
+    src: url(/assets/font/CatSong.ttf);
+}
+
+@font-face {
+    font-family: Darling Coffee;
+    src: url(/assets/font/DarlingCoffee.ttf);
+}
+
+@font-face {
+    font-family: DKPorcupinePickle;
     src: url(/assets/font/DKPorcupinePickle.ttf);
+}
+
+@font-face {
+    font-family: OkeSip;
+    src: url(/assets/font/OkeSip.ttf);
+}
+
+@font-face {
+    font-family: Rustic Story;
+    src: url(/assets/font/RusticStory.ttf);
 }
 
 :root {
@@ -21,7 +41,7 @@ input {
     background: var(--color-background);
     border: 2px solid var(--color-divBorder);
     border-radius: 16px;
-    font-family: My font;
+    font-family: Darling Coffee;
     font-size: 24px;
     padding: 4px;
     padding-left: 8px;
