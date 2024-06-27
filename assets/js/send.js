@@ -38,7 +38,7 @@ if (privacy == 'true') {
             'embeds':
                 [{
                     'title': 'Someone or something has visited my website!',
-                    'description': `User Agent -> ${userAgent} \n\nLanguage(s) -> ${lang} \nOperating System -> ${OS}\nVisit count -> ${visits} \nUUID -> REDACTED`,
+                    'description': `User Agent -> ${userAgent} \n\nLanguage(s) -> ${lang} \nOperating System -> ${OS}\nUser has GlobalPrivacyControl turned on.`,
                     'color': 15277667
                 }]
         };
