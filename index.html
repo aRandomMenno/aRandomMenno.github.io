@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 
+<div id="messageBox" class="message-box hidden">
+    <p>
+        Your screen width is less than 630 pixels, you may not view this page, due to rendering issues on low resolution screens. <br>
+        <br>
+        You should turn on desktop mode... to view this webpage, or make the window bigger, sorry if your screen just isn't big enough.
+    </p>
+</div>
+<script src="/assets/js/screenWidth.js"></script>
+
 <html lang='en-US'>
+
+<!-- <script> 
+// console.info(navigator.language)
+// let a = navigator.language.split('-')[0]
+// if (a = 'nl') { window.location.href = '/nl'; } 
+</script> -->
 
 <head>
     <!-- & Embed thingies. -->
@@ -32,15 +47,15 @@
 </head>
 
 <navigation>
-    &NonBreakingSpace;/&NonBreakingSpace;
+    &nbsp; / &nbsp;
     <a onclick='redirect("home")'>Homepage</a>
-    &NonBreakingSpace;-&NonBreakingSpace;
+    &nbsp; | &nbsp;
     <a onclick='redirect("projects")'>Projects</a>
-    &NonBreakingSpace;-&NonBreakingSpace;
+    &nbsp; | &nbsp;
     <a onclick='redirect("blog")'>Blog</a>
-    &NonBreakingSpace;-&NonBreakingSpace;
+    &nbsp; | &nbsp;
     <a onclick='redirect("notes")'>Notes</a>
-    &NonBreakingSpace;\&NonBreakingSpace;
+    &nbsp; \ &nbsp;
 </navigation>
 
 <body id='chrome'>
@@ -91,8 +106,8 @@
     <div class='d'>
         In the future when I am working etc, I would like to emigrate to
         <a onclick='redirect("Finland")'>Finland</a>, the reason for this is because I think it is a
-        very interesting country, and in the winter there is a lot of snow! and in the Netherlands we almost never get
-        snow these days.
+        very interesting country, and in the winter there is a lot of snow! 
+        and in the Netherlands we almost never get snow these days.
     </div>
 
     <div class='d'>
@@ -107,8 +122,7 @@
 </body>
 
 <copyright>
-    Copyright: MarshMenno 2023 - 2024 ||&NonBreakingSpace;
-    <a onclick='redirect("privacy")'>privacy policy</a>.
+    Copyright: MarshMenno 2023 - 2024 ||&nbsp; <a onclick='redirect("privacy")'>privacy policy</a>.
 </copyright>
 
 </html>

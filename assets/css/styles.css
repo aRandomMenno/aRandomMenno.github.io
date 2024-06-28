@@ -188,12 +188,26 @@ navigation {
     align-items: center;
 }
 
-::-webkit-scrollbar {
+.d404 {
+    padding: 16px;
+    font-size: 24px;
+    line-height: 40px;
+}
+
+.message-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url(/assets/img/galaxy.gif);
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 50%;
+}
+
+.hidden {
     display: none;
 }
 
-.d404 {
-    padding: 32px;
-    font-size: 32px;
-    line-height: 48px;
-}

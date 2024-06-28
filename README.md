@@ -9,8 +9,10 @@
 - [ ] Think of more things to put on my website.
 - [ ] Add more projects from other people to projects page. (With credits!)
 - [ ] Readd themes?
+- [ ] Customize the webring in the readme for profile on github... (why here? IDGAS)
 
 ## Completed features
+
 
 - [X] Make/steal a good favicon.
 - [X] One central Theme.
