@@ -65,6 +65,10 @@ h2 {
     /* @  animation: rainbow 5000ms linear infinite; too distracting? */
 }
 
+h3 {
+    margin-top: 32px;
+}
+
 .contain {
     /* border: 2px solid var(--color-debug); */
     display: flex;

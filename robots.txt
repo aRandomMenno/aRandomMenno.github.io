@@ -1,7 +1,5 @@
-# Block GPTBot
 User-agent: GPTBot
 Disallow: /
 
-# Allow all other crawlers
 User-agent: *
 Disallow:
