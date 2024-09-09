@@ -100,14 +100,15 @@ h3 {
     display: block;
     text-align: left;
     margin: 6px;
-    margin-top: 20px;
-    padding-right: 20px;
+    margin-top: 32px;
+    padding-right: 32px;
     border-left: 3px var(--color-divBorder) dotted;
 }
 
 .img {
-    margin: 24px;
-    margin-bottom: 8px;
+    margin: 8px;
+    margin-right: 0;
+
     border: var(--color-divBorder) 3px solid;
     border-radius: 12px;
 }
