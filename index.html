@@ -25,11 +25,11 @@
     let va = navigator.language;
     va = va.toLowerCase().split("-")[0];
     if (va === "nl") {
-        window.location.href = "/languages?message=language+not+yet+supported.";
+        window.location.href = "/nl/.";
     } else if (va === "en") {
         window.location.href = "/en/";
     } else {
-        window.location.href = "/languages?error=no+language+found+in+useragent.";
+        window.location.href = "/languages/?error=could+not+automatically+determine+language.";
         // Implement the error message.
     }
 </script>
