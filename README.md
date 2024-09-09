@@ -8,6 +8,12 @@
 
 It now is "minimalistic", lightweight, and has less javascript than before.
 
+## To do list
+
+- [X] Add Dutch translation.
+- [ ] Add different UI for mobile. <!-- @ hamburger menu for the nav? -->
+- [ ] Figure out signal thing
+
 <!-- # Old things
 
 ## Todo list
