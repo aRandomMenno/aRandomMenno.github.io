@@ -7,6 +7,8 @@
 ## Rewrote the entire site because I felt like it...
 
 It now is "minimalistic", lightweight, and has less javascript than before.
+My website is semi-efficient, according to [website carbon](https://www.websitecarbon.com/website/arandommenno-github-io/)
+However different pages give different results so go look around which is the most efficient.
 
 <!-- # Old things
 
