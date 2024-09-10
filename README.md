@@ -10,6 +10,12 @@ It now is "minimalistic", lightweight, and has less javascript than before.
 My website is semi-efficient, according to [website carbon](https://www.websitecarbon.com/website/arandommenno-github-io/)
 However different pages give different results so go look around which is the most efficient.
 
+## To do list
+
+- [X] Add Dutch translation.
+- [ ] Add different UI for mobile. <!-- @ hamburger menu for the nav? -->
+- [ ] Figure out signal thing
+
 <!-- # Old things
 
 ## Todo list
