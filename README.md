@@ -20,7 +20,7 @@ However different pages give different results so go look around which is the mo
 
 ## Todo list
 
-- [ ] Tzhink of more things to put on my website.
+- [ ] Think of more things to put on my website.
 - [ ] Add more projects from other people to projects page. (With credits!)
 - [ ] Readd themes?
 
