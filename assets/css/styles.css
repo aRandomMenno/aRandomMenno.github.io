@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: 'Kode Mono';
     src: url('/assets/font/Kode_Mono.ttf');
@@ -13,29 +12,20 @@
     --color-divBackground: #8000ff;
     --color-divBorder: #c1fffc;
     --color-debug: #ffffff;
-
-    /* Button Colours (Currently Unused) */
-    /* --color-buttonBackground: #14003c;
-    --color-buttonBackgroundHover: #3c003c99;
-    --color-buttonBorder: #c41840; */
 }
 
+/* @ general styles */
 html {
     background-image: url('/assets/img/galaxy.gif');
     color: var(--color-text);
     font-family: 'Kode Mono', monospace;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 300;
-    margin: 24px;
-    padding: 24px;
-    margin-top: 0;
-    padding-top: 12px;
-
 }
 
 body {
     letter-spacing: 2.5px;
-    line-height: 32px;
+    line-height: 28px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -43,7 +33,56 @@ body {
     padding: 0;
 }
 
-/* @ general styles */
+.contain {
+    /* border: 2px solid var(--color-debug); */
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+}
+
+/* @ navigation bar */
+.nav_wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.nav {
+    border: var(--color-divBorder) solid 3px;
+    border-radius: 12px;
+    padding: 16px;
+    margin: 16px;
+    max-width: fit-content;
+}
+
+/* @ general text styles */
+.text {
+    border-left: 4px var(--color-divBorder) dotted;
+    /* border: 2px solid var(--color-debug); */
+    text-align: left;
+    margin: 8px;
+    padding: 8px;
+    padding-left: 16px;
+}
+
+h2 {
+    line-height: 44px;
+    font-size: 36px;
+    padding-top: 12px;
+}
+
+h3 {
+    padding-left: 16px;
+    margin-top: 20px;
+}
+
+/* @ image styles */
+.img {
+    margin-top: 8px;
+    border: var(--color-divBorder) 3px solid;
+    border-radius: 12px;
+}
+
+/* @ link styles */
 a {
     text-decoration: none;
     color: var(--color-textLink);
@@ -57,78 +96,89 @@ a:hover {
     color: var(--color-textLinkHover);
 }
 
-h2 {
-    line-height: 48px;
-    font-size: 40px;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    /* @  animation: rainbow 5000ms linear infinite; too distracting? */
-}
-
-h3 {
-    margin-top: 32px;
-}
-
-.contain {
-    /* border: 2px solid var(--color-debug); */
-    display: flex;
-    flex-direction: column;
-    max-width: 1200px;
-    padding: 16px;
-}
-
-.nav_wrap {
-    display: flex;
-    justify-content: center;
-}
-.nav {
-    border: var(--color-divBorder) solid 3px;
-    border-radius: 12px;
-    padding: 16px;
-    margin: 16px;
-    margin-top: 0;
-    max-width: fit-content;
-}
-
-
-/* @ align elements / items */
+/* @ Utility Classes */
 .center {
     text-align: center;
 }
 
-.text {
-    display: block;
-    text-align: left;
-    margin: 6px;
-    margin-top: 32px;
-    padding-right: 32px;
-    border-left: 3px var(--color-divBorder) dotted;
-}
-
-.img {
-    margin: 8px;
-    margin-right: 0;
-
-    border: var(--color-divBorder) 3px solid;
-    border-radius: 12px;
-}
-
-/* * Rainbow Animation */
-/* @keyframes rainbow {
-    0% { color: violet; }
-    5% { color: red; }
-    25% { color: orange; }
-    45% { color: yellow; }
-    65% { color: green; }
-    85% { color: blue; }
-    100% { color: violet; }
-} */
-
-/* ? Utility Classes */
 .hidden {
     display: none;
 }
 
+.footer {
+    height: 24px;
+}
+
 p {
     padding: 8px;
+}
+
+@media only screen and (max-width: 640px) {
+    /* @ styles :) */
+    html {
+        background-image: url('/assets/img/galaxy.gif');
+        color: var(--color-text);
+        font-family: 'Kode Mono', monospace;
+        font-size: 16px;
+        font-weight: 300;
+    }
+    
+    body {
+        letter-spacing: 2.5px;
+        line-height: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .contain {
+        display: flex;
+        flex-direction: column;
+        max-width: 1280px;
+    }
+    
+    /* @ navigation bar */
+    .nav_wrap {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .nav {
+        border: var(--color-divBorder) solid 3px;
+        border-radius: 12px;
+        padding: 8px;
+        margin: 8px;
+        max-width: fit-content;
+    }
+    
+    /* @ general text styles */
+    .text {
+        border-left: 4px var(--color-divBorder) dotted;
+        /* border: 2px solid var(--color-debug); */
+        text-align: left;
+        margin: 8px;
+        margin-top: 24px;
+        margin-bottom: 0;
+        padding: 8px;
+        padding-left: 16px;
+    }
+    
+    h2 {
+        line-height: 40px;
+        font-size: 32px;
+        padding-top: 12px;
+    }
+    
+    h3 {
+        padding-left: 16px;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 319px) {
+    * {
+    all: unset;
+    }
 }
