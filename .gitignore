@@ -1,3 +1,7 @@
 
 # @ ignore these files types/ folders.
 .test
+.school
+.temp
+.stories
+.vscode
