@@ -97,6 +97,7 @@ body {
 
 .content {
     padding: 1.2rem;
+    padding-left: 1.8rem;
     padding-top: 0.6rem; padding-bottom: 0.6rem;
     color: var(--color-content-text);
 }
@@ -122,6 +123,7 @@ h2 {
 h3 {
     line-height: 2.2rem;
     font-size: 1.6rem;
+    padding-left: 1.2rem;
     color: var(--color-headers-3);
 }
 
