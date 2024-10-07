@@ -4,160 +4,169 @@
 }
 
 :root {
-    --color-background: #320024;
-    --color-title: #d83dda;
-    --color-text: #c8b53c;
-    --color-textLink: #a05dff;
-    --color-textLinkHover: #7700ff;
-    --color-divBackground: #8000ff;
-    --color-divBorder: #c1fffc;
-    --color-debug: #ffffff;
+    --color-html-background: #080808;
+
+    --color-container-background: #141414;
+    --color-container-border: #2e2e2e;
+    --color-container-shadow: #2e2e2e;
+
+    --color-content-background: #2a2a2a; /* % Unused */
+    --color-content-text: #ffe0e0;
+    --color-content-border: #ffffff; /* % Unused */
+
+    --color-title: #00ff55;
+    --color-headers-2: #00b418;
+    --color-headers-3: #0051ff;
+
+    --color-link: #bb86fc;
+    --color-link-hover: #03dac6;
+    --color-link-shadow: #03dac6;
+
+    --color-img-border: #444444;
 }
 
-/* @ general styles */
+@media (prefers-color-scheme: light) {
+    :root {
+        --color-html-background: #ffffff;
+    
+        --color-container-background: #a0ffff;
+        --color-container-border: #2c1927;
+        --color-container-shadow: #001742;
+    
+        --color-content-background: #2a2a2a; /* % Unused */
+        --color-content-text: #000000;
+        --color-content-border: #202020; /* % Unused */
+    
+        --color-title: #00ff55;
+        --color-headers-2: #00b418;
+        --color-headers-3: #0051ff;
+    
+        --color-link: #c800cf;
+        --color-link-hover: #1a50ff;
+        --color-link-shadow: #388eff;
+    
+        --color-img-border: #444444;
+    }
+}
+
+/* 
+&========= RULES: ==========--
+* 1. Display properties
+* 2. Positioning properties
+* 3. Box model properties (margin, padding, border, width, height)
+* 4. Typography (font, text)
+* 5. Background properties
+* 6. Other visual properties (color, shadow, etc.)
+* 7. Animation and transition properties
+&===========================--
+*/
+
 html {
-    background-image: url('/assets/img/galaxy.gif');
-    color: var(--color-text);
-    font-family: 'Kode Mono', monospace;
-    font-size: 1.3rem;
-    font-weight: 300;
+    font-family: 'Kode Mono';
+    background-color: var(--color-html-background);
 }
 
 body {
-    letter-spacing: 0.05rem;
-    line-height: 1.2rem;
-    width: 100%;
     display: flex;
     justify-content: center;
-    margin: 0;
-    padding: 0;
+    align-items: center; /* Add this line */
+    flex-direction: column; /* WHEN I ADD THIS LINE */
+    width: 100%;
+    letter-spacing: 0.05rem;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
 }
 
-.contain {
-    /* border: 2px solid var(--color-debug); */
+.container {
     display: flex;
     flex-direction: column;
-    max-width: 50rem;
+    margin: 40px 16px;
+    margin-top: 5vh;
+    margin-bottom: 2rem;
+    width: 80%;
+    max-width: 60rem;
+    background-color: var(--color-container-background);
+    border: solid 4px var(--color-container-border);
+    border-radius: 24px;
+    box-shadow: 0 0 32px var(--color-container-shadow);
 }
 
-/* @ navigation bar */
-.nav_wrap {
-    display: flex;
-    justify-content: center;
+#container {
+    margin-top: 0;
+}
+
+.content {
+    padding: 1.2rem;
+    padding-top: 0.6rem; padding-bottom: 0.6rem;
+    color: var(--color-content-text);
 }
 
 .nav {
-    border: var(--color-divBorder) solid 3px;
-    border-radius: 12px;
-    padding: 16px;
-    margin: 16px;
-    max-width: fit-content;
-}
-
-/* @ general text styles */
-.text {
-    border-left: 4px var(--color-divBorder) dotted;
-    /* border: 2px solid var(--color-debug); */
-    text-align: left;
-    margin: 8px;
-    padding: 8px;
-    padding-left: 16px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    color: var(--color-content-text);
+    padding: 24px;
+    padding-left: 36px;
+    padding-right: 36px;
 }
 
 h2 {
-    line-height: 2.3rem;
+    line-height: 3rem;
     font-size: 2rem;
-    padding-top: 12px;
+    color: var(--color-headers-2);
 }
 
 h3 {
-    padding-left: 16px;
-    margin-top: 20px;
+    line-height: 2.2rem;
+    font-size: 1.6rem;
+    color: var(--color-headers-3);
 }
 
-/* @ image styles */
-.img {
-    margin-top: 8px;
-    border: var(--color-divBorder) 3px solid;
-    border-radius: 12px;
+p {
+    margin-bottom: 0.7rem;
 }
 
-/* @ link styles */
 a {
     text-decoration: none;
-    color: var(--color-textLink);
-    transition: color 500ms ease-in-out;
-    transition: font-weight 500ms ease-in-out;
+    color: var(--color-link);
+    cursor: crosshair;
+    transition: text-shadow 700ms ease-in-out, color 700ms ease-in-out;
 }
 
 a:hover {
-    font-weight: 900;
-    text-decoration: underline;
-    color: var(--color-textLinkHover);
+    color: var(--color-link-hover);
+    text-shadow: 0 0 10px var(--color-link-shadow);
 }
 
-/* @ Utility Classes */
+.title {
+    line-height: 3.5rem;
+    font-size: 2.5rem;
+    color: var(--color-title);
+    margin: 0.6rem;
+    margin-bottom: 0.3rem;
+}
+
+.img {
+    margin: 4px;
+    border: solid 3px var(--color-img-border);
+    border-radius: 8px;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+.override {
+    color: var(--color-content-text);
+}
+
 .center {
     text-align: center;
 }
 
-.hidden {
+.only_small_screen {
     display: none;
-}
-
-.footer {
-    height: 24px;
-}
-
-p {
-    padding: 8px;
-}
-
-@media only screen and (max-width: 640px) {
-    /* @ styles :) */
-    html {
-        background-image: url('/assets/img/galaxy.gif');
-        color: var(--color-text);
-        font-family: 'Kode Mono', monospace;
-        font-weight: 300;
-    }
-    
-    body {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin: 0;
-        padding: 0;
-    }
-    
-    .contain {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    /* @ navigation bar */
-    .nav_wrap {
-        display: flex;
-        justify-content: center;
-    }
-    
-    .nav {
-        border: var(--color-divBorder) solid 3px;
-        border-radius: 12px;
-        padding: 8px;
-        margin: 8px;
-        max-width: fit-content;
-    }
-    
-    /* @ general text styles */
-    .text {
-        border-left: 4px var(--color-divBorder) dotted;
-        /* border: 2px solid var(--color-debug); */
-        text-align: left;
-        margin: 8px;
-        margin-top: 24px;
-        margin-bottom: 0;
-        padding: 8px;
-        padding-left: 16px;
-    }
 }

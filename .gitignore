@@ -1,8 +1,6 @@
 
 # @ ignore these files types/ folders.
-.test
-.school
-.temp
-.stories
-.vscode
+.env
 .notes
+.archive
+.vscode

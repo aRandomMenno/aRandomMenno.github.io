@@ -7,31 +7,41 @@
     <meta name="theme-color" content="dark">
     <meta name="viewport" content="width=device-width, initial-scale=1.2">
     <meta name="author" content="Menno Van Zoelen">
-    <meta name="description" content="my personal website on the place 'the internet'.">
-
+    <meta name="nickname" content="JustMenno">
+    <meta name="description" content="My personal hobby website, I add stuff to it sometimes, would be could if you visited!">
     <link rel="shortcut icon" href="/assets/favicon.svg">
     <link rel="stylesheet" href="/assets/css/reset.css">
     <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 
-<span style="font-size: 32px; padding-top: 48px;">
-    You've disabled JavaScript... <br>
-    Choose a language from <a href="/languages/">this</a> list.
-</span>
-
-<!-- @ Hello world! -->
-
 <script>
-    let va = navigator.language;
-    va = va.toLowerCase().split("-")[0];
-    if (va === "nl") {
+    let language = navigator.language;
+    let view = localStorage.getItem("view");
+    language = language.toLowerCase().split("-")[0];
+
+    if (view === "true") {
+        
+    } else if (language === "nl") {
         window.location.href = "/nl/.";
-    } else if (va === "en") {
+    } else if (language === "en") {
         window.location.href = "/en/";
     } else {
         window.location.href = "/languages/?error=could+not+automatically+determine+language.";
     }
 </script>
+
+<html>
+    <body>
+        <div class="container">
+            <div class="content">
+                Wait hold on, I'm redirecting you to the correct language page... <br>
+                Or did you perhaps disable JavaScript? :p <br>
+                If you didn't get redirected <a href="/languages/">click here</a>. Or not your choice. <br>
+                Maybe also take a loot at my Portfolio <a href="/portfolio/">here</a>.
+            </div>
+        </div>
+    </body>
+</html>
 
 <!-- 
 

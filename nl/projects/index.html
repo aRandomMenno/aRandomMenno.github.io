@@ -1,44 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="nl">
 
     <head>
-        <title>Projecten van mij (en anderen).</title>
+        <title>Projecten - van mij &amp; anderen.</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="theme-color" content="dark">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="Menno Van Zoelen">
-        <meta name="description" content="mijn persoonlijke website op de plek 'het internet'.">
-
+        <meta name="nickname" content="JustMenno">
+        <meta name="description" content="Mijn persoonlijke hobby website, de projecten subpagina, Hier lijst ik projecten op die ik graag gebruik / zelf heb gemaakt.">
         <link rel="shortcut icon" href="/assets/favicon.svg">
         <link rel="stylesheet" href="/assets/css/reset.css">
         <link rel="stylesheet" href="/assets/css/styles.css">
     </head>
 
     <body>
-        <div class="contain">
-            <div class="nav_wrap">
-                <div class="nav center">
-                    <a href="/nl/">thuis</a> -
-                    <a href="/nl/about/">over mij</a> -
-                    <a style="text-decoration: underline;" href="/nl/projects/">projecten</a> -
-                    <a href="/nl/contact/">contact</a> -
-                    <a href="/languages/">talen</a>
-                </div>
+        <div class="container">
+            <div class="nav" id="nav">
+                <a href="/nl/" class="overide">home</a>-
+                <a href="/nl/about/" class="overide">over mij</a>-
+                <a href="/nl/projects/" class="overide active">projecten</a>-
+                <a href="/nl/contact/" class="overide">contact</a>-
+                <a href="/languages/" class="overide">talen</a>
             </div>
-            <h2 class="center"> Dit zijn enkele projecten die ik heb gemaakt of graag gebruik. </h2>
-            <h3> <a href="https://github.com/aRandomMenno/aRandomMenno.github.io/"
-                    target="_blank">aRandomMenno.github.io</a> </h3>
-            <p class="text">
-                <i style="margin-bottom: 240px;">Mijn website, een hobby project dat steeds meer tijd in beslag nam.</i> <br>
-                Mijn website heeft echter een vloek: hoe meer tijd ik eraan besteed om het te bewerken, hoe groter de drang wordt om helemaal opnieuw te beginnen.
-            </p>
-            <h3> <a href="https://https://github.com/25huizengek1/ViTune">ViTune</a> (niet door mij gemaakt)</h3>
-            <p class="text">
-                ViTune, de app die ik gebruik om muziek af te spelen, zonder reclames. Je kunt ook offline muziek afspelen als je het nummer eerder hebt afgespeeld. De app maakt gebruik van YouTube Music als backend. Het is een fork van <a href="https://github.com/vfsfitvnm/ViMusic">ViMusic</a>, maar de laatste update van ViMusic was in 2022.
-            </p>
         </div>
 
+        <div class="container" id="container">
+            <h2 class="center title"> Een paar coole projecten. </h2>
+            <div class="content">
+                <h3><a href="https://github.com/aRandomMenno/aRandomMenno.github.io/" target="_blank">Mijn website</a></h3>
+                <i>Mijn website, een hobbyproject dat steeds meer tijd in beslag nam.</i>
+                Het heeft echter een vloek, hoe meer tijd ik eraan besteed, hoe sterker de drang om helemaal opnieuw te beginnen.
+            </div>
+            <div class="content">
+                <h3><a href="https://github.com/25huizengek1/ViTune">ViTune</a> (niet door mij gemaakt)</h3>
+                ViTune, de app die ik gebruik om muziek zonder advertenties af te spelen. Je kunt ook
+                muziek offline afspelen als je het nummer eerder hebt afgespeeld. De app
+                gebruikt YouTube Music als backend. Het is een fork van <a href="https://github.com/vfsfitvnm/ViMusic">ViMusic</a>, maar
+                de laatste update voor ViMusic was in 2022.
+            </div>
+        </div>
     </body>
-
 </html>
