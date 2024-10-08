@@ -4,17 +4,14 @@
 > Now it is my "portfolio" website
 > A little hobby website with *some* information about me.
 
-## Rewrote the entire site because I felt like it...
-
-It now is "minimalistic", lightweight, and has less javascript than before.
-My website is semi-efficient, according to [website carbon](https://www.websitecarbon.com/website/arandommenno-github-io/)
-However different pages give different results so go look around which is the most efficient.
-
 ## To do list
 
+- [X] Good font.
 - [X] Add Dutch translation.
-- [ ] Add different UI for mobile. <!-- @ hamburger menu for the nav? -->
-- [ ] Figure out signal thing
+- [X] Prevent mobile UI from being horrible.
+- [X] Figure out signal thing.
+- [ ] Improve portfolio page.
+- [ ] Add some interesting things.
 
 <!-- # Old things
 
