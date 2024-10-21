@@ -1,5 +1,77 @@
+:root {
+    --color-background-content: #ecf0f1;
+    --color-background-left: #61aaf3;
+    --color-text-left: #ffffff;
+    --color-text-content: #333;
+    --text-color: #333;
+    --highlight-color: #f943ff;
+    --link-color: #ff0000;
+    --link-hover-color: #3916ff;
+    --svg-fill-color: #F0F0F0;
+    --svg-hover-fill-color: #ff0000;
+    --special-text-color: #00b3b3;
+}
 
-#construction {
-    font-size: 2rem;
-    text-align: center;
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-background-content: #202020;
+        --color-background-left: #0056ac;
+        --color-text-left: #ffffff;
+        --color-text-content: #202020;
+        --text-color: #ffffff;
+        --highlight-color: #f943ff;
+        --link-color: #ff0000;
+        --link-hover-color: #00ff6a;
+        --svg-fill-color: #ffffff;
+        --svg-hover-fill-color: #ff0000;
+        --special-text-color: #00aeff;
+    }
+}
+
+button {
+    font-family: 'Kode Mono', monospace;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--color-text-content);
+    background-color: var(--text-color);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    transition: background-color 500ms ease, color 500ms ease;
+}
+
+button:hover {
+    background-color: var(--highlight-color);
+    color: var(--color-text-left);
+}
+
+button svg {
+    transition: transform 700ms ease;
+}
+
+button svg:hover {
+    transform: scale(1.2);
+}
+
+button svg path {
+    fill: var(--svg-fill-color);
+    transition: fill 700ms ease-in-out;
+}
+
+button svg:hover path {
+    fill: var(--svg-hover-fill-color);
+}
+
+button svg ellipse {
+    fill: var(--svg-fill-color);
+    transition: fill 700ms ease-in-out;
+}
+
+button svg:hover ellipse {
+    fill: var(--svg-hover-fill-color);
+}
+
+t {
+    color: var(--special-text-color);
 }
