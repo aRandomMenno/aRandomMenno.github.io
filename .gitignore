@@ -1,6 +1,1 @@
-
-# @ ignore these files types/ folders.
-.env
-.notes
-.archive
-.vscode
+.dontpush

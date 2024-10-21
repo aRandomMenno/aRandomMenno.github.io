@@ -1,174 +1,206 @@
-@font-face {
-    font-family: 'Kode Mono';
-    src: url('/assets/font/Kode_Mono.ttf');
-}
-
 :root {
-    --color-html-background: #080808;
-
-    --color-container-background: #141414;
-    --color-container-border: #2e2e2e;
-    --color-container-shadow: #2e2e2e;
-
-    --color-content-background: #2a2a2a; /* % Unused */
-    --color-content-text: #ffe0e0;
-    --color-content-border: #ffffff; /* % Unused */
-
-    --color-title: #00ff55;
-    --color-headers-2: #00b418;
-    --color-headers-3: #0051ff;
-
-    --color-link: #bb86fc;
-    --color-link-hover: #03dac6;
-    --color-link-shadow: #03dac6;
-
-    --color-img-border: #444444;
+    --color-background-content: #ecf0f1;
+    --color-background-left: #61aaf3;
+    --color-text-left: #ffffff;
+    --color-text-content: #333;
+    --text-color: #333;
+    --highlight-color: #f943ff;
+    --link-color: #ff0000;
+    --link-hover-color: #3916ff;
+    --svg-fill-color: #F0F0F0;
+    --svg-hover-fill-color: #ff0000;
+    --special-text-color: #00b3b3;
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
     :root {
-        --color-html-background: #ffffff;
-    
-        --color-container-background: #a0ffff;
-        --color-container-border: #2c1927;
-        --color-container-shadow: #001742;
-    
-        --color-content-background: #2a2a2a; /* % Unused */
-        --color-content-text: #000000;
-        --color-content-border: #202020; /* % Unused */
-    
-        --color-title: #00ff55;
-        --color-headers-2: #00b418;
-        --color-headers-3: #0051ff;
-    
-        --color-link: #c800cf;
-        --color-link-hover: #1a50ff;
-        --color-link-shadow: #388eff;
-    
-        --color-img-border: #444444;
+        --color-background-content: #202020;
+        --color-background-left: #0056ac;
+        --color-text-left: #ffffff;
+        --color-text-content: #202020;
+        --text-color: #ffffff;
+        --highlight-color: #f943ff;
+        --link-color: #ff0000;
+        --link-hover-color: #00ff6a;
+        --svg-fill-color: #ffffff;
+        --svg-hover-fill-color: #ff0000;
+        --special-text-color: #00aeff;
     }
 }
 
-/* 
-&========= RULES: ==========--
-* 1. Display properties
-* 2. Positioning properties
-* 3. Box model properties (margin, padding, border, width, height)
-* 4. Typography (font, text)
-* 5. Background properties
-* 6. Other visual properties (color, shadow, etc.)
-* 7. Animation and transition properties
-&===========================--
-*/
+@font-face {
+    font-family: 'Kode Mono';
+    src: url("/assets/font/kode-mono.ttf");
+}
 
 html {
-    font-family: 'Kode Mono';
-    background-color: var(--color-html-background);
+    font-family: 'Kode Mono', monospace;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 0.04rem;
+    color: var(--text-color);
+    background-color: var(--color-background-left);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
+    margin: 0;
+    padding: 0;
     display: flex;
-    justify-content: center;
-    align-items: center; /* Add this line */
-    flex-direction: column; /* WHEN I ADD THIS LINE */
-    width: 100%;
-    letter-spacing: 0.05rem;
-    font-size: 1.2rem;
-    line-height: 1.4rem;
+    flex-direction: column;
+    min-height: 100vh;
+    max-height: 100vh;
 }
 
 .container {
     display: flex;
-    flex-direction: column;
-    margin: 40px 16px;
-    margin-top: 5vh;
-    margin-bottom: 2rem;
-    width: 80%;
-    max-width: 60rem;
-    background-color: var(--color-container-background);
-    border: solid 4px var(--color-container-border);
-    border-radius: 24px;
-    box-shadow: 0 0 32px var(--color-container-shadow);
+    flex: 1;
+    overflow: hidden;
 }
 
-#container {
-    margin-top: 0;
+.left {
+    width: 15%;
+    max-width: 160px;
+    background-color: var(--color-background-left);
+    height: calc(100vh - 40px);
+    color: var(--color-text-left);
+    padding: 20px;
+    overflow-y: auto;
 }
 
-.content {
-    padding: 1.2rem;
-    padding-left: 1.8rem;
-    padding-top: 0.6rem; padding-bottom: 0.6rem;
-    color: var(--color-content-text);
+.nav ul {
+    padding: 0;
+    margin: 0;
 }
 
-.nav {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    font-size: 1.3rem;
-    line-height: 1.5rem;
-    color: var(--color-content-text);
-    padding: 24px;
-    padding-left: 36px;
-    padding-right: 36px;
+.nav li {
+    margin: 10px 0;
+    cursor: pointer;
+    transition: color 500ms ease;
+    font-size: 1.2rem;
 }
 
-h2 {
-    line-height: 3rem;
-    font-size: 2rem;
-    color: var(--color-headers-2);
+.nav li:hover {
+    color: var(--highlight-color);
 }
 
-h3 {
-    line-height: 2.2rem;
-    font-size: 1.6rem;
-    padding-left: 1.2rem;
-    color: var(--color-headers-3);
-}
-
-p {
-    margin-bottom: 0.7rem;
-}
-
-a {
-    text-decoration: none;
-    color: var(--color-link);
-    cursor: crosshair;
-    transition: text-shadow 700ms ease-in-out, color 700ms ease-in-out;
-}
-
-a:hover {
-    color: var(--color-link-hover);
-    text-shadow: 0 0 10px var(--color-link-shadow);
-}
-
-.title {
-    line-height: 3.5rem;
-    font-size: 2.5rem;
-    color: var(--color-title);
-    margin: 0.6rem;
-    margin-bottom: 0.3rem;
-}
-
-.img {
-    margin: 4px;
-    border: solid 3px var(--color-img-border);
-    border-radius: 8px;
-}
-
-.active {
+#current {
     text-decoration: underline;
 }
 
-.override {
-    color: var(--color-content-text);
+.socials {
+    margin-top: 20px;
 }
 
-.center {
+.socials a {
+    margin-right: 10px;
+}
+
+.content {
+    flex: 1;
+    margin: 0.75rem;
+    border-radius: 1.5rem;
+    background-color: var(--color-background-content);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.scrolling {
+    padding: 20px;
+    flex: 1;
+    overflow-y: auto;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0 0 20px 0;
+    letter-spacing: 0.08rem;
+}
+
+h1 {
+    font-size: 2.6rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+p {
+    margin: 0 0 20px 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 500ms ease;
+}
+
+a:hover {
+    color: var(--link-hover-color);
+}
+
+.socials {
+    margin: 8px;
+    display: flex;
+    flex-direction: row;
+}
+
+.socials a {
+    width: 48px;
+    height: 48px;
+    display: flex;
     text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
-.only_small_screen {
-    display: none;
+svg {
+    transition: transform 700ms ease;
+}
+
+svg:hover {
+    transform: scale(1.2);
+}
+
+svg path {
+    fill: var(--svg-fill-color);
+    transition: fill 700ms ease-in-out;
+}
+
+svg:hover path {
+    fill: var(--svg-hover-fill-color);
+}
+
+svg ellipse {
+    fill: var(--svg-fill-color);
+    transition: fill 700ms ease-in-out;
+}
+
+svg:hover ellipse {
+    fill: var(--svg-hover-fill-color);
+}
+
+t {
+    color: var(--special-text-color);
+}
+
+#pf {
+    font-size: 3.8rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
