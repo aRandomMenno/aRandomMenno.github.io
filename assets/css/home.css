@@ -1,10 +1,11 @@
 .picture {
     margin: 0;
-    margin-top: -140px;
+    margin-top: -138px;
     margin-bottom: 1.5rem;
     max-height: 240px;
     border-radius: 16px;
 }
+
 @media (max-width: 1079px) {
     .picture {
         margin-top: 0;
