@@ -67,7 +67,7 @@ body {
     background-color: var(--color-background-left);
     height: calc(100vh - 40px);
     color: var(--color-text-left);
-    padding: 20px;
+    padding: 16px;
     overflow-y: auto;
 }
 
@@ -91,14 +91,6 @@ body {
     text-decoration: underline;
 }
 
-.socials {
-    margin-top: 20px;
-}
-
-.socials a {
-    margin-right: 10px;
-}
-
 .content {
     flex: 1;
     margin: 0.75rem;
@@ -110,7 +102,7 @@ body {
 }
 
 .scrolling {
-    padding: 20px;
+    padding: 16px;
     flex: 1;
     overflow-y: auto;
 }
@@ -157,9 +149,11 @@ a:hover {
     margin: 8px;
     display: flex;
     flex-direction: row;
+    margin-top: 12px;
 }
 
 .socials a {
+    margin-right: 10px;
     width: 48px;
     height: 48px;
     display: flex;
@@ -167,6 +161,15 @@ a:hover {
     justify-content: center;
     align-items: center;
 }
+
+@media (min-width: 610px) {
+    .socials {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2px;
+    }
+}
+
 
 svg {
     transition: transform 700ms ease;
