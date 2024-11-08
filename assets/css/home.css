@@ -1,13 +1,41 @@
-.picture {
-    margin: 0;
-    margin-top: -138px;
-    margin-bottom: 1.5rem;
-    max-height: 240px;
-    border-radius: 16px;
+go {
+    background: linear-gradient(90deg, #4285F4, #34A853, #FBBC05, #EA4335);
+    background-clip: text;
+    color: transparent;
 }
 
-@media (max-width: 1079px) {
-    .picture {
-        margin-top: 0;
-    }
+m {
+    background: linear-gradient(90deg, #EA4335, #34A853, #4285F4, #FBBC05);
+    background-clip: text;
+    color: transparent;
+}
+
+f {
+    background: linear-gradient(90deg, #29bbff, #2b4079, #29bbff);
+    background-clip: text;
+    color: transparent;
+}
+
+d {
+    color: #29bbff;
+    font-weight: 600;
+}
+
+v {
+    color: #ffac2f;
+}
+
+r {
+    color: #ff4545;
+}
+
+p {
+    padding-left: 8px;
+}
+
+.img {
+    width: 45%;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    margin-top: 12px;
 }

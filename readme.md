@@ -4,15 +4,14 @@ Welcome to my personal website! This site showcases my projects, skills, and int
 
 ## Pages
 
-- **Home page**: A page with a bit of info about me.
-- **About Me**: Learn more about my background and experiences.
-- **Projects**: Explore the projects I've worked on.
+- **Home page**: A page with information about me.
+- **more pages coming soon(tm)**
 
 ## Technologies Used
 
 - HTML
 - CSS
-- JavaScript?
+- JavaScript? (planned)
 
 ## Contact
 
