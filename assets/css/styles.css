@@ -15,20 +15,14 @@ body {
 }
 
 a {
-    color: transparent;
-    text-decoration: none;
-    transition: background 1000ms ease;
-    background: linear-gradient(90deg, #29bbff, #ffac2f);
-    background-clip: text;
-    color: transparent;
+    color: #ff5084;
+    text-decoration: underline;
+    transition: color 600ms ease;
 }
 
 a:hover {
-    font-style: italic;
+    color: #09ff00;
     cursor: pointer;
-    background: linear-gradient(90deg, #ffac2f, #29bbff);
-    color: transparent;
-    background-clip: text;
 }
 
 /* Container */
@@ -65,6 +59,7 @@ a:hover {
 
 .ul_nav li a {
     color: #ff00ff;
+    text-decoration: none;
     font-weight: bold;
     transition: color 750ms;
 }
@@ -110,7 +105,7 @@ a:hover {
 
 .scrolling {
     z-index: 5;
-    max-width: 800px;
+    max-width: 920px;
     margin: 0 auto;
 }
 
@@ -165,7 +160,7 @@ svg:hover path {
 
 @keyframes title {
     0% {
-        transform: rotate(-3deg);
+        transform: rotate(-2deg);
     }
 
     10% {
@@ -173,31 +168,31 @@ svg:hover path {
     }
 
     20% {
-        transform: rotate(1deg);
+        transform: rotate(0deg);
     }
 
     30% {
-        transform: rotate(3deg);
+        transform: rotate(1deg);
     }
 
     40% {
-        transform: rotate(5deg);
+        transform: rotate(2deg);
     }
 
     50% {
-        transform: rotate(7deg);
-    }
-
-    60% {
-        transform: rotate(5deg);
-    }
-
-    70% {
         transform: rotate(3deg);
     }
 
-    80% {
+    60% {
+        transform: rotate(2deg);
+    }
+
+    70% {
         transform: rotate(1deg);
+    }
+
+    80% {
+        transform: rotate(0deg);
     }
 
     90% {
@@ -205,6 +200,6 @@ svg:hover path {
     }
 
     100% {
-        transform: rotate(-3deg);
+        transform: rotate(-2deg);
     }
 }

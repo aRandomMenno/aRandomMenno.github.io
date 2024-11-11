@@ -33,9 +33,27 @@ p {
     padding-left: 8px;
 }
 
+.astral {
+    transition: background 1000ms ease;
+    background: linear-gradient(90deg, #29bbff, #ffac2f);
+    background-clip: text;
+    color: transparent;
+}
+
+.astral:hover {
+    background: linear-gradient(90deg, #ffac2f, #29bbff);
+    color: transparent;
+    background-clip: text;
+}
+
 .img {
     width: 45%;
     border: 2px solid #ffffff;
     border-radius: 8px;
     margin-top: 12px;
+}
+
+#school {
+    border-bottom: 5px solid #1a1a2e;
+    margin-bottom: 12px;
 }
