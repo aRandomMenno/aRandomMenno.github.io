@@ -158,6 +158,11 @@ svg:hover path {
     fill: #09ff00;
 }
 
+#school {
+    border-bottom: 5px solid #1a1a2e;
+    margin-bottom: 12px;
+}
+
 @keyframes title {
     0% {
         transform: rotate(-2deg);

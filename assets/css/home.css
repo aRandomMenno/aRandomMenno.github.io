@@ -52,15 +52,3 @@ p {
     border-radius: 8px;
     margin-top: 12px;
 }
-
-#school {
-    border-bottom: 5px solid #1a1a2e;
-    margin-bottom: 12px;
-}
-
-@media (max-width: 950px) {
-    #school {
-        border-bottom: none;
-        margin-bottom: 0;
-    }
-}

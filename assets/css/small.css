@@ -101,6 +101,11 @@
         fill: #09ff00;
     }
 
+    #school {
+        border-bottom: none;
+        margin-bottom: 0;
+    }
+
     @keyframes title {
         0% {
             transform: rotate(-3deg);
