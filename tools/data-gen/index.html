@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Metadata -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="/assets/css/styles.css">
+        <link rel="stylesheet" href="/assets/css/small.css">
+        <link rel="stylesheet" href="/assets/css/data-gen.css">
+        <link rel="stylesheet" href="/assets/css/fix.css">
+        <link rel="stylesheet" href="/assets/css/scrollbar.css">
+        <link rel="icon" href="/assets/tree.svg" type="image/x-icon">
+        <link rel="apple-touch-icon" href="/assets/tree.svg">
+        <link rel="canonical" href="https://arandommenno.github.io">
+
+        <!-- Open Graph Protocol -->
+        <meta property="og:title" content="Data generator @ Menno's Website">
+        <meta property="og:description" content="A page with a random data generator. 'I am bad at explaining so just try it yourself.' ty :)">
+        <meta property="og:image" content="/assets/img/og.png">
+        <meta property="og:url" content="https://arandommenno.github.io/">
+        <meta property="og:type" content="website">
+
+        <title>Data generator @ Menno's website</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="left">
+                <div class="nav">
+                    <ul class="ul_nav">
+                        <li><a onclick="location.href='/'">home</a></li>
+                        <li id="school"><a onclick="location.href='http://101945.stu.sd-lab.nl/';">school</a></li>
+                        <li><a onclick="location.href='/links/'">links</a></li>
+                        <li><a onclick="location.href='/tools/'">tools</a></li>
+                        <li><a onclick="location.href='/projects/'">projects</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="scrolling">
+                    <h1 id="pf">Welcome to the data Generator!</h1>
+
+                    <h3>What is this?</h3>
+                    <p>
+                        On this page you can generate random strings of data. This data can be made of letters, numbers,
+                        specials characters or a combination of those. You can choose the amount of strings, the length of each
+                        string and a separator. <br>
+                        <br>
+                        Or you can choose your own characters that the strings can be made of. <br>
+                        WARN: if you include '&lt;' or '&gt;' in the custom "dictionary" the result might display weirdly. this is because it then tries to display the html code for the characters.
+                    </p>
+
+                    <h3>Generator:</h3>
+
+                    <div>
+                        <label for="dictionary">Custom dictionary:</label>
+                        <input type="text" name="dictionary" id="dictionary" placeholder="If any character is inputted here, only those characters can be used in the strings.">
+                        <label for="subs">If you want to use the default dictionary leave the field above empty</label>
+                        <br><br>
+                        <label for="num_of_strings">Amount of random strings:</label>
+                        <input type="number" name="num_of_strings" id="num_of_strings" value="4">
+
+                        <label for="length">Length of each string:</label>
+                        <input type="number" name="length" id="length" value="16">
+
+                        <label for="separator">Separator:</label>
+                        <input type="text" name="separator" id="separator" value="<br>">
+                        <label for="subs">the '&lt;br&gt;' makes it so every string is on a new line.</label>
+
+                        <button onclick="generateData()">Get data</button>
+                    </div>
+                    <div>
+                        <p id="result" tabindex="0">
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
