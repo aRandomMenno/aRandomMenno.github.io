@@ -1,0 +1,60 @@
+.circle {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: all 100ms ease;
+}
+
+.square {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    pointer-events: none;
+    border-radius: 0;
+    transform: translate(-50%, -50%);
+}
+
+.rainbow {
+    animation: rainbow 5s infinite;
+}
+
+@keyframes rainbow {
+    0% {
+        background-color: red;
+    }
+
+    20% {
+        background-color: orange;
+    }
+
+    40% {
+        background-color: yellow;
+    }
+
+    60% {
+        background-color: green;
+    }
+
+    80% {
+        background-color: blue;
+    }
+
+    100% {
+        background-color: purple;
+    }
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin: 10px 0;
+}
+
+html, body {
+    cursor: none;
+}

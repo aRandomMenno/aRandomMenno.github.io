@@ -15,8 +15,8 @@
     color: var(--color-text);
 }
 
-#lm {
-    text-align: center;
+#nl2 {
+    color: var(--color-navbar_selected);
 }
 
 .copyright {
@@ -34,16 +34,10 @@
     height: 128px;
 }
 
-#back, #contact {
-    background-image: linear-gradient(to right, rgb(100, 100, 255), rgb(255, 0, 85), rgb(100, 100, 255), rgb(255, 0, 85), rgb(100, 100, 255));
-    background-clip: border-box;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 200% 100%;
-    background-position: 0% 0%;
-    transition: background-position 4s ease;
-}
-
-#back:hover, #contact:hover {
-    background-position: 250% 0%;
+#my-cats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
 }

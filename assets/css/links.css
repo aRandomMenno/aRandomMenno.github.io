@@ -15,8 +15,8 @@
     color: var(--color-text);
 }
 
-#lm {
-    text-align: center;
+#nl4 {
+    color: var(--color-navbar_selected);
 }
 
 .copyright {
@@ -34,8 +34,8 @@
     height: 128px;
 }
 
-#back, #contact {
-    background-image: linear-gradient(to right, rgb(100, 100, 255), rgb(255, 0, 85), rgb(100, 100, 255), rgb(255, 0, 85), rgb(100, 100, 255));
+.ulink {
+    background-image: linear-gradient(to right, rgb(0, 255, 149), rgb(255, 0, 85), rgb(0, 255, 149), rgb(255, 0, 85), rgb(0, 255, 149));
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -44,6 +44,6 @@
     transition: background-position 4s ease;
 }
 
-#back:hover, #contact:hover {
+.ulink:hover {
     background-position: 250% 0%;
 }

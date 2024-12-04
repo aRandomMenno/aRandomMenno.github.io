@@ -1,19 +1,41 @@
-# Personal Website
+# My personal/ portfolio website
 
-Welcome to my personal website! This site showcases my projects, skills, and interests.
+> It was created with Firefox in mind.
 
-## Pages
+## Important pages
 
-- **Home page**: A page with information about me.
-- **more pages coming soon(tm)**
+### **Home**
 
-## Technologies Used
+- Key information about me
+- A picture of me
+- *A button to download my resume*
 
-- HTML
-- CSS
-- JavaScript? (planned)
+### **Projects**
+
+- Some projects that I made
+- At the time of writing: one project I contributed to
+
+### **About**
+
+- Has way more information about me
+- Also 2 pictures of a cat I had
+
+### **Links**
+
+- Links to usefull websites
+- atm 1 useful android app
+- The previous two versions of my website
+
+### **Archive**
+
+- v8, this is just version 8 of my website
+- v9, this is just version 8 of my website
+
+## The main programming languages
+
+CSS, HTML and JS.
 
 ## Contact
 
 Feel free to reach out to me at [justmenno@proton.me].
-Thank you for visiting my website!
+And thank you for visiting the github repository.
