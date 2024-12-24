@@ -20,3 +20,12 @@
 #ab {
     float: left;
 }
+
+.social-icon svg {
+    transition: scale 1500ms ease, transform 1750ms ease, fill 500ms ease;
+}
+
+.social-icon svg:hover {
+    scale: 1.5;
+    transform: rotate(360deg);
+}

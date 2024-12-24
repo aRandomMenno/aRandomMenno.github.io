@@ -1,0 +1,52 @@
+@media (max-width: 800px) {
+    body {
+        background-color: var(--color-secondary);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        padding: 6px;
+        font-size: 1.5em;
+    }
+
+    header {
+        height: 180px;
+    }
+
+    nav {
+        border-radius: 0;   
+    }
+
+    main {
+        border-radius: 0.75em;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+        max-height: 600px;
+        padding: 1em;
+    }
+
+    social {
+        border-radius: 0;
+        max-height: 200px;
+    }
+
+    news {
+        border-radius: 0.75em;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+        max-height: 400px;
+    }
+
+    footer {
+        border-radius: 0.75em;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+        margin-bottom: 0.5em;
+        max-height: 200px;
+    }
+}

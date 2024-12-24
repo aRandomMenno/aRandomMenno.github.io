@@ -56,6 +56,7 @@ h1, h2 {
 }
 
 html {
+    scroll-behavior: smooth;
     font-family: 'Kode mono';
     font-size: 1.2rem;
     line-height: 1.4;
@@ -214,14 +215,7 @@ p {
     height: 64px;
 }
 
-.social-icon svg {
-    transition: scale 1000ms ease, transform 1750ms ease, fill 1000ms ease;
-}
 
-.social-icon svg:hover {
-    scale: 1.5;
-    transform: rotate(360deg);
-}
 
 svg path {
     fill: #fff;
