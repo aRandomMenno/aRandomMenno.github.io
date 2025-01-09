@@ -11,7 +11,7 @@
         display: flex;
         justify-content: space-around;
         padding: 6px;
-        font-size: 1.5em;
+        font-size: 1.5rem;
     }
 
     header {
@@ -23,9 +23,9 @@
     }
 
     main {
-        border-radius: 0.75em;
-        margin-left: 0.5em;
-        margin-right: 0.5em;
+        border-radius: 10px;
+        margin-left: 6px;
+        margin-right: 6px;
         max-height: 600px;
         padding: 1em;
     }
@@ -36,17 +36,17 @@
     }
 
     news {
-        border-radius: 0.75em;
-        margin-left: 0.5em;
-        margin-right: 0.5em;
+        border-radius: 10px;
+        margin-left: 6px;
+        margin-right: 6px;
         max-height: 400px;
     }
 
     footer {
-        border-radius: 0.75em;
-        margin-left: 0.5em;
-        margin-right: 0.5em;
-        margin-bottom: 0.5em;
+        border-radius: 10px;
+        margin-left: 6px;
+        margin-right: 6px;
+        margin-bottom: 6px;
         max-height: 200px;
     }
 }
