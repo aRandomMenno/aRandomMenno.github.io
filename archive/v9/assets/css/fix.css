@@ -1,9 +1,0 @@
-@media (max-width: 720px) {
-    .left {
-        height: 55px;
-    }
-
-    .content {
-        min-height: abs(100% - 75px);
-    }
-}

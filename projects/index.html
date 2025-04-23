@@ -1,149 +1,97 @@
 <!DOCTYPE html>
-<html lang="en-GB">
+<html lang="en">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta charset="UTF-8">
 
-        <!-- SEO Meta Tags -->
         <meta name="description"
-            content="My personal website/ portfolio, I'm 17-year-old Software Development student from Netherlands specializing in HTML, CSS, and JavaScript development.">
+            content="Software development projects by Menno van Zoelen, including web applications and game mods.">
         <meta name="keywords"
-            content="Menno Van Zoelen, Projects, software developer, web development, HTML, CSS, JavaScript, Netherlands, portfolio, student developer">
-        <meta name="robots" content="index, follow">
-        <link rel="canonical" href="https://aRandomMenno.github.io/">
+            content="Menno, van Zoelen, projects, software development, programming, GitHub, Terraria, mod, web development">
+        <meta name="author" content="Menno van Zoelen">
 
-        <!-- Open Graph Meta Tags -->
-        <meta property="og:title" content="Menno Van Zoelen - Software Developer">
-        <meta property="og:description"
-            content="Portfolio of Menno Van Zoelen, a 17-year-old Software Development student from Netherlands specializing in HTML, CSS, and JavaScript development.">
-        <meta property="og:image" content="./assets/img/pict_me.jpg">
-        <meta property="og:url" content="https://aRandomMenno.github.io/">
-        <meta property="og:type" content="website">
-
-        <!-- Twitter Card Meta Tags -->
-        <meta name="twitter:card" content="[Picture of Menno Van Zoelen, young Software Developer student]">
-        <meta name="twitter:title" content="Menno Van Zoelen - Software Developer Portfolio">
-        <meta name="twitter:description"
-            content="Portfolio of Menno Van Zoelen, a 17-year-old Software Development student from Netherlands specializing in HTML, CSS, and JavaScript development.">
-        <meta name="twitter:image" content="./assets/img/pict_me.jpg">
-
-        <!-- StyleSheets -->
         <link rel="stylesheet" href="../assets/css/styles.css">
-        <link rel="stylesheet" href="../assets/css/small.css">
-        <link rel="stylesheet" href="../assets/css/projects.css">
+        <!-- <link rel="stylesheet" href="../assets/css/projects.css"> -->
+        <link rel="stylesheet" href="../assets/css/tiny.css">
 
-        <!-- Scripts -->
-        <!-- No scripts needed on this page -->
+        <script src="../assets/js/add_nav.js"></script>
+        <script src="../assets/js/welcome.js"></script>
+        <script src="../assets/js/dark_toggle.js"></script>
+        <!-- <script src="../assets/js/display_last_edited.js"></script> -->
 
-        <link rel="shortcut icon" href="../assets/img/favicon.svg" type="image/x-icon">
-        <title>Links @ Menno's Website</title>
+        <link rel="shortcut icon" href="../assets/icons/favicon-192x192.png" type="image/x-icon">
+        <link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png" type="image/x-icon">
+
+        <meta property="og:country-name" content="Netherlands">
+        <meta property="og:locality" content="Spijkenisse">
+        <meta property="og:title" content="Menno van Zoelen | Projects">
+        <meta property="og:description"
+            content="Software development projects by Menno van Zoelen, including web applications and game mods.">
+        <meta property="og:image" content="../assets/images/og_image.png">
+
+        <title>Menno's Personal Website -- Projects page</title>
     </head>
 
-    <script>
-        if (window.innerWidth <= 350) {
-            alert("Your screen-width is less than 350px, this website is not made for such small screens.");
-        }
-    </script>
-
     <body>
-        <div class="navbar">
-            <div class="navbar-inner">
-                <div class="logo">
-                    <a href="../">
-                        <svg width="64px" height="64px" viewBox="0 0 24 24" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12 5.50063L11.4596 6.02073C11.463 6.02421 11.4664 6.02765 11.4698 6.03106L12 5.50063ZM8.96173 18.9109L8.49742 19.4999L8.96173 18.9109ZM15.0383 18.9109L14.574 18.3219L15.0383 18.9109ZM7.00061 16.4209C6.68078 16.1577 6.20813 16.2036 5.94491 16.5234C5.68169 16.8432 5.72758 17.3159 6.04741 17.5791L7.00061 16.4209ZM2.34199 13.4115C2.54074 13.7749 2.99647 13.9084 3.35988 13.7096C3.7233 13.5108 3.85677 13.0551 3.65801 12.6917L2.34199 13.4115ZM13.4698 8.03034C13.7627 8.32318 14.2376 8.32309 14.5304 8.03014C14.8233 7.7372 14.8232 7.26232 14.5302 6.96948L13.4698 8.03034ZM2.75 9.1371C2.75 6.98623 3.96537 5.18252 5.62436 4.42419C7.23607 3.68748 9.40166 3.88258 11.4596 6.02073L12.5404 4.98053C10.0985 2.44352 7.26409 2.02539 5.00076 3.05996C2.78471 4.07292 1.25 6.42503 1.25 9.1371H2.75ZM8.49742 19.4999C9.00965 19.9037 9.55955 20.3343 10.1168 20.6599C10.6739 20.9854 11.3096 21.25 12 21.25V19.75C11.6904 19.75 11.3261 19.6293 10.8736 19.3648C10.4213 19.1005 9.95208 18.7366 9.42605 18.3219L8.49742 19.4999ZM15.5026 19.4999C16.9292 18.3752 18.7528 17.0866 20.1833 15.4758C21.6395 13.8361 22.75 11.8026 22.75 9.1371H21.25C21.25 11.3345 20.3508 13.0282 19.0617 14.4798C17.7469 15.9603 16.0896 17.1271 14.574 18.3219L15.5026 19.4999ZM22.75 9.1371C22.75 6.42503 21.2153 4.07292 18.9992 3.05996C16.7359 2.02539 13.9015 2.44352 11.4596 4.98053L12.5404 6.02073C14.5983 3.88258 16.7639 3.68748 18.3756 4.42419C20.0346 5.18252 21.25 6.98623 21.25 9.1371H22.75ZM14.574 18.3219C14.0479 18.7366 13.5787 19.1005 13.1264 19.3648C12.6739 19.6293 12.3096 19.75 12 19.75V21.25C12.6904 21.25 13.3261 20.9854 13.8832 20.6599C14.4405 20.3343 14.9903 19.9037 15.5026 19.4999L14.574 18.3219ZM9.42605 18.3219C8.63014 17.6945 7.82129 17.0963 7.00061 16.4209L6.04741 17.5791C6.87768 18.2624 7.75472 18.9144 8.49742 19.4999L9.42605 18.3219ZM3.65801 12.6917C3.0968 11.6656 2.75 10.5033 2.75 9.1371H1.25C1.25 10.7746 1.66995 12.1827 2.34199 13.4115L3.65801 12.6917ZM11.4698 6.03106L13.4698 8.03034L14.5302 6.96948L12.5302 4.97021L11.4698 6.03106Z"
-                                fill="#fff" />
-                        </svg>
-                    </a>
-                </div>
-                <div class="navbar-items">
-                    <a id="nl1" href="../" class="nav-link">Home</a> <t>|</t>
-                    <a id="nl2" href="../about/" class="nav-link">About</a> <t>-</t>
-                    <a id="nl3" href="../projects/" class="nav-link">Projects</a> <t>-</t>
-                    <a id="nl4" href="../links/" class="nav-link">Links</a>
-                </div>
-            </div>
-        </div>
+        <header>
+            <nav>
+                nav items should be added with JavaScript. If they are not showing up, please check the console for
+                errors or try enabling JavaScript.
+            </nav>
+        </header>
 
-        <div class="main-content">
-            <div class="content-wrapper">
-                <div class="text-content">
-                    <h1>Here are my personal projects</h1>
+        <main>
+            <section class="content-section flex-section goober-os">
+                <div>
+                    <h2>
+                        <a href="https://github.com/JeaV2/gooberos/" target="_blank" tabindex="0" class="link">Goober
+                            OS</a>
+                    </h2>
                     <p>
-                        I do not have many personal projects, I have also archived projects I don't play to work on
-                        anymore. The project I am working on now is my personal website, and other school projects.
-                        You can not find my school projects here.
-                    </p>
-
-                    <h2>My personal website.</h2>
-                    <p>
-                        This is my personal website. This is actually the tenth time I completely rewrote is from
-                        scratch on the links page you can see v8 and 9, I didn't make a backup of any previous
-                        versions.
-                    </p>
-                    <p>
-                        The reason I have rewritten the page so many times is mostly because I rewrote the site when
-                        I learned something new that I wanted to implement. This resulted in me rewriting it a lot.
-                        technically this could have been the eleventh time but when then I learned something new
-                        when I was already rewriting my website.
-                    </p>
-                    <p>
-                        <img src="../assets/img/html.svg" alt="[HTML icon]" class="icon">
-                        <img src="../assets/img/css.svg" alt="[CSS icon]" class="icon">
-                        <img src="../assets/img/js.svg" alt="[JS icon]" class="icon">
-                        <a href="https://github.com/aRandomMenno/aRandomMenno.github.io/" target="_blank">
-                            <img src="../assets/img/github.svg" alt="[Github icon]" class="icon">
-                        </a>
-                    </p>
-
-                    <h2><span style="color: #f00;">[ARCHIVED]</span> Tapps Autobox opener</h2>
-                    <p>
-                        This is a python "program"/ script that automatically clicks on the boxes in the evolution
-                        games from Tapps Games I rewrote it two times this was also because I learned new things,
-                        The first time I learned about functions.
-                    </p>
-                    <p>
-                        <img src="../assets/img/python.svg" alt="[Python icon]" class="icon">
-                        <a href="https://github.com/aRandomMenno/TappsBox/" target="_blank">
-                            <img src="../assets/img/github.svg" alt="[Github icon]" class="icon">
-                        </a>
-                    </p>
-
-                    <h1>My contributions:</h1>
-
-                    <h2>HTML Comment Finder</h2>
-                    <p>
-                        This is an extension for Firefox based browsers that finds HTML comments on the current page. It
-                        was forked from the Chrome version by <a href="https://github.com/AstralVRZ/">Astral</a> and
-                        changed to work on Firefox based browsers. I improved the styles for the extension. But I made a
-                        security mistake by inputting the comments in the popup.html with 
-                        `<span style="color: #f00;">.innerHTML</span>` instead of
-                        `<span style="color: #0f0;">.innerText</span>`. This was caught by Astral and fixed by her.
-                    </p>
-                    <p>
-                        <img src="../assets/img/html.svg" alt="[HTML icon]" class="icon">
-                        <img src="../assets/img/css.svg" alt="[CSS icon]" class="icon">
-                        <img src="../assets/img/js.svg" alt="[JS icon]" class="icon">
-                        <a href="https://github.com/AstralVRZ/html-comment-finder/" target="_blank">
-                            <img src="../assets/img/github.svg" alt="[Github icon]" class="icon">
-                        </a>
+                        Goober OS is a web based Terminal. With a command to open a windows 95/98 Inspired GUI.
+                        I made this in collaboration with <a href="https://github.com/astralvrz" target="_blank"
+                            class="link" tabindex="0">Jea</a> (my sister), Stone, Tigo and Rianne. It was a school
+                        project for a Make-a-thon. We had 48 hours to make a project in the theme of Lo-Fi Retro. And
+                        always 1 person had to be programming. We had a lot of fun making this project. I mostly worked
+                        on the logic for the commands in the terminal.
                     </p>
                 </div>
-            </div>
-        </div>
-
-        <div class="footer">
-            <div class="footer-inner">
-                <div class="copyright">
-                    <h1><c>&copy;</c> 2024 - Menno Van Zoelen</h1>
+            </section>
+            <section class="content-section flex-section personal-website">
+                <div>
+                    <h2>
+                        <a href="https://github.com/arandommenno/arandommenno.github.io" target="_blank"
+                            tabindex="0" class="link">Personal website</a>
+                    </h2>
                     <p>
-                        This website was made by me. However I am far from a good web developer/ designer, But feel free
-                        to copy anything useful you find here.
+                        This is my personal website. I made this to learn more about HTML, CSS and JavaScript. I also
+                        wanted to learn how to host a website on GitHub Pages. I am always looking for new ways to
+                        improve the design.
                     </p>
                 </div>
-            </div>
-        </div>
+            </section>
+            <section class="content-section flex-section terraria-mod">
+                <div>
+                    <h2 id="unnamed-terraria-mod"><a href="#unnamed-terraria-mod" tabindex="0" class="link">Unnamed
+                            Terraria mod</a></h2>
+                    <p>
+                        I mainly made this mod to learn more about C#, and to try something new. This mod currently does
+                        not add anything noteworthy to the game. It is also not yet published anywhere.
+                    </p>
+                </div>
+            </section>
+            <footer class="content-section footer">
+                <p>
+                    <a href="https://www.github.com/arandommenno/" class="link" target="_blank" tabindex="0">my
+                        Github</a>
+                </p>
+                <p>
+                    <a href="https://signal.me/#eu/0OLO6qJBbLzyAo8nilPOaU8CFgUZocUNhUPe9CvRaPSOw5f4ZJtPLqd5jYP7Ai3b"
+                        class="link" target="_blank" tabindex="0">my Signal</a>
+                </p>
+            </footer>
+        </main>
     </body>
 </html>
