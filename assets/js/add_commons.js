@@ -32,7 +32,7 @@ function setFooter() {
     const footer_html = `
         <p>&copy; 2025 Menno van Zoelen, all rights reserved.</p>
         <p>
-            <a href="https://www.github.com/arandommenno/" class="link" target="_blank" tabindex="0">myGithub</a>
+            <a href="https://www.github.com/arandommenno/" class="link" target="_blank" tabindex="0">my Github</a>
         </p>
         <p>
             <a href="https://signal.me/#eu/0OLO6qJBbLzyAo8nilPOaU8CFgUZocUNhUPe9CvRaPSOw5f4ZJtPLqd5jYP7Ai3b" class="link" target="_blank" tabindex="0">my Signal</a>
