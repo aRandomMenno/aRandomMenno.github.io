@@ -1,42 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta charset="UTF-8">
 
-        <meta name="description" content="Page not found - Menno van Zoelen's personal website">
-        <meta name="keywords" content="Menno, van Zoelen, 404, not found, error page">
-        <meta name="author" content="Menno van Zoelen">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8">
 
-        <link rel="stylesheet" href="/assets/css/styles.css">
-        <link rel="stylesheet" href="/assets/css/404.css">
-        <link rel="stylesheet" href="/assets/css/tiny.css">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self' data:; object-src 'none'; base-uri 'self'; frame-ancestors 'none';">
 
-        <link rel="shortcut icon" href="/assets/icons/favicon-192x192.png" type="image/x-icon">
-        <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png" type="image/x-icon">
+    <script>
+        (function () {
+            const darkMode = localStorage.getItem("dark_mode");
+            const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
-        <meta property="og:country-name" content="Netherlands">
-        <meta property="og:locality" content="Spijkenisse">
-        <meta property="og:title" content="Menno van Zoelen | Page Not Found">
-        <meta property="og:description" content="Page not found - Menno van Zoelen's personal website">
-        <meta property="og:image" content="/assets/images/og_image.png">
+            if (darkMode === "true" || (darkMode === null && prefersDark)) {
+                document.documentElement.setAttribute("data_theme", "dark");
+            } else {
+                document.documentElement.setAttribute("data_theme", "light");
+            }
+        })();
+    </script>
 
-        <title>Menno's Personal Website -- Page not found</title>
-    </head>
+    <meta name="description" content="Page not found - Menno van Zoelen's personal website">
+    <meta name="keywords" content="Menno, van Zoelen, 404, not found, error page">
+    <meta name="author" content="Menno van Zoelen">
 
-    <body>
-        <main>
-            <section>
-                <h1>404 \ Page Not Found</h1>
-                <p>
-                    Oops! The page you are looking for does not exist. <a href="/" class="link">Return Home</a> or
-                    <a
-                        href="javascript:history.back()" class="link">go back in time</a>.
-                </p>
-            </section>
-        </main>
-    </body>
-    <script src="./assets/js/oneko.js"></script>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/404.css">
+    <link rel="stylesheet" href="/assets/css/tiny.css">
+
+    <link rel="shortcut icon" href="/assets/icons/favicon-192x192.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png" type="image/x-icon">
+
+    <meta property="og:country-name" content="Netherlands">
+    <meta property="og:locality" content="Spijkenisse">
+    <meta property="og:title" content="Menno van Zoelen | Page Not Found">
+    <meta property="og:description" content="Page not found - Menno van Zoelen's personal website">
+    <meta property="og:image" content="/assets/images/og_image.png">
+
+    <title>TWIG \\ 404</title>
+</head>
+
+<body>
+    <main>
+        <section>
+            <h1>404 \ Page Not Found</h1>
+            <p>
+                Oops! The page you are looking for does not exist. <a href="/" class="link">Return Home</a> or
+                <a href="javascript:history.back()" class="link">go back in time</a>.
+            </p>
+        </section>
+    </main>
+</body>
+<script src="/assets/js/oneko.js"></script>
+
 </html>

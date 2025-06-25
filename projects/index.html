@@ -1,102 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta charset="UTF-8">
 
-        <meta name="description"
-            content="Software development projects by Menno van Zoelen, including web applications and game mods.">
-        <meta name="keywords"
-            content="Menno, van Zoelen, projects, software development, programming, GitHub, Terraria, mod, web development">
-        <meta name="author" content="Menno van Zoelen">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8">
 
-        <link rel="stylesheet" href="../assets/css/styles.css">
-        <link rel="stylesheet" href="../assets/css/tiny.css">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self' data:; object-src 'none'; base-uri 'self'; frame-ancestors 'none';">
 
-        <script src="../assets/js/add_commons.js"></script>
-        <script src="../assets/js/dark_toggle.js"></script>
-        <script src="../assets/js/display_last_edited.js"></script>
+    <script>
+        (function () {
+            const darkMode = localStorage.getItem("dark_mode");
+            const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
-        <link rel="shortcut icon" href="../assets/icons/favicon-192x192.png" type="image/x-icon">
-        <link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png" type="image/x-icon">
+            if (darkMode === "true" || (darkMode === null && prefersDark)) {
+                document.documentElement.setAttribute("data_theme", "dark");
+            } else {
+                document.documentElement.setAttribute("data_theme", "light");
+            }
+        })();
+    </script>
 
-        <meta property="og:country-name" content="Netherlands">
-        <meta property="og:locality" content="Spijkenisse">
-        <meta property="og:title" content="Menno van Zoelen | Projects">
-        <meta property="og:description"
-            content="Software development projects by Menno van Zoelen, including web applications and game mods.">
-        <meta property="og:image" content="../assets/images/og_image.png">
+    <meta name="description"
+        content="Software development projects by Menno van Zoelen, including web applications and game mods.">
+    <meta name="keywords"
+        content="Menno, van Zoelen, projects, software development, programming, GitHub, Terraria, mod, web development">
+    <meta name="author" content="Menno van Zoelen">
 
-        <title>Menno's Personal Website -- Projects page</title>
-    </head>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/tiny.css">
 
-    <body>
-        <header>
-            <nav>
-                Nav items should be added with JavaScript. If they are not showing up, please check the console for
-                errors or try enabling JavaScript. (If you don't know what this means, please contact me)
-            </nav>
-        </header>
+    <script src="../assets/js/add_commons.js"></script>
+    <script src="../assets/js/dark_toggle.js"></script>
+    <script src="../assets/js/display_last_edited.js"></script>
 
-        <main>
-            <section class="content-section flex-section">
-                <div>
-                    <h2>Some projects I helped with/ made.</h2>
-                    <p>
-                        This page display some of the projects I made or helped with. I currently have no idea what 
-                        kind of project to work on next. For now though I'll be making a Terraria mod.
-                    </p>
-                    <p>
-                        This page was last updated on: <span id="last_edited"></span>.
-                    </p>
-                </div>
-            </section>
-            <section class="content-section flex-section goober-os">
-                <div>
+    <link rel="shortcut icon" href="../assets/icons/favicon-192x192.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png" type="image/x-icon">
+
+    <meta property="og:country-name" content="Netherlands">
+    <meta property="og:locality" content="Spijkenisse">
+    <meta property="og:title" content="Menno van Zoelen | Projects">
+    <meta property="og:description"
+        content="Software development projects by Menno van Zoelen, including web applications and game mods.">
+    <meta property="og:image" content="../assets/images/og_image.png">
+
+    <title>Some projects</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="../" class="nav-logo">Menno</a>
+            <ul class="nav-links">
+                <li><a href="../">Home</a></li>
+                <li><a href="../projects/">Projects</a></li>
+                <li><a href="../gallery/">Gallery</a></li>
+            </ul>
+            <button id="dark_toggle" aria-label="Toggle dark mode"></button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section content-section">
+            <h1>My Projects</h1>
+            <p>
+                A showcase of software development projects I've created or contributed to,
+                ranging from web applications to game modifications.
+            </p>
+        </section>
+
+        <section class="content-section">
+            <div class="flex-section">
+                <div class="card">
                     <h2>
-                        <a href="https://github.com/JeaV2/gooberos/" target="_blank" tabindex="0" class="link">Goober
-                            OS</a>
+                        <a href="https://github.com/JeaV2/gooberos/" target="_blank" class="link">
+                            Goober OS 🖥️
+                        </a>
                     </h2>
+                    <div style="margin-bottom: 1rem;">
+                        <span class="badge">JavaScript</span>
+                        <span class="badge">Terminal</span>
+                        <span class="badge">GUI</span>
+                        <span class="badge">Team Project</span>
+                    </div>
                     <p>
-                        Goober OS is a web based Terminal. With a command to open a windows 95/98 Inspired GUI.
-                        I made this in collaboration with <a href="https://github.com/astralvrz" target="_blank"
-                            class="link" tabindex="0">Jea</a> (my sister), Stone, Tigo and Rianne. It was a school
-                        project for a Make-a-thon. We had 48 hours to make a project in the theme of Lo-Fi Retro. And
-                        always 1 person had to be programming. We had a lot of fun making this project. I mostly worked
-                        on the logic for the commands in the terminal.
+                        A web-based terminal emulator with a nostalgic Windows 95/98 inspired GUI.
+                        Built during a 48-hour Make-a-thon with the theme "Lo-Fi Retro" in collaboration
+                        with my sister <a href="https://github.com/astralvrz" target="_blank" class="link">Jea</a> and
+                        Stone, Rianne, and Tigo (2 classmates and 1 schoolmate).
                     </p>
+                    <p>
+                        <strong>My Role:</strong> Developed the core command logic and terminal functionality,
+                        ensuring smooth command parsing and execution within the retro-themed interface.
+                    </p>
+                    <div style="margin-top: 1.5rem;">
+                        <a href="https://github.com/JeaV2/gooberos/" target="_blank" class="btn">
+                            View on GitHub
+                        </a>
+                    </div>
                 </div>
-            </section>
-            <section class="content-section flex-section personal-website">
-                <div>
+
+                <div class="card">
                     <h2>
-                        <a href="https://github.com/arandommenno/arandommenno.github.io" target="_blank"
-                            tabindex="0" class="link">Personal website</a>
+                        <a href="https://github.com/arandommenno/arandommenno.github.io" target="_blank" class="link">
+                            Personal Website 🌐
+                        </a>
                     </h2>
+                    <div style="margin-bottom: 1rem;">
+                        <span class="badge">HTML</span>
+                        <span class="badge">CSS</span>
+                        <span class="badge">JavaScript</span>
+                        <span class="badge">GitHub Pages</span>
+                    </div>
                     <p>
-                        This is my personal website. I made this to learn more about HTML, CSS and JavaScript. I also
-                        wanted to learn how to host a website on GitHub Pages. I am always looking for new ways to
-                        improve the design.
+                        This very website you're browsing! A modern, responsive personal portfolio
+                        built from scratch to showcase my work and learn web development fundamentals.
                     </p>
-                </div>
-            </section>
-            <section class="content-section flex-section terraria-mod">
-                <div>
-                    <h2 id="unnamed-terraria-mod"><a href="#unnamed-terraria-mod" tabindex="0" class="link">Unnamed
-                            Terraria mod</a></h2>
                     <p>
-                        I mainly made this mod to learn more about C#, and to try something new. This mod currently does
-                        not add anything noteworthy to the game. It is also not yet published anywhere.
+                        <strong>Features:</strong> Dark/light theme toggle, responsive design,
+                        photography gallery, project showcase, and smooth animations. Continuously
+                        improving the design and adding new features.
                     </p>
+                    <div style="margin-top: 1.5rem;">
+                        <a href="https://github.com/arandommenno/arandommenno.github.io" target="_blank" class="btn">
+                            View Source Code
+                        </a>
+                    </div>
                 </div>
-            </section>
-            <footer class="content-section footer">
-                Footer content should be added with JavaScript. If it is not showing up, please check the console for
-                errors or try enabling JavaScript. (If you don't know what this means, please contact me)
-            </footer>
-        </main>
-    </body>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>What's Next?</h2>
+            <div class="card">
+                <h3>🎮 Terraria Mod Development</h3>
+                <p>
+                    I would love to create a mod for Terraria using C# however currently I am still focused on school
+                    projects, so I'm busy with HTML, CSS, JS and PHP. So I am not really working on this <i>yet</i>.
+                </p>
+                <p>
+                    <strong>My goals:</strong> C# knowledge, game modding skills, getting familiar with tModLoader,
+                    and contributing to the Terraria modding community.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Improve Comment finder extension</h3>
+                <p>
+                    Some time ago I made an improvement to an existing extension called HTML Comment Finder (for
+                    firefox). Which my sister forked from the Chrome version. I made some improvements to the
+                    extension improving readability and accidentally introduced a security vulnerability.
+                </p>
+                <p>
+                    The security vulnerability in the extension would make it so that any commented out script tag would
+                    be executed when the extension was enabled. Like this would be executed: <br>
+                    <code>&lt;script src="https://example.com/malicious_script.js"&gt;&lt;script&gt;</code> <br>
+                    This was promptly fixed by my sister.
+                </p>
+                <!-- Search function -->
+                <!-- Customize Popup -->
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div style="text-align: center;">
+                <h2>Would you like to code with me?</h2>
+                <p style="margin-bottom: 2rem;">
+                    I'm always open to coding with others, it doesn't really matter what you do, maybe you can help me
+                    learn another language or I can help you with something. I would also
+                </p>
+                <a href="https://github.com/arandommenno" class="btn" target="_blank">
+                    Check out my GitHub
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p>&copy; 2025 Menno van Zoelen. All rights reserved.</p>
+            <p style="margin-top: 0.5rem; font-size: 0.875rem;">
+                Last updated: <span id="last_edited"></span>
+            </p>
+        </div>
+    </footer>
+
     <script src="../assets/js/oneko.js"></script>
+</body>
+
 </html>

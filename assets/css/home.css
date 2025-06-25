@@ -9,7 +9,7 @@
 
 .dutchy:hover {
 	scale: 1.1;
-	transition: scale 0.3s ease;
+	transition: scale 0.6s ease;
 	cursor: help;
 }
 
@@ -19,12 +19,14 @@
 	height: auto;
 	border-radius: 16px;
 	overflow: hidden;
+    /* border: 2px solid var(--color-header-border); */
 }
 
 .picture {
 	width: 100%;
 	height: auto;
 	border-radius: 16px;
+    /* border: 2px solid var(--color-header-border); */
 }
 
 .me {

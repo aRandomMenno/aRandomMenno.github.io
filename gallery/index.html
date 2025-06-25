@@ -1,85 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta charset="UTF-8">
 
-        <meta name="description"
-            content="Photography gallery showcasing Menno van Zoelen's nature, wildlife, and landscape photography work.">
-        <meta name="keywords"
-            content="Menno, van Zoelen, photography, gallery, nature, animals, landscapes, wildlife, photos, pictures">
-        <meta name="author" content="Menno van Zoelen">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8">
 
-        <link rel="stylesheet" href="../assets/css/styles.css">
-        <link rel="stylesheet" href="../assets/css/gallery.css">
-        <link rel="stylesheet" href="../assets/css/tiny.css">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self' data:; object-src 'none'; base-uri 'self'; frame-ancestors 'none';">
 
-        <script src="../assets/js/add_commons.js"></script>
-        <script src="../assets/js/dark_toggle.js"></script>
-        <script src="../assets/js/display_last_edited.js"></script>
+    <script>
+        (function () {
+            const darkMode = localStorage.getItem("dark_mode");
+            const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
-        <link rel="shortcut icon" href="../assets/icons/favicon-192x192.png" type="image/x-icon">
-        <link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png" type="image/x-icon">
+            if (darkMode === "true" || (darkMode === null && prefersDark)) {
+                document.documentElement.setAttribute("data_theme", "dark");
+            } else {
+                document.documentElement.setAttribute("data_theme", "light");
+            }
+        })();
+    </script>
 
-        <meta property="og:country-name" content="Netherlands">
-        <meta property="og:locality" content="Spijkenisse">
-        <meta property="og:title" content="Menno van Zoelen | Photography Gallery">
-        <meta property="og:description"
-            content="Photography gallery showcasing Menno van Zoelen's nature, wildlife, and landscape photography work.">
-        <meta property="og:image" content="../assets/images/og_image.png">
+    <meta name="description"
+        content="Photography gallery showcasing Menno van Zoelen's nature, wildlife, and landscape photography work.">
+    <meta name="keywords"
+        content="Menno, van Zoelen, photography, gallery, nature, animals, landscapes, wildlife, photos, pictures">
+    <meta name="author" content="Menno van Zoelen">
 
-        <title>Menno's Personal Website -- Photography Gallery</title>
-    </head>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/gallery.css">
+    <link rel="stylesheet" href="../assets/css/tiny.css">
 
-    <body>
-        <header>
-            <nav>
-                Nav items should be added with JavaScript. If they are not showing up, please check the console for
-                errors or try enabling JavaScript. (If you don't know what this means, please contact me)
-            </nav>
-        </header>
+    <script src="../assets/js/add_commons.js"></script>
+    <script src="../assets/js/dark_toggle.js"></script>
+    <script src="../assets/js/display_last_edited.js"></script>
 
-        <main>
-            <section class="content-section">
-                <h1 class="gallery-title">My Photography Collection</h1>
-                <p class="gallery-description">
-                    A selection of my favorite photographs. I enjoy capturing nature, animals, and interesting moments.
-                </p>
-                <p>
-                    This page was last updated on: <span id="last_edited"></span>.
-                </p>
-            </section>
+    <link rel="shortcut icon" href="../assets/icons/favicon-192x192.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png" type="image/x-icon">
 
-            <section class="content-section flex-section">
-                <div>
-                    <img src="../assets/images/pict_thor_1.jpg" alt="A picture of my cat Thor" class="pic">
-                    <img src="../assets/images/pict_thor_2.jpg" alt="Another picture of my cat Thor" class="pic">
+    <meta property="og:country-name" content="Netherlands">
+    <meta property="og:locality" content="Spijkenisse">
+    <meta property="og:title" content="Menno van Zoelen | Photography Gallery">
+    <meta property="og:description"
+        content="Photography gallery showcasing Menno van Zoelen's nature, wildlife, and landscape photography work.">
+    <meta property="og:image" content="../assets/images/og_image.png">
+
+    <title>My photography gallery</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="../" class="nav-logo">Menno</a>
+            <ul class="nav-links">
+                <li><a href="../">Home</a></li>
+                <li><a href="../projects/">Projects</a></li>
+                <li><a href="../gallery/">Gallery</a></li>
+            </ul>
+            <button id="dark_toggle" aria-label="Toggle dark mode"></button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content-section gallery-hero">
+            <h1>Photography Gallery</h1>
+            <p>
+                A small collection of photographs I have taken over the years, these photos range from nature and
+                animals to landscapes and interesting plants. I hope you like the photos I have taken.
+            </p>
+            <p>
+                More photos will be added over time. So you can check back every now and then to see if anything has
+                changed.
+            </p>
+        </section>
+
+        <section class="content-section">
+            <h2>Photo collection</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="../assets/images/gallery/pict_thor_1.jpg" alt="Thor the cat">
                 </div>
-                <div>
-                    <img src="../assets/images/elk.jpg" alt="A picture of an elk in Finland with Snow." class="pic">
-                    <img src="../assets/images/fire_salamander.jpg" alt="A picture of a fire salamander from Germany"
-                        class="pic">
-                </div>
-            </section>
 
-            <section class="content-section flex-section">
-                <div>
-                    <img src="../assets/images/mushroom.jpg" alt="Forest mushroom" class="pic">
-                    <img src="../assets/images/forest_1.jpg" alt="Forest landscape" class="pic">
+                <div class="gallery-item">
+                    <img src="../assets/images/gallery/elk.jpg" alt="Elk in Finland">
                 </div>
-                <div>
-                    <img src="../assets/images/plant.jpg" alt="Interesting plant" class="pic">
-                    <img src="../assets/images/fossil.jpg" alt="Ancient fossil" class="pic">
-                </div>
-            </section>
 
-            <footer class="content-section footer">
-                Footer content should be added with JavaScript. If it is not showing up, please check the console for
-                errors or try enabling JavaScript. (If you don't know what this means, please contact me)
-            </footer>
-        </main>
-    </body>
+                <div class="gallery-item">
+                    <img src="../assets/images/gallery/fire_salamander.jpg" alt="Fire salamander">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="../assets/images/gallery/mushroom.jpg" alt="Forest mushroom">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="../assets/images/gallery/forest_1.jpg" alt="Forest landscape">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="../assets/images/gallery/plant.jpg" alt="Interesting plant">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="../assets/images/gallery/fossil.jpg" alt="Ancient fossil">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="../assets/images/gallery/pict_thor_2.jpg" alt="Thor (my cat)">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="../assets/images/gallery/some_cool_flow.jpg" alt="A really cool flower">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p>&copy; 2025 Menno van Zoelen. All rights reserved.</p>
+            <p style="margin-top: 0.5rem; font-size: 0.875rem;">
+                Last updated: <span id="last_edited"></span>
+            </p>
+        </div>
+    </footer>
+
     <script src="../assets/js/oneko.js"></script>
+</body>
+
 </html>
