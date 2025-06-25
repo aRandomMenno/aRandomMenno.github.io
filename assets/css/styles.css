@@ -211,6 +211,7 @@ main {
 }
 
 .card {
+    margin-bottom: 2em;
     background: var(--color-surface-elevated);
     border-radius: var(--radius-xl);
     padding: 2rem;
@@ -220,6 +221,21 @@ main {
 }
 
 .card:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-4px);
+}
+
+.card-bottom {
+    margin-bottom: 0;
+    background: var(--color-surface-elevated);
+    border-radius: var(--radius-xl);
+    padding: 2rem;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s ease;
+    border: 1px solid var(--color-border);
+}
+
+.card-bottom:hover {
     box-shadow: var(--shadow-md);
     transform: translateY(-4px);
 }
