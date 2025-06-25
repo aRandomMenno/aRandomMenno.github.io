@@ -1,43 +1,43 @@
 .pic {
-	width: 100%;
-	height: auto;
-	border-radius: 16px;
-	margin-bottom: 24px;
-	transition: transform 0.3s ease, box-shadow 0.3s ease;
-	box-shadow: 0 4px 8px var(--color-shadow);
-	object-fit: cover;
+    width: 100%;
+    height: auto;
+    border-radius: 1em;
+    margin-bottom: 1.5em;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px var(--color-shadow);
+    object-fit: cover;
 }
 
 .pic:hover {
-	transform: scale(1.03);
-	box-shadow: 0 8px 16px var(--color-shadow);
+    transform: scale(1.03);
+    box-shadow: 0 0.5em 1em var(--color-shadow);
 }
 
 .flex-section div {
-	display: flex;
-	flex-direction: column;
-	gap: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
 }
 
 .gallery-title {
-	text-align: center;
-	margin-bottom: 32px;
-	color: var(--color-accent);
+    text-align: center;
+    margin-bottom: 2em;
+    color: var(--color-accent);
 }
 
 .gallery-description {
-	text-align: center;
-	margin-bottom: 48px;
-	max-width: 800px;
-	margin-left: auto;
-	margin-right: auto;
+    text-align: center;
+    margin-bottom: 2.5em;
+    max-width: 50em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
-    margin-top: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(18.75em, 1fr));
+    gap: 1.5em;
+    margin-top: 2em;
 }
 
 .gallery-item {
@@ -50,13 +50,13 @@
 }
 
 .gallery-item:hover {
-    transform: translateY(-8px);
+    transform: translateY(-0.5em);
     box-shadow: var(--shadow-xl);
 }
 
 .gallery-item img {
     width: 100%;
-    height: 250px;
+    height: 15.625em;
     object-fit: cover;
     transition: transform 0.3s ease;
     border-radius: var(--radius-xl);
@@ -69,7 +69,7 @@
 
 .gallery-hero {
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 3em;
 }
 
 .gallery-hero h1 {
@@ -77,20 +77,20 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    margin-bottom: 1rem;
+    margin-bottom: 1em;
 }
 
-@media (max-width: 900px) {
-	.pic {
-		margin-bottom: 16px;
-	}
+@media (max-width: 56.25em) {
+    .pic {
+        margin-bottom: 1em;
+    }
 
-	.flex-section div {
-		gap: 16px;
-	}
+    .flex-section div {
+        gap: 1em;
+    }
 
     .gallery-grid {
         grid-template-columns: 1fr;
-        gap: 1rem;
+        gap: 1em;
     }
 }

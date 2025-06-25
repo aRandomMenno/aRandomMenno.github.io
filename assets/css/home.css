@@ -1,38 +1,36 @@
 .inline_flag {
-	display: inline-block;
-	vertical-align: middle;
-	height: 1.6em;
-	margin: 0 0.25em;
-	position: relative;
-	top: -0.05em;
+    display: inline-block;
+    vertical-align: middle;
+    height: 1.6em;
+    margin: 0 0.25em;
+    position: relative;
+    top: -0.05em;
 }
 
 .dutchy:hover {
-	scale: 1.1;
-	transition: scale 0.6s ease;
-	cursor: help;
+    scale: 1.1;
+    transition: scale 0.6s ease;
+    cursor: help;
 }
 
 .image-container {
-	width: 100%;
-	max-width: 400px;
-	height: auto;
-	border-radius: 16px;
-	overflow: hidden;
-    /* border: 2px solid var(--color-header-border); */
+    width: 100%;
+    max-width: 25em;
+    height: auto;
+    border-radius: 1em;
+    overflow: hidden;
 }
 
 .picture {
-	width: 100%;
-	height: auto;
-	border-radius: 16px;
-    /* border: 2px solid var(--color-header-border); */
+    width: 100%;
+    height: auto;
+    border-radius: 1em;
 }
 
 .me {
-	transition: scale 0.3s ease;
+    transition: scale 0.3s ease;
 }
 
 .me:hover {
-	scale: 1.14;
+    scale: 1.14;
 }

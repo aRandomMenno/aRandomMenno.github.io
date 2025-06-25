@@ -1,77 +1,111 @@
-@media (max-width: 1424px) {
-	nav {
-		margin: 12px;
-	}
+@media (max-width: 89em) {
+    nav {
+        margin: 0.75em;
+    }
 }
 
-@media (max-width: 1332px) {
-	.content-section {
-		margin: 24px 16px;
-	}
+@media (max-width: 83.25em) {
+    .content-section {
+        margin: 1.5em 1em;
+    }
 
-	.flex-section {
-		gap: 32px;
-	}
+    .flex-section {
+        gap: 2em;
+    }
 
-	nav {
-		padding: 0 24px;
-	}
+    nav {
+        padding: 0 1.5em;
+    }
 }
 
-@media (max-width: 900px) {
-	.flex-section {
-		flex-direction: column;
-		align-items: right;
-		padding: 16px 16px;
-		gap: 24px;
-	}
+@media (max-width: 56.25em) {
+    .flex-section {
+        flex-direction: column;
+        align-items: right;
+        padding: 1em 1em;
+        gap: 1.5em;
+    }
 
-	.image-container {
-		/* max-width: 100%; */
-		margin: 0 0 16px 16px;
-	}
+    .image-container {
+        margin: 0 0 1em 1em;
+    }
 
-	nav {
-		flex-wrap: wrap;
-		justify-content: center;
-		gap: 16px;
-		height: auto;
-		padding: 10px 16px;
-	}
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1em;
+        height: auto;
+        padding: 0.625em 1em;
+    }
 
-	#dark_toggle {
-		margin-top: 6px;
-		margin-bottom: 6px;
-	}
+    #dark_toggle {
+        margin-top: 0.375em;
+        margin-bottom: 0.375em;
+    }
 
-	.footer {
-		flex-direction: column;
-		align-items: center;
-		gap: 8px;
-	}
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5em;
+    }
 
-	.footer p {
-		/* width: 100%; */
-		text-align: center;
-	}
+    .footer p {
+        text-align: center;
+    }
 }
 
-@media (max-width: 600px) {
-	nav {
-		margin: 10px;
-		border-radius: 12px;
-	}
+@media (max-width: 48em) {
+    nav {
+        padding: 1em;
+        flex-direction: column;
+        gap: 1em;
+    }
 
-	header {
-		top: 12px;
-		height: auto;
-	}
+    .nav-links {
+        gap: 1em;
+    }
 
-	body {
-		font-size: 1rem;
-	}
+    main {
+        padding: 1em;
+    }
 
-	.content-section {
-		padding: 24px 16px;
-	}
+    .content-section {
+        padding: 2em;
+    }
+
+    .hero-section {
+        padding: 3em 2em;
+    }
+
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .flex-section {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        transition: transform 0.3s ease;
+    }
+}
+
+@media (max-width: 37.5em) {
+    nav {
+        margin: 0.625em;
+        border-radius: 0.75em;
+    }
+
+    header {
+        top: 0.75em;
+        height: auto;
+    }
+
+    body {
+        font-size: 1rem;
+    }
+
+    .content-section {
+        padding: 1.5em 1em;
+    }
 }

@@ -3,47 +3,48 @@ main {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    padding: 24px;
+    padding: 1.5em;
 }
 
 section {
     background-color: var(--color-section);
-    border-radius: 24px;
-    padding: 48px;
+    border-radius: 1.5em;
+    padding: 3em;
     text-align: center;
-    max-width: 800px;
+    max-width: 50em;
     width: 100%;
-    box-shadow: 0 0 32px var(--color-section_shadow);
+    box-shadow: 0 0 2em var(--color-section_shadow);
     animation: fade-in 0.8s ease-in-out;
 }
 
 h1 {
     font-size: 3rem;
-    margin-bottom: 24px;
+    margin-bottom: 1.5em;
     color: var(--color-accent);
     font-family: "retro computer", monospace;
 }
 
 p {
     font-size: 1.4rem;
-    margin-bottom: 24px;
+    margin-bottom: 1.5em;
     line-height: 1.6;
 }
 
 @keyframes fade-in {
     from {
         opacity: 0;
-        transform: translateY(-20px);
+        transform: translateY(-1.25em);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 37.5em) {
     section {
-        padding: 32px 24px;
+        padding: 2em 1.5em;
     }
 
     h1 {
