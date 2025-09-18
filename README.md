@@ -1,4 +1,0 @@
-
-# gekko
-
-> Hekko woodde degga

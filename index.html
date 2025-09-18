@@ -1,167 +1,73 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en-US">
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta charset="UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="content-language" content="en-NL">
 
-    <meta http-equiv="Content-Security-Policy"
-        content="default-src 'self'; script-src 'self' 'unsafe-inline' gc.zgo.at; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self' data:; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; connect-src 'self' gc.zgo.at;">
-
-    <script>
-        (function () {
-            const darkMode = localStorage.getItem("dark_mode");
-            const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-
-            if (darkMode === "true" || (darkMode === null && prefersDark)) {
-                document.documentElement.setAttribute("data_theme", "dark");
-            } else {
-                document.documentElement.setAttribute("data_theme", "light");
-            }
-        })();
-    </script>
-
-    <meta name="description"
-        content="Personal hobby website of Menno van Zoelen, a software development student from the Netherlands.">
-    <meta name="keywords"
-        content="Menno, van Zoelen, personal, hobby, software development, photography, Linux, gaming, games, Netherlands">
-    <meta name="author" content="Menno van Zoelen">
-
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/home.css">
-    <link rel="stylesheet" href="assets/css/tiny.css">
-
-    <script src="assets/js/add_commons.js"></script>
-    <script src="assets/js/welcome.js"></script>
-    <script src="assets/js/dark_toggle.js"></script>
-    <script src="assets/js/display_last_edited.js"></script>
-
-    <link rel="shortcut icon" href="assets/icons/favicon-192x192.png" type="image/x-icon">
-    <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png" type="image/x-icon">
-
-    <meta property="og:country-name" content="Netherlands">
-    <meta property="og:locality" content="Spijkenisse">
-    <meta property="og:title" content="Menno van Zoelen | Personal Website">
-    <meta property="og:description"
-        content="Personal hobby website of Menno van Zoelen, a software development student from the Netherlands.">
-    <meta property="og:image" content="assets/images/og_image.png">
-
-    <title>Menno van Zoelen | Software Developer & Photographer</title>
+  <title>Hobbysite | Hobby photographer</title>
+  <link rel="stylesheet" href="css/general.css">
+  <link rel="stylesheet" href="css/home.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="/" class="nav-logo">Menno</a>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="projects/">Projects</a></li>
-                <li><a href="gallery/">Gallery</a></li>
-            </ul>
-            <button id="dark_toggle" aria-label="Toggle dark mode"></button>
-        </nav>
-    </header>
+  <header>
+    <nav>
+      <a href=".">Home</a>
+      <a href="projects/">Projects</a>
+      <!-- <a href="gallery/">Picture gallery</a> -->
+      <!-- <a href="stuff/">Other stuff</a> This is to do -->
+    </nav>
+  </header>
 
-    <main>
-        <section class="hero-section content-section">
-            <h1 id="welcome_message">Hi, I'm Menno! 👋</h1>
-            <p>
-                Software development student from the Netherlands with an interest in technology, photography and
-                gaming.
-            </p>
-        </section>
+  <main>
+    <section>
+      <h1 id="greetings">"Greetings, internet traveler! My name is <n>Menno</n>.</h1>
+      <p>
+        And welcome to my little pebble on the internet! I'm <span id="age">17 (this might be outdated)</span> years old
+        and live in the Netherland Near Rotterdam. Currently I am studying Software Development (3 year course), my two
+        most used coding languages are <pr>JavaScript</pr> and <pr>PHP</pr>. Which I wish to change but do not have
+        the motivation for, as the world is currently destroying itself.
+      </p>
+      <p>
+        For School we are still learning about web development however due to the Minor I chose to do (Applied
+        Development) I'll be learning to make websites with ASP.NET (C# and Razor). I do not know yet how I feel about
+        that just yet. What I do know is that it's made by Microsoft, so I already have a grudge against the framework.
+      </p>
+      <p>
+        Other things I like to do in my spare time include but are not limited to sleeping, gaming and coding. I'm
+        actually pretty boring, I know. There's also a reason why this website looks pretty "boring", I don't like the
+        way how most websites look. They're overengineered and take up megabytes of bandwidth just to show a few images
+        and some text, I know that this website is not Facebook/Meta or YouTube but those website are so slow. I hate
+        the current state of the internet, it's just a mess of 99% AI, Ads and trackers.
+        <!-- You <i>could</i> take a look what I have to say about random news or stuff I found on the internet
+        <a href="stuff/" class="link">here</a>. -->
+      </p>
+    </section>
+    <section>
+      <h2>Some chores</h2>
+      <ol>
+        <li>Bring back the picture gallery. (didn't have the time yet)</li>
+        <li>Make some sort of "blog" about random stuff I did, found or want to share.</li>
+        <li>Add TL;DR before ranting.</li>
+      </ol>
+    </section>
+  </main>
 
-        <section class="content-section flex-section">
-            <div class="card">
-                <h2>About Me</h2>
-                <p>
-                    I'm a <im>17-year-old</im> software development student at
-                    <a href="https://www.glr.nl/opleidingen/software-developer" target="_blank" class="link">
-                        GLR Rotterdam</a>.
-                    Currently in my first year of a 3-year program. I enjoy coding and I'm trying to learn as much about
-                    software (development) as I can.
-                </p>
-                <p>
-                    From <a href="https://en.wikipedia.org/wiki/Spijkenisse" target="_blank" class="link">Spijkenisse,
-                        Netherlands</a>
-                    🇳🇱, I spend my time coding, gaming with friends, exploring cybersecurity, and taking pictures.
-                </p>
-                <div class="badge-container">
-                    <span class="badge">Python</span>
-                    <span class="badge">JavaScript</span>
-                    <span class="badge">HTML/CSS</span>
-                    <span class="badge">Photography</span>
-                </div>
-            </div>
-            <div class="card">
-                <img src="assets/images/pict_me.jpg" alt="A picture of me in Spain" class="card-image">
-                <h3>Currently Learning</h3>
-                <p>
-                    Focusing on <im>JavaScript</im>, <im>HTML</im>, and <im>CSS</im> for web development.
-                    Also working with <im>PHP</im> for school projects, though I'd prefer to dive deeper
-                    into <im>C#</im> for game development or return to <im>Python</im> for its versatility.
-                </p>
-            </div>
-        </section>
-
-        <section class="content-section">
-            <h2>What I'm Up To</h2>
-            <div class="flex-section">
-                <div class="card">
-                    <h3>🎮 Gaming & Development</h3>
-                    <p>
-                        Exploring game development possibilities, particularly interested in creating
-                        Terraria mods using C# to combine my love for gaming with programming.
-                    </p>
-                </div>
-                <div class="card">
-                    <h3>🔐 Cybersecurity</h3>
-                    <p>
-                        Learning about information security, ethical hacking concepts, and staying
-                        updated with the latest security practices in software development.
-                    </p>
-                </div>
-                <div class="card">
-                    <h3>📸 Photography</h3>
-                    <p>
-                        Capturing nature, wildlife, and interesting moments. Check out my
-                        <a href="gallery/" class="link">photography gallery</a> to see my work!
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section class="content-section">
-            <div class="text-center">
-                <h2>Let's Connect!</h2>
-                <p class="text-center-margin">
-                    Interested in collaborating or just want to chat? Feel free to reach out!
-                </p>
-                <div class="button-flex-container">
-                    <a href="https://github.com/arandommenno" class="btn" target="_blank">
-                        My GitHub Profile
-                    </a>
-                    <a href="https://signal.me/#eu/0OLO6qJBbLzyAo8nilPOaU8CFgUZocUNhUPe9CvRaPSOw5f4ZJtPLqd5jYP7Ai3b"
-                        class="btn" target="_blank">
-                        Chat on Signal
-                    </a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="footer-bottom">
-            <p>&copy; 2025 Menno van Zoelen. All rights reserved.</p>
-            <p class="last-updated-text">
-                Last updated: <span id="last_edited"></span>
-            </p>
-        </div>
-    </footer>
-
-    <script src="assets/js/oneko.js"></script>
+  <footer>
+    <p>
+      &copy; 2025, Menno van Zoelen.
+    </p>
+    <p>Social links:</p>
+    <div class="socials">
+      <a href="https://github.com/arandommenno" target="_blank" class="link">GitHub Profile</a>
+      <a href="" target="_blank" class="link">Message me! (signal)</a>
+    </div>
+  </footer>
 </body>
+<script src="js/greet.js"></script>
 
 </html>
