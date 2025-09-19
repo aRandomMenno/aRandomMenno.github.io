@@ -1,3 +1,29 @@
 .archived {
   color: rgb(255, 175, 30);
 }
+
+.section-flex {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  width: 100%;
+}
+
+.left {
+  width: 50%;
+}
+
+.right {
+  width: 50%;
+}
+
+@media (max-width: 850px) {
+  .section-flex {
+    flex-direction: column;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+}

@@ -38,3 +38,20 @@ pr:hover {
   justify-content: center;
   text-align: center;
 }
+
+.img-myself {
+  width: 100%;
+  max-width: 320px;
+  margin: 1em 0 1em 2em;
+  float: right;
+}
+
+@media (max-width: 700px) {
+  .img-myself {
+    max-width: unset;
+    width: 70%;
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+}
