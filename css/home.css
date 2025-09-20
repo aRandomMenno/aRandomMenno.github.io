@@ -38,7 +38,7 @@ pr:hover {
 
 .img-myself {
   width: 100%;
-  max-width: 320px;
+  max-width: 18em;
   margin: 1em 0 1em 2em;
   float: right;
 }
@@ -50,5 +50,11 @@ pr:hover {
     float: none;
     display: block;
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .img-myself {
+    width: 96%;
   }
 }

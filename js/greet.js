@@ -1,6 +1,6 @@
 // messages = [
 //     "Ping pong, my name is <n>Menno</n>!",
-//     "Oh hey you're here? My name is <n>Menno</n>!",
+//     "Oh hey you"re here? My name is <n>Menno</n>!",
 //     "Hello visitor, my name is <n>Menno</n>!",
 //     "Peek-a-boo! My name is <n>Menno</n>!"
 // ];
@@ -21,7 +21,7 @@ function bday() {
   return Math.abs(ageDate.getUTCFullYear() - 1970);
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  document.getElementById('greetings').innerHTML = messages[Math.floor(Math.random() * messages.length)];
+document.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("greetings").innerHTML = messages[Math.floor(Math.random() * messages.length)];
   document.getElementById("age").innerText = bday();
 });
