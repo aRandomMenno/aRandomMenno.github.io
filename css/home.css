@@ -41,6 +41,7 @@ pr:hover {
   max-width: 18em;
   margin: 1em 0 1em 2em;
   float: right;
+  border-radius: 1em;
 }
 
 @media (max-width: 700px) {

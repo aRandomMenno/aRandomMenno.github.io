@@ -17,6 +17,7 @@
 }
 
 .gallery-img {
+  border-radius: 1em;
   width: 100%;
   height: auto;
   display: block;
