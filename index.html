@@ -19,7 +19,7 @@
       <a href=".">Home</a>
       <a href="projects/">Projects</a>
       <a href="gallery/">Picture gallery</a>
-      <!-- <a href="stuff/">Other stuff</a> This is to do -->
+      <a href="stuff/">Other stuff</a>
     </nav>
   </header>
 
@@ -27,12 +27,20 @@
     <section>
       <h1 id="greetings">"Greetings, internet traveler! My name is <n>Menno</n>.</h1>
       <p>
-        And welcome to my little pebble on the internet! I'm <span id="age">17 (this might be outdated)</span> years old
-        and live in the Netherland Near Rotterdam. Currently I am studying Software Development (3 year course), my two
-        most used coding languages are <pr>JavaScript</pr> and <pr>PHP</pr>. Which I wish to change but do not have
-        the motivation for, as the world is currently destroying itself.
+        <a class="link" id="tldr-btn">Toggle TL:DR</a><br>
+        <span id="tldr" style="display: none;">
+          The TL:DR; Hey, I am 17 year old who loves coding and taking pictures. I am currently studying Software
+          Development (2nd year). I mostly use JavaScript and PHP, but I would love to learn more languages.
+        </span>
       </p>
-      <img src="pictures/myself.jpg" alt="Me in front of an orange wall, with glasses wearing a palm leaf shirt."
+      <p>
+        And welcome to my little pebble on the internet! I'm <span id="age">17 (this might be outdated)</span> years old
+        and live in the Netherland Near Rotterdam. Currently I am studying Software Development (3 year course, in my
+        2nd year), my two most used coding languages are <pr>JavaScript</pr> and <pr>PHP</pr>. Which I wish to change
+        but do not have the motivation for, as the world is currently destroying itself.
+      </p>
+      <img src="pictures/myself.jpg"
+        alt="Me, Menno in luxembourg, with a luxembourg flag in the background. I'm in castle wearing a blue t-shirt with a leaf pattern on it."
         class="img-myself">
       <p>
         For School we are still learning about web development however due to the Minor I chose to do (Applied
@@ -40,17 +48,24 @@
         that just yet. What I do know is that it's made by Microsoft, so I already have a grudge against the framework.
       </p>
       <p>
+        In the future I want to follow a Cyber Security course, so I can become an ethical hacker. I also want to learn
+        more programming languages, like Go, Rust and <i>maybe</i> C/C++. I already know a decent amount of Python and
+        would like to keeping learning it. I also want to learn more about Linux, networking, servers and all that
+        stuff. I am already selfhosting some stuff on my Raspberry Pi at home.
+        <a href="stuff/2025/selfhosting.html">Read more about selfhosting</a>
+      </p>
+      <p>
         Other things I like to do in my spare time include but are not limited to sleeping, gaming and coding. I'm
-        actually pretty boring, I know. There's also a reason why this website looks pretty "boring", I don't like the
-        way how most websites look. They're overengineered and take up megabytes of bandwidth just to show a few images
-        and some text, I know that this website is not Facebook/Meta or YouTube but those website are so slow. I hate
-        the current state of the internet, it's just a mess of 99% AI, Ads and trackers. Which this page does not have.
+        actually pretty boring, I know. There's also a reason why this website looks pretty "boring" compared to other
+        websute, I don't like the way how most modern websites look. They're overengineered and take up megabytes of
+        bandwidth just to show a few images and some text, I know that this website is not Facebook/Meta or YouTube but
+        those website are so slow. I hate the current state of the internet, it's just a mess of 99% AI, Ads and
+        trackers. Which this page does not have.
         <!-- You <i>could</i> take a look what I have to say about random news or stuff I found on the internet
         <a href="stuff/" class="link">here</a>. -->
       </p>
       <h2>Some chores</h2>
       <ol>
-        <li>Add TL;DR before ranting.</li>
         <li>Make some sort of "blog" about random stuff I did, found or want to share.</li>
         <li>Do random stuff with JS</li>
       </ol>
@@ -70,6 +85,7 @@
     </p>
   </footer>
 </body>
+<script src="js/tldr.js"></script>
 <script src="js/greet.js"></script>
 
 </html>
