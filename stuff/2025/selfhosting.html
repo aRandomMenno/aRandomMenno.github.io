@@ -8,9 +8,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta http-equiv="content-language" content="en-NL">
 
-  <title>Hobbysite | Selfhosting</title>
+  <title>Hobbysite | Raspberry Pi selfhosting</title>
   <link rel="stylesheet" href="../../css/general.css">
-  <link rel="stylesheet" href="../../css/projects.css">
+  <link rel="stylesheet" href="../css/stuff.css">
 </head>
 
 <body>
@@ -18,17 +18,39 @@
     <nav>
       <a href="../..">Home</a>
       <a href="../../projects/">Projects</a>
-      <a href="../../gallery/">Picture gallery</a>
-      <a href="..">Other stuff</a>
+      <a href="../../gallery/">Gallery</a>
+      <a href="..">Stuff</a>
     </nav>
   </header>
 
   <main>
+    <h1>Selfhosting on a Raspberry PI</h1>
+    <h2 class="notaguide">This is not a selfhosting/ server/ security guide!</h2>
     <p>
-      Raspberry Pi 5 8GB <br>
-      SSH <br>
-      Owntracks <br>
-      SFTP
+      A while back now I bought a Raspberry Pi 5 8GB, with the intention of learning more about Linux and selfhosting.
+      At that time I did not have any knowledge about Linux. So for the first couple of weeks I just tried doing random
+      things and breaking the OS in obscure ways. After a bit I decided to reinstall Raspberry Pi OS on my Pi and start
+      from scratch to Try and selfhosting some stuff. I started with Owntracks, a Private location tracking app.
+    </p>
+    <p>
+      The first time I tried to install Owntracks I ran into an issue where I could not connect to my Pi from the
+      outside my network. Because I didn't enable port forwarding on my router. After Correctly routing those ports to
+      the ports on my Pi it worked correctly. Lucky for me I actually have a fixed IP from my ISP, so I don't have to
+      use a dynamic DNS service to peridocally update my IP address. I also setup a wireguard connection from my laptop
+      and phone to my Pi so I can connect to my Pi and my home network securely from anywhere.
+    </p>
+    <p>
+      However, before all of this I first had to Harden my Pi. I just use UFW to block all incoming connections except
+      for SSH and the ports I needed for Owntracks and my "VPN" connection to my PI. I also made sure that only I was
+      able to login via SSH by disabling password authentication and only allowing login via SSH keys. I am also using
+      Fail2ban to protect against brute force attacks, when someone tries to attack my Pi their IP will get banned for a
+      certain amount of time on <b>all</b> ports.
+    </p>
+    <p>
+      In the future I also want to host a website on my Pi, I will have DDOS protection by then and a proper domain name
+      and not host on github pages. Because GitHub page are pretty limited in what you can do with them, like you can
+      not use a database or server side code. I might also host some small game servers on my Pi when I feel like it.
+      (not publicly accessible)
     </p>
   </main>
 
