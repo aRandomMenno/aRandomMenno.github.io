@@ -39,12 +39,12 @@ function loadAnimation() {
   }
 
   if (state === "normal") {
-    incrementDelay = Math.floor(Math.random() * 60 + 500);
+    incrementDelay = Math.floor(Math.random() * 60 + 40);
     percent++;
     if (stateChangeCooldown > 0) stateChangeCooldown--;
   }
   else if (state === "fast") {
-    incrementDelay = Math.floor(Math.random() * 20 + 100);
+    incrementDelay = Math.floor(Math.random() * 15 + 10);
     stateLength--;
     if (stateLength <= 0) {
       state = "normal";
@@ -52,7 +52,7 @@ function loadAnimation() {
     percent++;
   }
   else if (state === "slow") {
-    incrementDelay = Math.floor(Math.random() * 100 + 1500);
+    incrementDelay = Math.floor(Math.random() * 125 + 125);
     stateLength--;
     if (stateLength <= 0) {
       state = "normal";
