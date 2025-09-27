@@ -2,10 +2,10 @@
   --font: "Barlow";
   --bg: #1f1f1f;
   --text: #fff;
-  --accent: #2b6fd6;
-  --accent-hover: #72aaff;
-  --accent-2: #c927d8;
-  --accent-2-hover: #d181d7;
+  --accent: #5ca3ff;
+  --accent-hover: #0066ff;
+  --accent-2: #f268ff;
+  --accent-2-hover: #f12fff;
 }
 
 * {
@@ -29,27 +29,22 @@ body {
 }
 
 header {
-  height: 3.75em;
+  width: 100%;
+  height: auto;
   display: flex;
   justify-content: center;
-}
-
-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 1em;
 }
 
 nav {
   width: 100%;
   max-width: 70em;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: safe center;
 }
 
 nav a {
-  padding: 1em;
+  padding: 1em 0.5em 1em 0.5em;
 }
 
 main {
@@ -59,6 +54,17 @@ main {
   flex-direction: column;
   margin: 0 auto;
   padding: 0 1em;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 1em;
+}
+
+footer p {
+  text-align: center;
 }
 
 a {

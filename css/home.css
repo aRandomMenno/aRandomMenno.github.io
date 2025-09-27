@@ -33,7 +33,18 @@ pr:hover {
 
 .socials {
   display: flex;
-  gap: 2em;
+  gap: 1.5em;
+}
+
+@media (max-width: 540px) {
+  .socials {
+    flex-direction: column;
+    gap: 0.5em;
+  }
+}
+
+.socials {
+  text-align: center;
 }
 
 .img-myself {
