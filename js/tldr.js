@@ -1,8 +1,7 @@
+const tldrEl = document.getElementById("tldr");
+const tldrBtn = document.getElementById("tldr-btn");
+
 document.getElementById("tldr-btn").addEventListener("click", () => {
-  const el = document.getElementById("tldr");
-  if (el.style.display === "none") {
-    el.style.display = "inline";
-  } else {
-    el.style.display = "none";
-  }
+  tldrEl.style.display = tldrEl.style.display === "none" ? "block" : "none";
+  tldrBtn.innerText = tldrBtn.innerText === "Show TL:DR" ? "Hide TL:DR" : "Show TL:DR";
 });
