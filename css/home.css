@@ -70,3 +70,8 @@ pr:hover {
     width: 96%;
   }
 }
+
+#tldr {
+  color: var(--accent);
+  font-size: 1.05em;
+}
