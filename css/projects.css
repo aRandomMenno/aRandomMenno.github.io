@@ -17,6 +17,12 @@
   width: 50%;
 }
 
+.stack {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+}
+
 @media (max-width: 850px) {
   .section-flex {
     flex-direction: column;
@@ -26,4 +32,8 @@
   .right {
     width: 100%;
   }
+}
+
+.tech-icon {
+  height: 1.2em;
 }
