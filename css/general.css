@@ -3,18 +3,20 @@
   --bg: #1f1f1f;
   --text: #fff;
   --accent: #5ca3ff;
-  --accent-hover: #0066ff;
+  --accent-hover: #5cd6ff;
   --accent-2: #f268ff;
-  --accent-2-hover: #f12fff;
+  --accent-2-hover: #ff209b;
 }
 
 * {
+  transition: all 0.2s ease;
   box-sizing: border-box;
   cursor: default;
 }
 
 html,
 body {
+  line-break: strict;
   height: 100%;
   width: 100%;
 }
@@ -44,7 +46,7 @@ nav {
 }
 
 nav a {
-  padding: 1em 0.5em 1em 0.5em;
+  margin: 1em 0.5em 1em 0.5em;
 }
 
 main {
@@ -60,7 +62,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 1em;
+  padding: 0 0.5em 0.5em;
 }
 
 footer p {
@@ -68,6 +70,7 @@ footer p {
 }
 
 a {
+
   cursor: pointer;
   text-decoration: none;
   color: var(--accent-2);
@@ -76,6 +79,28 @@ a {
 
 a:hover {
   color: var(--accent-2-hover);
+}
+
+.underline-anim {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.1em;
+}
+
+.underline-anim::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 0.005em;
+  bottom: 0;
+  left: 0;
+  background-color: currentColor;
+  transition: transform 0.25s ease-in-out;
+}
+
+.underline-anim:hover::after {
+  transform: scaleX(1);
 }
 
 @font-face {

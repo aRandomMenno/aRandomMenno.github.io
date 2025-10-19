@@ -4,21 +4,30 @@
   gap: 1em;
 }
 
-@media (min-width: 600px) {
-  .gallery {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (min-width: 900px) {
-  .gallery {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-
 .gallery-img {
   border-radius: 1em;
   width: 100%;
   height: auto;
   display: block;
+  transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  filter: brightness(0.9);
+}
+
+.gallery-img:hover {
+  transform: scale(1.015);
+  filter: brightness(1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 60em) {
+  .gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 37.5em) {
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+  }
 }

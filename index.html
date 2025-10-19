@@ -17,56 +17,55 @@
 <body>
   <header>
     <nav>
-      <a href="." aria-current="page">Home</a>
-      <a href="projects/">Projects</a>
-      <a href="gallery/">Gallery</a>
-      <a href="stuff/">Stuff</a>
+      <a class="link underline-anim" href="." aria-current="page">Home</a>
+      <a class="link underline-anim" href="projects/">Projects</a>
+      <a class="link underline-anim" href="gallery/">Gallery</a>
+      <a class="link underline-anim" href="stuff/">Stuff</a>
     </nav>
   </header>
 
   <main>
+    <h1 id="greetings">Greetings, internet traveler! My name is <n>Menno</n>.</h1>
     <section>
-      <h1 id="greetings">Greetings, internet traveler! My name is <n>Menno</n>.</h1>
-      <a class="link" id="tldr-btn">Show TL:DR</a><br>
+      <a class="link underline-anim" id="tldr-btn">Show TL:DR</a><br>
       <p>
         <span id="tldr" style="display: none;">
-          Hey, my name is Menno, I am 17 years old and I live in Spijkenisse. I love coding and taking pictures,
-          currently I am studying software development at Grafisch Lyceum, I'm in my second year out of the three years
-          it will take. I have taken a photography course but I haven't done much photography since finishing that
-          course.
+          Hey, my name is <n>Menno</n>. I am 17 years old and I live in Spijkenisse. I love coding and photography.
+          I'm currently studying <pr>software development</pr> at Grafisch Lyceum and I'm in the second year of a
+          three-year course.
         </span>
       </p>
-      <img src="pictures/myself.jpg"
-        alt="Me, Menno in luxembourg, with a luxembourg flag in the background. I'm in castle wearing a blue t-shirt with a leaf pattern on it."
-        class="img-myself">
-      <p>
-        And welcome to my little pebble on the internet! I'm <span id="age">17 (this might be outdated)</span> years old
-        and live in the Netherland near Rotterdam. Currently I am studying Software Development (3 year course, in my
-        2nd year), my two most used coding languages are <pr>JavaScript</pr> and <pr>PHP</pr>. Which I wish to change
-        but do not have the motivation for, as the world is currently destroying itself. I'd like to improve my Python
-        skills and learn more about cryptography.
-      </p>
-      <p>
-        For school we are still learning about web development however due to the minor I chose to do (Applied
-        Development) I'll be learning to make websites with <pr>ASP.NET</pr> (<pr>C#</pr> and <pr>Razor</pr>). I think
-        it's an okay framework. ASP.NET is made by Microsoft, which is... not my favorite company.
-      </p>
-      <p>
-        In the future I want to follow a Cyber Security course, so I can become an ethical hacker. I also want to learn
-        more programming languages, like Go, Rust and <i>maybe</i> C/C++. I already know a decent amount of Python and
-        would like to keeping learning it. I also want to learn more about Linux, networking, servers and all that
-        stuff. I am already selfhosting some stuff on my Raspberry Pi at home.
-        <a href="stuff/2025/selfhosting.html">Read about my selfhosting journey</a>.
-      </p>
-      <p>
-        Other things I like to do in my spare time include but are not limited to sleeping, gaming, coding and taking
-        pictures. I'm actually pretty boring, I know. There's also a reason why this website looks pretty "boring"
-        compared to other website, I don't like the way how most modern websites look. They're over engineered and take
-        up megabytes of bandwidth just to show a few images and some text, I know that this website is not Facebook/Meta
-        or YouTube but those website are so slow. I hate the current state of the internet, it's just a mess of 99% AI,
-        Ads and trackers. And this website has none of that stuff.
-      </p>
     </section>
+    <div class="grid-things">
+      <section>
+        <img src="pictures/myself.jpg"
+          alt="Me, Menno in luxembourg, with a luxembourg flag in the background. I'm in castle wearing a blue t-shirt with a leaf pattern on it."
+          class="img-myself">
+      </section>
+      <section>
+        <p>
+          Welcome to my personal website. I am <span id="age">17 (this might be outdated)</span> years old and I live in
+          the Netherlands in Spijkenisse. Currently I am studying software development; I'm in my second year of three.
+          My main programming languages are <pr>JavaScript</pr> and <pr>PHP</pr>. While I have experience with Python,
+          I haven't used it in a while. I also have some experience with <pr>HTML</pr> and <pr>CSS</pr> for web
+          development. Take a look at my <a href="projects/" class="link underline-anim">projects</a> to see what I've been working on.
+          or have worked on in the past.
+        </p>
+        <p>
+          In my software development course I am still learning more about <pr>PHP</pr>, <pr>JavaScript</pr>, and
+          <pr>CSS</pr>. This year I also started Applied Development, so I will be learning how to use <pr>ASP.NET</pr>
+          (<pr>C#</pr> and <pr>Razor</pr>) to build websites with databases. After finishing my current course, I'd like
+          to follow a course in cyber security so I can hopefully become an ethical hacker in the future. I also want to
+          learn more programming languages like Go, Rust, and possibly C/C++. I am also interested in learning more
+          about <pr>networking</pr> and <pr>cryptography</pr>.
+        </p>
+        <p>
+          Things I like to do in my spare time include, but are not limited to, sleeping, gaming, coding, and <pr>taking
+            pictures</pr>. I have taken a photography course to learn more about it, and I really enjoy taking
+          photographs. You can find some of my photos in my <a href="gallery/" class="link underline-anim">gallery</a>.
+        </p>
+      </section>
+    </div>
     <section>
       <h2>Tasks:</h2>
       <ul>
@@ -81,10 +80,10 @@
   <footer>
     <h3>Social links:</h3>
     <div class="socials">
-      <a href="https://github.com/arandommenno" target="_blank" class="link">GitHub Profile</a>
+      <a href="https://github.com/arandommenno" target="_blank" class="link underline-anim">GitHub Profile</a>
       <a href="https://signal.me/#eu/0OLO6qJBbLzyAo8nilPOaU8CFgUZocUNhUPe9CvRaPSOw5f4ZJtPLqd5jYP7Ai3b" target="_blank"
-        class="link">Message me</a>
-      <a href="mailto:justmenno@proton.me" class="link">Shoot me an email</a>
+        class="link underline-anim">Message me</a>
+      <a href="mailto:justmenno@proton.me" class="link underline-anim">Shoot me an email</a>
     </div>
     <p>
       &copy; 2025, Menno van Zoelen. | <span id="LastModified">1 January 1970 @ 00:00</span>
