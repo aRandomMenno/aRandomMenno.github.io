@@ -1,0 +1,2 @@
+canvas = document.getElementById("lines");
+
