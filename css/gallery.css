@@ -1,6 +1,6 @@
 .gallery {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 1em;
 }
 
@@ -20,14 +20,14 @@
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-@media (min-width: 60em) {
+@media (max-width: 920px) {
   .gallery {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
-@media (min-width: 37.5em) {
+@media (max-width: 520px) {
   .gallery {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 }

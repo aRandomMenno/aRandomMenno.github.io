@@ -9,7 +9,6 @@
 }
 
 * {
-  transition: all 0.2s ease;
   box-sizing: border-box;
   cursor: default;
 }
@@ -23,7 +22,8 @@ body {
 
 body {
   margin: 0;
-  background: var(--bg);
+  background: #000000;
+  background: linear-gradient(166deg, rgba(0, 0, 0, 1) 0%, rgba(0, 9, 26, 1) 25%, rgba(0, 23, 64, 1) 50%, rgba(0, 9, 26, 1) 75%, rgba(0, 0, 0, 1) 100%);
   color: var(--text);
   font-size: 1.2rem;
   line-height: 1.35;
