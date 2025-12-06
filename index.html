@@ -12,6 +12,10 @@
   <link rel="stylesheet" href="css/general.css">
   <link rel="stylesheet" href="css/home.css">
   <link rel="icon" href="/icons/favicon.ico">
+  <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg">
+  <link rel="shortcut icon" href="/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
 </head>
 
 <body>
@@ -28,63 +32,53 @@
     <h1 id="greetings">Greetings, internet traveler! My name is <n>Menno</n>.</h1>
     <section>
       <a class="link underline-anim" id="tldr-btn">Show TL:DR</a><br>
-      <p>
-        <span id="tldr" style="display: none;">
-          Hey, my name is <n>Menno</n>. I am 17 years old and I live in Spijkenisse. I love coding and photography.
-          I'm currently studying <pr>software development</pr> at Grafisch Lyceum and I'm in the second year of a
-          three-year course.
-        </span>
+      <p id="tldr" style="display: none;">
+        Hey, my name is Menno, I am <span class="age">18</span> years old and I live in Spijkenisse. I love coding,
+        taking pictures, and sleeping. Currently I am studying software development at Grafisch Lyceum, I'm in my second
+        year out of the three years it will take. I have taken a photography course but I haven't done much photography
+        since finishing that course.
       </p>
     </section>
-    <div class="grid-things">
-      <section>
-        <img src="pictures/myself.jpg"
-          alt="Me, Menno in luxembourg, with a luxembourg flag in the background. I'm in castle wearing a blue t-shirt with a leaf pattern on it."
-          class="img-myself">
-      </section>
+    <section class="grid-things">
+      <img src="pictures/myself.jpg"
+        alt="Me, Menno in luxembourg, with a luxembourg flag in the background. I'm in castle wearing a blue t-shirt with a leaf pattern on it."
+        class="img-myself">
       <section>
         <p>
-          Welcome to my personal website. I am <span id="age">17 (this might be outdated)</span> years old and I live in
-          the Netherlands in Spijkenisse. Currently I am studying software development; I'm in my second year of three.
-          My main programming languages are <pr>JavaScript</pr> and <pr>PHP</pr>. While I have experience with Python,
-          I haven't used it in a while. I also have some experience with <pr>HTML</pr> and <pr>CSS</pr> for web
-          development. Take a look at my <a href="projects/" class="link underline-anim">projects</a> to see what I've been working on.
-          or have worked on in the past.
+          Welcome, to my website. I'm <span class="ag">18</span>-years-old and studying software development @ GLR (<a
+            href="https://www.glr.nl/" target="_blank" class="link underline-anim">Grafisch Lyceum Rotterdam</a>). I'm
+          in my second year out the the three years it will take.
         </p>
         <p>
-          In my software development course I am still learning more about <pr>PHP</pr>, <pr>JavaScript</pr>, and
-          <pr>CSS</pr>. This year I also started Applied Development, so I will be learning how to use <pr>ASP.NET</pr>
-          (<pr>C#</pr> and <pr>Razor</pr>) to build websites with databases. After finishing my current course, I'd like
-          to follow a course in cyber security so I can hopefully become an ethical hacker in the future. I also want to
-          learn more programming languages like Go, Rust, and possibly C/C++. I am also interested in learning more
-          about <pr>networking</pr> and <pr>cryptography</pr>.
+          At the moment I am fairly good at 3 programming languages. The language I am best at in my opinion is <pr>PHP
+          </pr> after which comes <pr>JavaScript</pr> and lastly <pr>Python</pr>. My Python is currently not that good
+          since I have not used it since I've made my "simple" project to automated part of a mobile game I used to
+          play. For school I am currently researching 4 different programming languages. <pr>Kotlin</pr> or <pr>Java
+          </pr> for a Minecraft mod or <pr>Rust</pr> vs <pr>Go</pr> to make a chess engine.
         </p>
         <p>
-          Things I like to do in my spare time include, but are not limited to, sleeping, gaming, coding, and <pr>taking
-            pictures</pr>. I have taken a photography course to learn more about it, and I really enjoy taking
+          Things I like to do in my spare time include, but are not limited to listening to music, gaming, sleeping, and
+          <pr>taking pictures</pr>. I have taken a photography course to learn more about it, and I really enjoy taking
           photographs. You can find some of my photos in my <a href="gallery/" class="link underline-anim">gallery</a>.
         </p>
+        <h3>The future</h3>
+        <p>
+          After my current study I'd like to study <pr>Cyber Security</pr>. Focusing on ethical hacking, Network defense
+          or Social Engineering prevention. And if the tech world does not work out for me I can always try to go in on
+          photography since I also really like that.
+        </p>
       </section>
-    </div>
-    <section>
-      <h2>Tasks:</h2>
-      <ul>
-        <li>Improve CSS styling to be a little less boring</li>
-        <li>Make a favicon</li>
-        <li>Themes</li>
-        <li>Move to a proper domain (no gh pages)</li>
-      </ul>
     </section>
   </main>
 
   <footer>
     <h3>Social links:</h3>
-    <div class="socials">
+    <section class="socials">
       <a href="https://github.com/arandommenno" target="_blank" class="link underline-anim">GitHub Profile</a>
       <a href="https://signal.me/#eu/0OLO6qJBbLzyAo8nilPOaU8CFgUZocUNhUPe9CvRaPSOw5f4ZJtPLqd5jYP7Ai3b" target="_blank"
         class="link underline-anim">Message me</a>
       <a href="mailto:justmenno@proton.me" class="link underline-anim">Shoot me an email</a>
-    </div>
+    </section>
     <p>
       &copy; 2025, Menno van Zoelen. | <span id="LastModified">1 January 1970 @ 00:00</span>
     </p>

@@ -8,7 +8,7 @@ const messages = [
   "Hello! My name is <n>Menno</n>.",
 ];
 
-const bday = () => {
+function bday() {
   const birthDate = new Date("2007-11-07");
   const ageDiffMs = Date.now() - birthDate.getTime();
   const ageDate = new Date(ageDiffMs);
@@ -17,5 +17,5 @@ const bday = () => {
 
 document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("greetings").innerHTML = messages[Math.floor(Math.random() * messages.length)];
-  document.getElementById("age").innerText = bday();
+  document.querySelectorAll(".age").forEach(ageEl => { ageEl.textContent = bday() });
 });
