@@ -1,4 +1,4 @@
 .notaguide {
-  color: rgb(180, 0, 0);
+  color: var(--danger);
   margin: -0.1em 0;
 }

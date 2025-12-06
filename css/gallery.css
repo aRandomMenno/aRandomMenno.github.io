@@ -9,24 +9,24 @@
   width: 100%;
   height: auto;
   display: block;
-  transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 300ms ease, filter 300ms ease, box-shadow 300ms ease;
   cursor: pointer;
-  filter: brightness(0.9);
+  filter: brightness(0.85);
 }
 
 .gallery-img:hover {
   transform: scale(1.015);
   filter: brightness(1);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 1em var(--shadow);
 }
 
-@media (max-width: 920px) {
+@media (max-width: 57.5em) {
   .gallery {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 32.5em) {
   .gallery {
     grid-template-columns: 1fr;
   }

@@ -1,40 +1,44 @@
-:root {
-  --font: "Barlow";
-  --bg: #1f1f1f;
-  --text: #fff;
-  --accent: #5ca3ff;
-  --accent-hover: #5cd6ff;
-  --accent-2: #f268ff;
-  --accent-2-hover: #ff209b;
-}
+@import url("color.css");
+@import url("fonts.css");
 
 * {
-  box-sizing: border-box;
   cursor: default;
 }
 
 html,
 body {
-  line-break: strict;
   height: 100%;
   width: 100%;
+  line-break: strict;
 }
 
 body {
-  margin: 0;
-  background: #000000;
-  background: linear-gradient(166deg, rgba(0, 0, 0, 1) 0%, rgba(0, 9, 26, 1) 25%, rgba(0, 23, 64, 1) 50%, rgba(0, 9, 26, 1) 75%, rgba(0, 0, 0, 1) 100%);
+  background: #000;
+  background: linear-gradient(166deg, rgba(0, 0, 0, 0.94) 0%, rgba(0, 9, 26, 0.94) 25%, rgba(0, 23, 64, 0.94) 50%, rgba(0, 9, 26, 0.94) 75%, rgba(0, 0, 0, 0.94) 100%), url(../pictures/background.webp);
+  background-attachment: fixed;
+  font-family: var(--font-regular);
   color: var(--text);
   font-size: 1.2rem;
   line-height: 1.35;
-  font-family: var(--font);
+  margin: 0;
+}
+
+
+h1,
+h2 {
+  font-family: var(--font-bold);
+}
+
+h3,
+h4 {
+  font-family: var(--font-medium);
 }
 
 header {
-  width: 100%;
-  height: auto;
   display: flex;
   justify-content: center;
+  width: 100%;
+  height: auto;
 }
 
 nav {
@@ -43,19 +47,23 @@ nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: safe center;
-}
 
-nav a {
-  margin: 1em 0.5em 1em 0.5em;
+  a {
+    margin: 1em 0.5em 1em 0.5em;
+  }
 }
 
 main {
-  width: 100%;
+  width: calc(100% - 2em);
   max-width: 70em;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   padding: 0 1em;
+}
+
+section {
+  margin-bottom: 1em;
 }
 
 footer {
@@ -65,45 +73,41 @@ footer {
   padding: 0 0.5em 0.5em;
 }
 
-footer p {
-  text-align: center;
+footer {
+  p {
+    text-align: center;
+  }
 }
 
 a {
-
   cursor: pointer;
   text-decoration: none;
   color: var(--accent-2);
-  transition: color 0.3s ease-in-out;
-}
+  transition: color 300ms ease-in-out;
 
-a:hover {
-  color: var(--accent-2-hover);
+  &:hover {
+    color: var(--accent-2-hover);
+  }
 }
 
 .underline-anim {
   position: relative;
   display: inline-block;
   padding-bottom: 0.1em;
-}
 
-.underline-anim::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 0.005em;
-  bottom: 0;
-  left: 0;
-  background-color: currentColor;
-  transition: transform 0.25s ease-in-out;
-}
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: currentColor;
+    transition: transform 300ms ease-in-out;
+  }
 
-.underline-anim:hover::after {
-  transform: scaleX(1);
-}
-
-@font-face {
-  font-family: "Barlow";
-  src: url(../fonts/barlow.ttf);
+  &:hover::after {
+    transform: scaleX(1);
+  }
 }

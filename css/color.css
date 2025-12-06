@@ -1,0 +1,18 @@
+:root {
+  /* Fonts */
+  --font-regular: "Barlow Regular";
+  --font-medium: "Barlow Medium";
+  --font-bold: "Barlow Bold";
+  /* Main colors */
+  --bg: #1f1f1f;
+  --text: #fff;
+  --accent: #5ca3ff;
+  --accent-hover: #5cd6ff;
+  --accent-2: #f268ff;
+  --accent-2-hover: #ff209b;
+  --shadow: #ffffff15;
+  /* Message colors */
+  --danger: #b40000;
+  --warn: #f7ff1d;
+  --success: #22ff22;
+}

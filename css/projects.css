@@ -21,18 +21,19 @@
   display: inline-flex;
   align-items: center;
   gap: 0.4em;
-  transition: gap 0.2s ease;
+  transition: gap 200ms ease;
 }
 
 .tech-icon {
   height: 1.2em;
-  transition: transform 0.3s ease, filter 0.3s ease;
+  transition: transform 300ms ease, filter 300ms ease;
+
+  &:hover {
+    transform: rotate(10deg) scale(1.15);
+    filter: drop-shadow(0 0 4px rgba(255, 175, 30, 0.4));
+  }
 }
 
-.tech-icon:hover {
-  transform: rotate(10deg) scale(1.15);
-  filter: drop-shadow(0 0 4px rgba(255, 175, 30, 0.4));
-}
 
 @media (max-width: 53.125em) {
   .section-flex {
