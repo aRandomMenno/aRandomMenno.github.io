@@ -1,12 +1,6 @@
-@import url("color.css");
-@import url("fonts.css");
-
-* {
-  cursor: default;
-}
-
 html,
 body {
+  cursor: default;
   height: 100%;
   width: 100%;
   line-break: strict;
@@ -61,10 +55,6 @@ main {
   flex-direction: column;
   margin: 0 auto;
   padding: 0 1em;
-}
-
-section {
-  margin-bottom: 1em;
 }
 
 footer {
