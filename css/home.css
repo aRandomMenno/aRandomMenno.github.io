@@ -11,6 +11,7 @@
 n {
   background: linear-gradient(to right, #7953cd 20%, #00affa 30%, #0190cd 70%, #764ada 80%);
   -webkit-background-clip: text;
+  -moz-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
@@ -41,12 +42,12 @@ pr {
   border-radius: 1em;
 }
 
-#tldr-btn {
+.tldr-btn {
   color: var(--);
   font-size: 1.1em;
 }
 
-#tldr {
+.tldr {
   color: var(--accent);
   font-size: 1.05em;
 }
