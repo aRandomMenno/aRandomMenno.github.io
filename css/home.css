@@ -27,7 +27,9 @@ n {
 .rs,
 .go,
 .git,
-.linux {
+.linux,
+.cyb-sec,
+.photo {
   font-family: "Barlow Medium";
 }
 
@@ -69,6 +71,14 @@ n {
   color: #f8bf11;
 }
 
+.cyb-sec {
+  color: #ff3ab0;
+}
+
+.photo {
+  color: #2db221;
+}
+
 .socials {
   display: flex;
   gap: 1.5em;
@@ -83,8 +93,8 @@ n {
   border-radius: 1em;
 }
 
-.tldr-btn {
-  color: var(--);
+.btn {
+  color: var(--accent);
   font-size: 1.1em;
 }
 

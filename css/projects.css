@@ -35,7 +35,7 @@
 }
 
 
-@media (max-width: 53.125em) {
+@media (max-width: 55em) {
   .section-flex {
     flex-direction: column;
   }
