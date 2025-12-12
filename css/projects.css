@@ -17,6 +17,11 @@
   width: 50%;
 }
 
+.src-and-stack {
+  display: flex;
+  gap: 0.5em;
+}
+
 .stack {
   display: inline-flex;
   align-items: center;
