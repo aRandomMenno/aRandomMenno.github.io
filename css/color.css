@@ -14,5 +14,18 @@
   /* Message colors */
   --danger: #b40000;
   --warn: #f7ff1d;
+  --warn-darker: #ffaf1e;
   --success: #22ff22;
+}
+
+.danger {
+  color: var(--danger);
+}
+
+.warn {
+  color: var(--warn);
+}
+
+.success {
+  color: var(--success);
 }

@@ -70,6 +70,11 @@ footer {
   }
 }
 
+.copy-and-mod {
+  display: flex;
+  gap: 0.4em;
+}
+
 a {
   cursor: pointer;
   text-decoration: none;

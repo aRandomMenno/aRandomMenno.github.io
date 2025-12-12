@@ -19,13 +19,54 @@ n {
   animation: textShine 5000ms ease-in-out infinite alternate;
 }
 
-pr {
-  color: var(--accent);
-  transition: color 300ms ease-in-out;
+.php,
+.js,
+.py,
+.kotlin,
+.java,
+.rs,
+.go,
+.git,
+.linux {
+  font-family: "Barlow Medium";
+}
 
-  &:hover {
-    color: var(--accent-hover);
-  }
+.php {
+  color: #576cc8;
+}
+
+.js {
+  color: #f7df1e;
+}
+
+.py {
+  background: linear-gradient(90deg, #3672a4 40%, #ffd747 60%);
+  color: transparent;
+  background-clip: text;
+}
+
+.kotlin {
+  background: linear-gradient(90deg, #0095d5, 20%, #806ee3 40%, #f88909 60%, #cd5da5 80%);
+  color: transparent;
+  background-clip: text;
+}
+
+.java {
+  background: linear-gradient(60deg, #e76f00 33%, #5382a1 45%);
+  color: transparent;
+  background-clip: text;
+}
+
+.rs {
+  color: #f44b00;
+}
+
+.git {
+  color: #de4c36;
+}
+
+.linux {
+  color: #f8bf11;
 }
 
 .socials {

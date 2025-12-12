@@ -1,5 +1,5 @@
-.archived {
-  color: rgb(255, 175, 30);
+.notice {
+  color: var(--warn-darker);
 }
 
 .section-flex {
