@@ -72,7 +72,13 @@ footer {
 
 .copy-and-mod {
   display: flex;
-  gap: 0.4em;
+  gap: 1em;
+}
+
+@media (max-width: 45em) {
+  .copy-and-mod {
+    display: block;
+  }
 }
 
 a {

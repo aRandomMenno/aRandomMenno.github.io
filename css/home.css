@@ -105,11 +105,8 @@ n {
 
 .clock {
   font-size: 2em;
-  /* width: 15em; */
-  /* height: 3em; */
   float: right;
-  padding: 1em;
-  /* position: ; */
+  padding: 0 0 1em 1em;
 }
 
 @media (max-width: 45em) {
