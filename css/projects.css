@@ -1,5 +1,6 @@
 .notice {
   color: var(--warn-darker);
+  font-family: "Barlow Medium";
 }
 
 .section-flex {

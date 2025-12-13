@@ -1,8 +1,8 @@
-let currentLang;
+const url = currentLang === "en" ? "../json/projects.json" : currentLang === "nl" ? "../../json/projects.json" : "../json/projects.json";
 
 const fetchProjects = async () => {
   try {
-    const response = await fetch("../json/projects.json");
+    const response = await fetch(url);
     if (!response.ok) {
       throw new Error("Network response not ok: " + response.status + ", " + response.statusText);
     }
@@ -15,9 +15,6 @@ const fetchProjects = async () => {
 }
 
 const displayProjects = async (projectsData) => {
-  currentLang = document.documentElement.lang;
-  currentLang = currentLang === "en-US" ? "en" : currentLang === "nl-NL" ? "nl" : "en";
-
   const projectsContainer = document.querySelector(".projects-display");
   projectsContainer.innerHTML = "";
 
