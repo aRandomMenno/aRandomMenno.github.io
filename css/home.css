@@ -103,6 +103,15 @@ n {
   font-size: 1.05em;
 }
 
+.clock {
+  font-size: 2em;
+  /* width: 15em; */
+  /* height: 3em; */
+  float: right;
+  padding: 1em;
+  /* position: ; */
+}
+
 @media (max-width: 45em) {
   .img-myself {
     max-width: 20em;
@@ -116,5 +125,11 @@ n {
 @media (max-width: 30em) {
   .img-myself {
     width: 96%;
+  }
+}
+
+@media (max-width: 60em) {
+  .clock {
+    display: none;
   }
 }
