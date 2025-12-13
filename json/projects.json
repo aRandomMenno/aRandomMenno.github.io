@@ -1,0 +1,78 @@
+[
+  {
+    "title": {
+      "en": "GooberOS",
+      "nl": "GooberOS"
+    },
+    "src": "https://github.com/JeaV2/gooberos/",
+    "langs": [
+      "javascript",
+      "css",
+      "html"
+    ],
+    "descriptions": {
+      "en": "A web-based terminal emulator which recreates the Linux shell. Users can execute basic commands, navigate a filesystem and manage \"their\" files. This project was made during a 48-hour make-a-thon organized by our school. I participated in this make-a-thon with 4 students from the same course: my sister <a href=\"https://github.com/astralvrz\" class=\"link underline-anim\" target=\"_blank\">Jea</a>, 2 classmates (Stone and Rianne) and a classmate of my sister (Tigo). We worked together on this project with <pr>HTML</pr>, <pr>CSS</pr> and <pr>JavaScript</pr>. The make-a-thon was a success, since we won against the other two first-year groups. For winning we all got a small prize. During this project I learned more about working together as a team and communication inside of a team.",
+      "nl": "Een webgebaseerde terminal die de Linux shell nabootst. Gebruikers kun basiscommando's uitvoeren, navigeren door het bestandssysteem en bestanden beheren. Dit project was gemaakt tijdens een 48-uur durende make-a-thon georganiseerd door onze school.Ik heb deelgenomen aan deze make-a-thon met 4 studenten van dezelfde afdeling: mijn zus <a href=\"https://github.com/astralvrz\" class=\"link underline-anim\" target=\"_blank\">Jea</a>, 2 klasgenoten (Stone en Rianne) en een klasgenoot van mijn zus (Tigo). We hebben met zijn vijven samengewerkt aan dit project met <pr>HTML</pr>, <pr>CSS</pr> en <pr>JavaScript</pr>. Het project was een groot succes, we hebben gewonnen van de andere twee eerstejaarsgroepen en hebben hiermee een kleine prijs gewonnen. Tijdens dit project heb ik meer geleerd over samenwerken en communicatie binnen een team."
+    }
+  },
+  {
+    "title": {
+      "en": "TappsBox",
+      "nl": "TappsBox"
+    },
+    "src": "https://github.com/aRandomMenno/TappsBox",
+    "langs": [
+      "python"
+    ],
+    "descriptions": {
+      "en": "<span class=\"notice\">[Archived project, no longer maintained!]</span><br> TappsBox is a relatively simple Python project that automatically clicks on boxes in a mobile game named Goat Evolution. I made this project using OpenCV and PyAutoGUI. Using OpenCV I determine the place of the box(es) and then using PyAutoGUI I move the mouse to the box and click on the box. Now, you may be thinking: \"It's a mobile game. How do you have a mouse?\". I solved that problem with scrcpy, with scrcpy you can mirror your phone screen to your computer and control your phone using your computer/laptop.",
+      "nl": "<span class=\"notice\">[Gearchiveerd project, wordt niet meer onderhouden!]</span><br> TappsBox is een redelijk simpel Python-project dat automatisch op doosjes klikt in het telefoonspel genaamd Goat Evolution. Ik heb dit project gemaakt met behulp van OpenCV en PyAutoGUI. Met OpenCV bepaal ik waar de doos of dozen op het scherm zijn en met PyAutoGUI beweeg ik de muis ernaartoe en klik ik erop. Nu denk je misschien: \"maar het is toch een spel op je telefoon; hoe gebruik je dan een muis?\". Dat probleem heb ik opgelost door mijn telefoonscherm te 'projecteren' naar mijn computer via scrcpy. Want met scrcpy kan je je telefoon besturen via je computer."
+    }
+  },
+  {
+    "title": {
+      "en": "Personal website",
+      "nl": "Persoonlijke website"
+    },
+    "src": "https://github.com/arandommenno/arandommenno.github.io",
+    "langs": [
+      "html",
+      "css",
+      "javascript"
+    ],
+    "descriptions": {
+      "en": "This very website you are looking at right now! I made this website to showcase my projects and to have a personal space on the internet. The website is built using plain ol' HTML, CSS and a bit of JavaScript. If I have correctly counted, this is the 12th version of the little website. Fact: the first commit was on Feb 13, 2023. I have learned a lot about coding in the past years (it's 2025 now).",
+      "nl": "Nederlandse tekst die het project uitlegt."
+    }
+  },
+  {
+    "title": {
+      "en": "Colorcat (cli)",
+      "nl": "Colorcat (cli)"
+    },
+    "src": "https://github.com/astralvrz/colorcat",
+    "langs": [
+      "python"
+    ],
+    "descriptions": {
+      "en": "<span class=\"notice\">[only a small contribution was made]</span><br> A simple python script to print colored and styled text from a file to your terminal! The author (my sister) originally created this because she wanted to show their todo list in a more visually appealing way when they opened their terminal, however now it can be used for any text file. I made a small contribution to the project by adding support to print each line with a slight delay (configurable in the file or via a command line flag) [-d [delay in milliseconds]]",
+      "nl": "Nederlandse tekst die het project uitlegt."
+    }
+  },
+  {
+    "title": {
+      "en": "Comment Finder",
+      "nl": "Commentaar Vinder"
+    },
+    "src": "https://github.com/AstralVRZ/html-comment-finder",
+    "langs": [
+      "javascript",
+      "css",
+      "html"
+    ],
+    "descriptions": {
+      "en": "Comment Finder is a browser extension made for FireFox. The extension finds HTML, CSS and JavaScript comments on any webpage. Originally it was made by <a href=\"https://github.com/dimdenGD/\" target=\"_blank\">DimdenGD</a> for Chrome to find just HTML comments however my sister ported it to FireFox and after a while I decided to figure out how to add functionality to make it find CSS and JavaScript comments as well.",
+      "nl": "Nederlandse tekst die het project uitlegt."
+    }
+  }
+]

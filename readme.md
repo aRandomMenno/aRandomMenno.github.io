@@ -7,7 +7,7 @@ The website is hosted on GitHub Pages and can be found at: [aRandomMenno.github.
 
 ## Tasks
 
-- [ ] Add a clock, because I can.
-- [ ] Put projects in JSON file to fetch with JavaScript.
-- [ ] Make underline animation take 50ms per character in the `<a>` element.
+- [X] Add a clock, because I can.
+- [X] Put projects in JSON file to fetch with JavaScript.
+- [ ] Make underline animation take 50ms per character in the `<a>` element with a max of 600ms.
 - [ ] Add a dutch translation of the website.
