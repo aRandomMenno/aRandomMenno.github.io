@@ -62,7 +62,7 @@
   {
     "title": {
       "en": "Comment Finder",
-      "nl": "Commentaar Vinder"
+      "nl": "Comment Finder"
     },
     "src": "https://github.com/AstralVRZ/html-comment-finder",
     "langs": [
@@ -72,7 +72,7 @@
     ],
     "descriptions": {
       "en": "Comment Finder is a browser extension made for FireFox. The extension finds HTML, CSS and JavaScript comments on any webpage. Originally it was made by <a href=\"https://github.com/dimdenGD/\" target=\"_blank\">DimdenGD</a> for Chrome to find just HTML comments however my sister ported it to FireFox and after a while I decided to figure out how to add functionality to make it find CSS and JavaScript comments as well.",
-      "nl": "Commentaar Vinder is een browserextensie gemaakt voor Firefox. De extensie zoekt naar HTML-, CSS- en JavaScript-commentaar op pagina's die je bezoekt. Het is oorspronkelijk gemaakt door <a href=\"https://github.com/dimdenGD/\" target=\"_blank\">DimdenGD</a> voor Chrome om HTML-commentaar te vinden. Mijn zus heeft de extensie naar Firefox geport. Daarna heb ik geholpen om ervoor te zorgen dat ook CSS- en JavaScript-commentaar gevonden kan worden."
+      "nl": "Comment Finder is een browserextensie gemaakt voor Firefox. De extensie zoekt naar HTML-, CSS- en JavaScript-commentaar op pagina's die je bezoekt. Het is oorspronkelijk gemaakt door <a href=\"https://github.com/dimdenGD/\" target=\"_blank\">DimdenGD</a> voor Chrome om HTML-commentaar te vinden. Mijn zus heeft de extensie naar Firefox geport. Daarna heb ik geholpen om ervoor te zorgen dat ook CSS- en JavaScript-commentaar gevonden kan worden."
     }
   }
 ]
