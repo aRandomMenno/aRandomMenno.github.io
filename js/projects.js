@@ -56,7 +56,11 @@ const createProjectDiv = async (project, lang, position) => {
   stackSpan.className = "stack";
   project.langs.forEach(lang => {
     const img = document.createElement("img");
-    img.src = `../icons/${lang}.svg`;
+    if (currentLang === "en") {
+      img.src = `../icons/${lang}.svg`;
+    } else if (currentLang === "nl") {
+      img.src = `../../icons/${lang}.svg`;
+    }
     img.alt = `${lang.charAt(0).toUpperCase() + lang.slice(1)} icon`;
     img.className = "tech-icon";
     stackSpan.appendChild(img);
