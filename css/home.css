@@ -81,8 +81,9 @@ n {
 
 .socials {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1.5em;
-  text-align: center;
 }
 
 .img-myself {
