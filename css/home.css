@@ -108,6 +108,7 @@ n {
   font-size: 2em;
   float: right;
   padding: 0 0 1em 1em;
+  min-width: 200px;
 }
 
 @media (max-width: 45em) {
