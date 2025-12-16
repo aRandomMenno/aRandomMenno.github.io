@@ -41,8 +41,8 @@
       "javascript"
     ],
     "descriptions": {
-      "en": "This very website you are looking at right now! I made this website to showcase my projects and to have a personal space on the internet. The website is built using plain ol' HTML, CSS and a bit of JavaScript. If I have correctly counted, this is the 12th version of the little website. Fact: the first commit was on Feb 13, 2023. I have learned a lot about coding in the past years (it's 2025 now).",
-      "nl": "Nederlandse tekst die het project uitlegt."
+      "en": "This very website you are looking at right now! I made this website to showcase my projects and to have a personal space on the internet. The website is built using plain ol' HTML, CSS and some JavaScript. If I have correctly counted, this is the 12th version of the website. Fact: the first commit was on Feb 13, 2023. I have learned a lot about coding in the past years.",
+      "nl": "Dit project is de website waar je nu naar kijkt! Ik heb deze website gemaakt om mijn projecten te laten zien, mijn HTML, CSS en JavaScript skills te laten zien en om een kleine plek te hebben op het internet. De website is gemaakt met alleen HTML, CSS en JavaScript. En als ik goed heb geteld is dit de twaalfde versie van de website. Feit: de eerste commit was op 13 Februari 2023. Sindsdien heb ik veel geleerd over programmeren en computer."
     }
   },
   {
@@ -55,8 +55,8 @@
       "python"
     ],
     "descriptions": {
-      "en": "<span class=\"notice\">[only a small contribution was made]</span><br> A simple python script to print colored and styled text from a file to your terminal! The author (my sister) originally created this because she wanted to show their todo list in a more visually appealing way when they opened their terminal, however now it can be used for any text file. I made a small contribution to the project by adding support to print each line with a slight delay (configurable in the file or via a command line flag) [-d [delay in milliseconds]]",
-      "nl": "Nederlandse tekst die het project uitlegt."
+      "en": "<span class=\"notice\">[only a small contribution was made]</span><br> A simple Python script to print colored and styled text from a file to your terminal! The author (my sister) originally created this because she wanted to show her todo list in a more visually appealing way when she opened her terminal, however now it can be used for any text file. I made a small contribution to the project by adding support to print each line with a slight delay (configurable in the file or via a command line flag) [-d [delay in seconds]]",
+      "nl": "<span class=\"notice\">[Alleen een kleine toevoeging is gemaakt]</span><br> Een simpel Python script om gekleurde en geformatteerde tekst te printen naar de terminal uit een bestand. De auteur (mijn zus) heeft dit origineel gemaakt omdat ze haar todo lijstje op een aantrekkelijkere manier wilde printen in de terminal. Ik heb een kleine toevoeging gemaakt aan het project. Nu kun je met de -d flag een pauze toevoegen tussen elke regel; bijvoorbeeld -d 0.5 zorgt dat het programma 500 milliseconden wacht voordat hij de volgende regel print."
     }
   },
   {
