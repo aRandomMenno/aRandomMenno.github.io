@@ -2,23 +2,25 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1em;
+
+  .img {
+    border-radius: 1em;
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 300ms ease, filter 300ms ease, box-shadow 300ms ease;
+    cursor: pointer;
+    filter: brightness(0.85);
+  }
+
+  .img:hover {
+    transform: scale(1.015);
+    filter: brightness(1);
+    box-shadow: 0 0 1em var(--shadow);
+  }
 }
 
-.gallery-img {
-  border-radius: 1em;
-  width: 100%;
-  height: auto;
-  display: block;
-  transition: transform 300ms ease, filter 300ms ease, box-shadow 300ms ease;
-  cursor: pointer;
-  filter: brightness(0.85);
-}
 
-.gallery-img:hover {
-  transform: scale(1.015);
-  filter: brightness(1);
-  box-shadow: 0 0 1em var(--shadow);
-}
 
 @media (max-width: 57.5em) {
   .gallery {
