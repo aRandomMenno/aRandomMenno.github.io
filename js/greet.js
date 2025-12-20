@@ -72,12 +72,12 @@ const hour = new Date().getHours();
 const timeOfDay = hour >= 6 && hour < 12 ? "morning" : hour >= 12 && hour < 18 ? "afternoon" : hour >= 18 ? "evening" : "night";
 
 document.addEventListener("DOMContentLoaded", () => {
-  let naam;
+  let nameMessage;
   document.querySelector(".greetings").innerHTML = (() => {
     const msgs = messages[currentLang][timeOfDay];
-    if (currentLang === "en") naam = " Mijn naam is <n>Menno</n>.";
-    if (currentLang === "nl") naam = " My name is <n>Menno</n>.";
-    return msgs[Math.floor(Math.random() * msgs.length)] + naam;
+    if (currentLang === "en") nameMessage = " My name is <n>Menno</n>.";
+    if (currentLang === "nl") nameMessage = " Mijn naam is <n>Menno</n>.";
+    return msgs[Math.floor(Math.random() * msgs.length)] + nameMessage;
   })();
   document.querySelectorAll(".age").forEach(ageEl => { ageEl.textContent = bday() });
 });
